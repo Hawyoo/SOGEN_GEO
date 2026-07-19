@@ -1,6 +1,6 @@
 # SOGEN_data
 
-SOGEN_data 是一个面向妇产科、乳腺及女性生殖相关疾病研究的 GEO 公共数据集结构化标注仓库。仓库用于帮助 AI 快速定位候选 GSE、理解研究设计、判断可支持的分析方向，并识别进一步复核原始数据时需要关注的限制。仓库不包含原始表达矩阵、原始测序文件或完整临床数据。
+SOGEN_data 是面向妇产科、乳腺及女性生殖相关疾病研究的 GEO 公共数据集结构化标注仓库。仓库用于帮助 AI 快速定位候选 GSE、理解研究设计、判断可能支持的分析方向；仓库不包含原始表达矩阵、原始测序文件或完整临床数据。
 
 ---
 
@@ -14,34 +14,35 @@ secondary_data_format: XLSX
 raw_omics_data_included: false
 clinical_data_complete: false
 annotation_is_final_evidence: false
-source_of_truth_for_analysis:
+repository_snapshot_date: 2026-07-19
+directory_snapshot_is_authoritative: false
+source_of_truth_for_final_analysis:
   - original_GEO_record
   - sample_level_metadata
   - associated_publication
   - supplementary_materials
-repository_index_updated_at: 2026-07-15
 ```
 
-## 1. REQUIRED_READING_BEHAVIOR
+## 1. NON_NEGOTIABLE_READING_RULES
 
-AI 读取本仓库时必须遵循以下顺序：
+AI 读取本仓库时必须遵循：
 
-1. 动态扫描仓库根目录，不得只依赖 README 中的目录清单。
-2. 根据用户研究疾病选择对应疾病目录。
-3. 根据目标组学类型读取编号为 `01`–`07` 的分类 JSON。
-4. 根据目标研究问题读取名称中包含 `专题` 的 JSON。
-5. 同时需要组学类型和研究设计时，读取两类文件并按 `gse_id` 关联。
-6. 对跨文件结果按 `gse_id` 去重，不得把同一 GSE 重复计数。
-7. 优先读取 `datasets` 数组中的标准字段和 `evidence` 对象。
-8. 默认忽略名称不稳定的随机下划线字段，不得将其作为筛选条件或固定 schema。
-9. 输出候选数据集时，必须区分“仓库标注提示可行”和“经 GEO、论文及样本级信息复核后确认可行”。
-10. 不得把仓库标注直接表述为数据已下载、质量已验证、分析可以直接运行或结论已经复现。
-11. 当 JSON 的 `datasets` 为空时，只能解释为当前文件没有收录符合该分类规则的记录，不得解释为 GEO 中绝对不存在相关研究。
+1. 先动态扫描仓库根目录；README 中的目录清单只是快照，不是永久白名单。
+2. 根据用户指定的疾病、组学类型和研究问题选择文件，不得无差别读取后直接混合全部记录。
+3. 读取文件前先判断文件是否存在、是否有内容、是否为有效 JSON。
+4. 目标组学类型对应编号为 `01`–`07` 的分类 JSON。
+5. 目标研究问题对应文件名中包含 `专题` 的 JSON。
+6. 同时需要组学类型和研究设计时，读取两类文件并按 `gse_id` 关联。
+7. 跨文件、跨专题和跨目录汇总时，默认以 `gse_id` 为主键去重。
+8. 优先读取 `datasets` 数组中的标准字段和 `evidence` 对象。
+9. 默认忽略名称不稳定的随机下划线字段，不得把它们写入固定 schema 或用作筛选条件。
+10. 输出候选数据集时，必须区分“仓库标注提示可能可用”和“已经复核为可直接分析”。
+11. 不得把仓库标注直接表述为数据已经下载、质量已经验证、分析能够直接运行或研究结论已经复现。
 12. 用户要求“最新数据”时，应同时检查仓库最新提交、文件的 `generated_at` 和 GEO 当前记录。
 
-## 2. REPOSITORY_SCOPE
+## 2. CURRENT_DIRECTORY_SNAPSHOT
 
-当前仓库目录包括：
+以下目录存在于 2026-07-19 的仓库快照中：
 
 ```yaml
 disease_directories:
@@ -49,29 +50,37 @@ disease_directories:
     - 乳腺癌
     - 三阴性乳腺癌
     - 男性乳腺癌
+    - 导管原位癌
     - 卵巢癌
     - 子宫内膜癌
     - 宫颈癌
-  reproductive_and_obstetric_diseases:
-    - 妊娠期糖尿病
+    - 外阴癌
+
+  benign_gynecologic_and_reproductive_disorders:
     - 女性不孕
-    - 双胎输血综合征
+    - 多囊卵巢综合征
     - 子宫内膜异位症
+    - 外阴硬化性苔藓
+    - 子宫内膜增生
+    - 子宫肌瘤
+    - 盆腔炎
+
+  pregnancy_and_perinatal_disorders:
+    - 妊娠期糖尿病
+    - 双胎输血综合征
     - 子痫前期
+    - 围产期心肌病
+    - 妊娠期肝内胆汁淤积症
+    - 异位妊娠
+    - 胎儿生长受限
+
+  infection_related_topics:
     - 细菌性阴道病
+    - 寨卡病毒病
+    - 风疹
 ```
 
-本次目录索引新增：
-
-```yaml
-newly_indexed_directories:
-  - 双胎输血综合征
-  - 子宫内膜异位症
-  - 子痫前期
-  - 细菌性阴道病
-```
-
-上述列表仅用于描述当前仓库快照。疾病目录和文件可能继续增加，实际读取时必须以仓库根目录为准。
+目录分类仅用于导航，不代表疾病之间的数据可以合并，也不代表每个目录的数据完整程度相同。实际读取必须以当前仓库根目录和文件内容为准。
 
 ## 3. EXPECTED_DIRECTORY_PATTERN
 
@@ -92,11 +101,57 @@ newly_indexed_directories:
 └── SOGEN_<疾病名称>_数据集清单.xlsx
 ```
 
-并非每个疾病目录都保证包含全部文件，也不保证每个文件的 `datasets` 均非空。遇到缺失或空文件时，应继续读取实际存在的其他分类文件，不得虚构记录。
+该模式是预期命名规范，不保证每个目录始终包含全部文件，也不保证每个文件均有候选记录。
 
-## 4. FILE_TYPE_SEMANTICS
+## 4. FILE_STATE_MODEL
 
-### 4.1 编号分类文件
+AI 必须先给每个目标文件分配状态：
+
+```yaml
+file_states:
+  missing:
+    meaning: 目标路径不存在
+    action: 记录缺失并继续检查同目录其他文件
+
+  zero_byte:
+    meaning: 文件存在但无内容
+    action: 不执行 JSON 解析；不得等同于 datasets 为空
+
+  invalid_json:
+    meaning: 文件有内容但无法解析为完整 JSON
+    action: 标记解析失败；不得从中生成候选数据集
+
+  valid_json_without_datasets:
+    meaning: JSON 有效但不存在标准 datasets 数组
+    action: 仅使用可识别的文件级信息；不得虚构 datasets
+
+  valid_json_empty_datasets:
+    meaning: JSON 有效且 datasets == []
+    action: 解释为当前文件未收录符合该分类规则的记录
+
+  valid_json_with_records:
+    meaning: JSON 有效且 datasets 包含一个或多个对象
+    action: 执行字段解析、筛选、去重和证据评估
+
+  xlsx_present:
+    meaning: 存在人工浏览清单
+    action: 可用于交叉检查；字段级判断仍优先使用 JSON
+```
+
+强制区分：
+
+```yaml
+zero_byte_is_empty_dataset: false
+missing_file_is_empty_dataset: false
+invalid_json_is_empty_dataset: false
+valid_empty_dataset_proves_no_GEO_study_exists: false
+```
+
+即使某个分类文件为空、缺失或没有记录，也只能说明当前仓库快照未在该文件中提供候选记录，不能据此断言 GEO 中不存在相关研究。
+
+## 5. FILE_TYPE_SEMANTICS
+
+### 5.1 编号分类文件
 
 ```yaml
 01_转录组测序:
@@ -148,9 +203,9 @@ newly_indexed_directories:
     - other_spatial_expression_platforms
 ```
 
-编号分类文件主要回答：**该 GSE 属于什么检测、测序或组学类型。**
+编号文件主要回答：该 GSE 属于什么检测、测序或组学类型。
 
-### 4.2 专题文件
+### 5.2 专题文件
 
 ```yaml
 专题_差异表达:
@@ -169,19 +224,17 @@ newly_indexed_directories:
   target_question: 是否包含血液、血清、血浆、羊水、外泌体或其他体液来源样本
 ```
 
-专题文件主要回答：**该 GSE 可能支持什么研究问题。**
+专题文件主要回答：该 GSE 可能支持什么研究问题。
 
-### 4.3 XLSX 文件
+### 5.3 XLSX 文件
 
 ```yaml
 xlsx_role: human_readable_dataset_inventory
-preferred_for_AI_parsing: false
+preferred_for_AI_field_parsing: false
 preferred_AI_source: JSON
 ```
 
-XLSX 适合人工浏览和快速筛选；AI 进行字段级判断时应优先读取 JSON，并在需要时使用 XLSX 交叉检查。
-
-## 5. CROSS_FILE_RELATIONSHIP
+## 6. CROSS_FILE_RELATIONSHIP
 
 ```yaml
 numbered_files_mutually_exclusive: usually_but_not_guaranteed
@@ -195,60 +248,51 @@ canonical_cross_file_key: gse_id
 
 - 不得把 7 个编号文件与专题文件中的 `n_datasets` 直接相加作为疾病数据集总数。
 - 同一个 GSE 可以同时出现在一个编号文件和多个专题文件中。
-- 合并候选结果时以 `gse_id` 为主键去重。
+- 同一个 GSE 也可能因 SuperSeries、SubSeries 或多组学设计出现在不同组学分类中。
+- 合并结果时以 `gse_id` 为主键去重，同时保留全部 `source_files`、`categories` 和 `topics`。
 - `n_datasets` 仅表示当前 JSON 的 `datasets` 数组记录数。
-- `n_verified_total` 不得默认解释为当前文件的唯一 GSE 数、可分析数据集数或患者数。
-- 同一 GSE 在不同文件中字段不一致时，应保留来源文件和冲突信息，不得静默覆盖。
+- `n_verified_total` 不得解释为唯一 GSE 数、可分析数据集数、样本数或患者数。
+- 同一 GSE 在不同文件中字段不一致时，不得静默覆盖。
 
-## 6. JSON_TOP_LEVEL_SCHEMA
+## 7. JSON_TOP_LEVEL_SCHEMA
 
-常见顶层字段如下。字段可能缺失，也可能出现额外字段，解析器必须允许 schema 扩展。
+字段可能缺失，也可能新增；解析器必须允许 schema 扩展。
 
 ```yaml
 brand:
   type: string
-  meaning: 数据标识
 
 group_name:
   type: string
-  meaning: 数据更新或交流群名称
 
 disease:
   type: string
-  meaning: 目标疾病中文名称
 
 disease_slug:
   type: string
-  meaning: 目标疾病英文或程序化标识
 
 category:
   type: string
   applies_to: numbered_files
-  meaning: 测序或组学类别
 
 category_note:
   type: string
   applies_to: numbered_files
-  meaning: 类别补充说明
 
-topic:
+ topic:
   type: string
   applies_to: topic_files
-  meaning: 研究专题名称
 
-topic_field:
+ topic_field:
   type: string
   applies_to: topic_files
-  meaning: 专题对应的程序化字段名称
 
 note:
   type: string
   optional: true
-  meaning: 文件定位、统计口径或专题重叠说明
 
 generated_at:
   type: date_string
-  meaning: 当前标注文件生成或更新日期
 
 n_datasets:
   type: integer
@@ -257,36 +301,34 @@ n_datasets:
 n_verified_total:
   type: integer
   optional: true
-  meaning: 某些专题文件提供的核验规模统计，不得默认等同于 n_datasets
+  meaning: 文件级核验规模统计，不等同于 n_datasets
 
 organism_breakdown:
   type: object_string_to_integer
-  meaning: 当前文件内物种构成
+  optional: true
 
 sequencing_type_breakdown:
   type: object_string_to_integer
   optional: true
-  meaning: 当前文件内测序类型构成
 
 research_question_breakdown:
   type: object_string_to_integer
   optional: true
-  meaning: 当前文件内研究设计布尔标记汇总
 
 datasets:
   type: array_of_dataset_objects
-  meaning: 数据集标注主体
+  required_for_standard_record_parsing: true
 ```
 
-### 6.1 非稳定字段
+### 7.1 不稳定下划线字段
 
-JSON 中可能存在名称类似以下形式的字段：
+JSON 中可能出现：
 
 ```text
 _<随机字符>
 ```
 
-这些字段可能承载版本、来源、署名、说明或其他附加信息。AI 默认行为：
+默认策略：
 
 ```yaml
 use_for_dataset_selection: false
@@ -295,21 +337,19 @@ ignore_when_unknown: true
 preserve_when_copying_original_record: true
 ```
 
-不得编写依赖特定随机下划线字段名称的固定解析逻辑。
+这些字段可能包含来源、版本、署名、授权、宣传或其他附加信息。不得依赖具体随机字段名建立解析逻辑。
 
-## 7. DATASET_OBJECT_SCHEMA
+## 8. DATASET_OBJECT_SCHEMA
 
-`datasets` 数组中的每个对象通常代表一个 GSE 级记录。
+`datasets` 数组中的对象通常代表 GSE 级记录。
 
 ```yaml
 gse_id:
   type: string
-  expected_pattern: '^GSE[0-9]+$'
-  role: canonical_dataset_identifier
+  role: primary_identifier
 
 title:
   type: string
-  source: GEO
 
 organism:
   type: string
@@ -317,14 +357,13 @@ organism:
 
 n_samples:
   type: integer
-  meaning: GEO 样本条目数，不保证等于独立患者或独立供体数
+  meaning: GEO 样本条目数，不等于独立患者数或独立供体数
 
 platform:
   type: string_or_integer_or_array
 
 pdat:
   type: date_string
-  meaning: GEO 发布或更新日期
 
 pubmed_ids:
   type: array
@@ -332,20 +371,9 @@ pubmed_ids:
 
 sequencing_type:
   type: string
-  meaning: 标注后的实际检测或测序类型
 
 sample_source:
-  type: array_of_strings
-  typical_values:
-    - tissue
-    - primary_cell
-    - blood
-    - serum
-    - plasma
-    - body_fluid
-    - cell_line
-    - organoid
-    - other
+  type: string_or_array
 
 summary:
   type: string
@@ -357,22 +385,20 @@ overall_design:
 
 study_design:
   type: string
-  meaning: 中文核心设计概括
+  meaning: 标注后的核心研究设计概括
 
 relevance_reason:
   type: string
-  meaning: 数据与目标疾病相关的简要判定理由
+  meaning: 与目标疾病相关的标注依据
 
 treatment:
   type: boolean
 
 treatment_type:
   type: string
-  note: 可能存在自由文本或未完全标准化值，不能未经核验直接作为受控词表
 
 drug_names:
   type: string_or_array
-  note: 空值不代表关联论文中绝对不存在药物
 
 case_vs_control_differential:
   type: boolean
@@ -391,146 +417,113 @@ response:
 
 verified:
   type: boolean
-  note: 表示记录经过当前标注流程核验，不代表原始数据和结论已复现
+  meaning: 标注记录经过人工核验，不代表分析结果已复现
 
 ftplink:
   type: string
-  meaning: GEO FTP 目录，可能为 ftp 协议地址
+  meaning: GEO FTP 路径；可访问性仍需重新检查
 
 evidence:
   type: object
-  meaning: 各判定字段的具体证据、限制和解释
+  role: field_level_annotation_rationale
 ```
 
-字段类型属于宽松约定。AI 必须容忍 `null`、空字符串、缺失字段、单值与数组混用、自由文本和历史格式差异。
+字段不存在、为空字符串或为 `null` 时，必须输出 `unknown_or_not_provided`，不得自行补全。
 
-## 8. EVIDENCE_PRIORITY
-
-`evidence` 是解释布尔标记和研究设计判定的关键对象。常见子字段包括：
+## 9. BOOLEAN_AND_EVIDENCE_SEMANTICS
 
 ```yaml
-evidence.relevant: 疾病主体和样本与目标疾病的对应依据
-evidence.sequencing_type: 测序或检测类型的判定依据
-evidence.sample_source: 样本来源、分选、培养或直接取材的依据
-evidence.case_vs_control_differential: 差异分析可行或不可行的理由
-evidence.correlation: 相关性分析可行或不可行的理由
-evidence.treatment: 治疗或干预轴的判断依据
-evidence.survival_analysis: 生存字段是否存在及能否执行生存分析的依据
-evidence.study_design: 可选的设计补充
-evidence.relevance_reason: 可选的相关性补充
+boolean_true:
+  meaning: 当前标注证据提示可能满足该研究设计
+  interpretation: candidate_positive
+
+boolean_false:
+  meaning: 当前公开信息或核验标准下未发现充分支持
+  interpretation: insufficient_current_evidence
+  absolute_impossibility: false
+
+verified_true:
+  meaning: 标注条目经过人工检查
+  does_not_mean:
+    - raw_data_downloaded
+    - sample_metadata_complete
+    - quality_control_passed
+    - analysis_reproduced
+    - publication_conclusion_validated
 ```
 
-候选筛选时的证据优先级：
+证据优先级：
 
 ```yaml
-priority_1: evidence 中的具体说明
-priority_2: study_design 和 overall_design
-priority_3: summary
-priority_4: 数据集级布尔字段
-priority_5: 顶层汇总字段
-priority_6: 文件名和专题名称
+annotation_priority:
+  - evidence 中针对具体字段的解释
+  - study_design
+  - relevance_reason
+  - overall_design
+  - summary
+  - 文件级统计字段
 ```
 
-布尔字段适合快速检索，`evidence` 适合解释和排除误判。不得只看布尔值而忽略证据文本。
-
-## 9. BOOLEAN_FIELD_INTERPRETATION
-
-### 9.1 `true`
-
-`true` 表示按照当前标注规则发现了支持该分析方向的公开证据。它不保证：
-
-- 原始矩阵可以直接下载；
-- 分组数量满足用户的统计要求；
-- 所有 GSM 都有完整注释；
-- 独立患者数等于 `n_samples`；
-- 批次效应可以处理；
-- 数据适合作为训练集、验证集或因果证据；
-- 用户指定的目标变量一定存在于样本级 metadata 中。
-
-### 9.2 `false`
-
-`false` 表示按照当前公开信息和当前规则未识别到充分条件。可能原因包括：
-
-```yaml
-possible_false_reasons:
-  - 目标字段不存在或未公开
-  - 样本级 metadata 不完整
-  - 测序平台不适合该分析
-  - 独立患者或供体数不足
-  - 对照组不符合当前定义
-  - 只有治疗前样本而没有干预比较轴
-  - 生存信息只出现在论文汇总结果中
-  - 论文提到某分析，但 GEO 数据本身不提供执行条件
-```
-
-因此，`false` 应表述为“当前公开标注未确认可行”，不得解释为理论上绝对不可分析。
-
-### 9.3 空 `datasets`
-
-```yaml
-empty_datasets_means:
-  - 当前文件未收录满足当前分类或专题规则的记录
-empty_datasets_does_not_mean:
-  - GEO 中绝对不存在相关数据
-  - 目标疾病没有任何组学研究
-  - 其他分类文件中也一定为空
-```
+若布尔字段与 `evidence` 冲突，必须记录冲突并回到 GEO 或关联论文复核，不得只采用更方便的值。
 
 ## 10. SAMPLE_COUNT_RULES
 
-`n_samples` 是 GEO 样本条目数量。不得自动解释为：
+`n_samples` 表示 GEO 样本条目数。AI 不得直接将其改写为“患者数”。
 
-- 独立患者数；
-- 独立供体数；
-- 生物学重复数；
-- 可用于统计模型的有效样本数；
-- 单细胞数据中的细胞数；
-- 空间转录组中的 spot 或 ROI 数；
-- 配对病例数。
-
-可能造成样本条目数与独立个体数不一致的情况：
+必须区分：
 
 ```yaml
-sample_multiplicity:
-  - 同一患者多个组织或病灶
-  - 肿瘤与配对正常组织
-  - 多个时间点
-  - 治疗前后样本
-  - 多个空间区域或切片
-  - 多个细胞亚群
-  - 技术重复
-  - 多平台或 SuperSeries/SubSeries 结构
+possible_sampling_units:
+  - independent_patient
+  - independent_donor
+  - tissue_sample
+  - paired_tumor_normal_sample
+  - longitudinal_timepoint
+  - technical_replicate
+  - biological_replicate
+  - cell_line
+  - organoid
+  - animal
+  - single_cell_library
+  - spatial_slide
+  - ROI
+  - sequencing_run
 ```
 
-涉及最小样本量、相关性、生存分析、机器学习或外部验证时，必须进一步核对独立患者或供体数。
+特别规则：
 
-## 11. DATASET_SELECTION_LOGIC
+- 单细胞数据不得用细胞总数替代独立供体数。
+- 空间转录组不得用 spot、ROI 或切片数替代患者数。
+- 同一患者的配对组织、多个时间点或多个区域不得默认视为独立样本。
+- 多物种、动物、细胞系、类器官和人体组织不得无条件合并。
+
+## 11. ANALYSIS_CANDIDATE_RULES
 
 ### 11.1 差异表达
 
 ```yaml
-required_or_preferred:
+candidate_conditions:
   - case_vs_control_differential == true
-  - verified == true
-  - sequencing_type 为表达定量平台
-  - evidence 明确说明比较组
-  - 独立样本数和重复数可核查
+  - verified == true preferred
+  - 检测平台能够生成可比较的表达定量数据
+  - 存在明确且可恢复的比较组
+  - 独立生物学重复满足用户要求
 ```
 
-不得因为标题含某疾病名称就默认存在健康对照。良性疾病、癌旁组织、健康人、细胞系、动物模型和不同疾病对照不得视为等价对照。
+`case_vs_control_differential == true` 不代表对照一定是健康人；对照可能是癌旁、良性疾病、治疗前、低风险或其他参照组。
 
-### 11.2 相关性分析
+### 11.2 相关性
 
 ```yaml
-required_or_preferred:
+candidate_conditions:
   - correlation == true
-  - verified == true
+  - verified == true preferred
   - 存在表达定量数据
   - 存在目标临床变量或连续表型
-  - 独立疾病样本数达到用户要求
+  - 独立疾病样本数满足用户要求
 ```
 
-专题文件中的相关性标记不保证用户指定的 BMI、年龄、分期、孕周、疗效等变量存在，必须进一步检查样本级 metadata。
+专题相关性文件不保证包含用户指定的 BMI、年龄、分期、疗效等变量，必须检查样本级 metadata。
 
 ### 11.3 治疗与疗效
 
@@ -544,72 +537,66 @@ paired_or_longitudinal_intervention:
 treatment_response_comparison:
   condition: response == true
 
-identified_intervention_fields:
+fields_to_read:
   - treatment_type
   - drug_names
   - evidence.treatment
 ```
 
-仅有 `pretreatment` 样本时，不得自动认定存在治疗前后比较。`treatment_type` 出现自然语言说明时，应结合 `evidence.treatment` 重新归一化。
+仅有 `pretreatment` 样本不代表存在治疗前后比较。
 
 ### 11.4 生存分析
 
 ```yaml
-required:
+candidate_conditions:
   - survival_analysis == true
-  - evidence.survival_analysis 明确指出样本级生存时间和状态可获得
-  - 独立患者 ID 可以建立
+  - evidence.survival_analysis 明确支持样本级生存时间和状态可获得
+  - 独立患者 ID 可建立
 ```
 
-论文使用外部 TCGA 或其他队列做生存验证，不代表当前 GEO 数据集本身可以做生存分析。
+论文使用外部 TCGA 进行生存验证，不代表当前 GEO 数据集本身可进行生存分析。
 
 ### 11.5 单细胞或单核数据
 
 ```yaml
-check:
-  - 独立供体数
-  - 每位供体的疾病状态
-  - 样本组织或细胞来源
-  - 是否为 scRNA-seq 或 snRNA-seq
-  - 是否存在多个测序批次
-  - 是否提供原始或处理后矩阵
-  - 是否提供 sample-level metadata
-  - 是否能区分供体而非仅区分细胞
+required_checks:
+  - independent_donor_count
+  - disease_state_per_donor
+  - sample_tissue
+  - scRNA_seq_or_snRNA_seq
+  - sequencing_batch
+  - matrix_availability
+  - sample_level_metadata
+  - donor_cell_mapping
 ```
-
-不得使用细胞总数替代独立供体数。
 
 ### 11.6 空间转录组
 
 ```yaml
-check:
-  - 患者或供体数
-  - 切片数
-  - ROI 或空间区域数量
-  - 平台类型
-  - 是否包含明确比较区域
-  - 多个区域是否来自同一患者
+required_checks:
+  - patient_count
+  - slide_count
+  - ROI_or_region_count
+  - platform
+  - disease_or_region_groups
+  - regions_nested_within_patient
 ```
 
-不得将多个 ROI、切片或 spot 当作独立患者进行无层级处理的统计比较。
-
-### 11.7 液体活检和体液样本
+### 11.7 液体活检
 
 ```yaml
-check:
-  - blood_or_body_fluid_type
-  - serum_plasma_whole_blood_amniotic_fluid_or_other
-  - 被测分子类型
-  - 病例和对照定义
-  - 是否与组织样本配对
-  - 是否存在诊断、分期、复发、转移或疗效目标
+required_checks:
+  - body_fluid_type
+  - serum_plasma_whole_blood_cells_or_other
+  - measured_molecule_type
+  - case_and_control_definition
+  - tissue_pairing
+  - diagnostic_recurrence_metastasis_or_response_target
 ```
 
-`sample_source` 为 `blood` 或 `body_fluid` 不代表该记录一定适合无创标志物研究，必须结合检测对象、样本采集方式和研究设计判断。
+`sample_source` 包含 `blood` 不代表记录一定适合无创标志物研究。
 
 ## 12. DEDUPLICATION_AND_CONFLICT_RULES
-
-### 12.1 去重主键
 
 ```yaml
 primary_key: gse_id
@@ -619,42 +606,44 @@ fallback_key_when_gse_id_missing:
   - pdat
 ```
 
-正常情况下以 `gse_id` 去重。不要仅以标题去重，因为标题可能变化，也可能存在 SuperSeries/SubSeries。
+正常情况下必须以 `gse_id` 去重。不得仅按标题去重，因为标题可能变化，也可能存在 SuperSeries/SubSeries。
 
-### 12.2 同一 GSE 多记录合并
+同一 GSE 多文件合并后应保留：
 
 ```yaml
 merged_record:
-  gse_id: 唯一编号
-  source_files: 所有命中文件路径
-  categories: 所有编号分类
-  topics: 所有专题分类
-  latest_generated_at: 最大日期
-  dataset_fields: 选择信息更完整的记录
-  evidence_by_source: 按来源文件保留全部 evidence
-  conflicts: 显式记录不一致字段
+  gse_id: unique_identifier
+  source_files: all_matching_paths
+  source_file_states: state_for_each_path
+  categories: all_numbered_categories
+  topics: all_topic_categories
+  latest_generated_at: maximum_available_date
+  dataset_fields: most_complete_non_conflicting_values
+  evidence_by_source: all_evidence_objects
+  conflicts: explicit_field_conflicts
 ```
 
-### 12.3 字段冲突处理
+冲突处理顺序：
 
 ```yaml
-conflict_resolution_order:
-  - 不静默覆盖冲突
+conflict_resolution:
+  - 不静默覆盖
+  - 比较来源文件语境
   - 比较 generated_at
   - 比较 verified
   - 比较 evidence 的具体程度
-  - 检查是否由专题筛选语境不同导致
-  - 回到 GEO、样本级 metadata 和论文复核
+  - 检查 SuperSeries 与 SubSeries 关系
+  - 返回 GEO 和论文复核
 ```
 
-较新的文件不必然代表单条记录一定更准确，更新日期只能作为辅助信号。
+文件更新日期只能作为辅助信号，不自动代表较新记录一定更准确。
 
-## 13. SUPER_SERIES_AND_SUBSERIES
+## 13. SUPER_SERIES_AND_SUBSERIES_RULES
 
 遇到 GEO SuperSeries 或 SubSeries 时必须检查：
 
 ```yaml
-check:
+required_checks:
   - 当前 GSE 是否只是索引容器
   - 实际表达矩阵位于哪个 SubSeries
   - 不同 SubSeries 是否对应不同组学平台
@@ -662,22 +651,33 @@ check:
   - 研究问题应在 SuperSeries 还是 SubSeries 层面定义
 ```
 
-不得因为 SuperSeries 的 `n_samples` 较大就默认所有样本属于同一可合并表达矩阵。
+不得因 SuperSeries 的 `n_samples` 较大就默认所有样本属于同一可合并表达矩阵。
 
-## 14. TEMPORAL_AND_VERSION_RULES
+## 14. CANDIDATE_STATUS_MODEL
 
 ```yaml
-annotation_version_field: generated_at
-external_records_can_change: true
-latest_file_is_not_automatic_ground_truth: true
-recheck_original_source_before_final_inclusion: required
+candidate_status:
+  annotated_candidate:
+    meaning: 仓库标注提示可能符合条件
+
+  metadata_checked:
+    meaning: 已进一步检查 GEO 样本级 metadata
+
+  publication_checked:
+    meaning: 已检查关联论文和必要的补充材料
+
+  files_confirmed:
+    meaning: 已确认所需矩阵或原始文件可获得
+
+  analysis_ready:
+    meaning: 已确认矩阵、分组、独立样本量和必要变量能够支持目标分析
 ```
 
-输出时应说明读取的来源文件及其 `generated_at`。用户要求最新数据时，应检查仓库最新提交和 GEO 当前记录，而不是只依赖历史标注。
+除非完成相应核查，不得把 `annotated_candidate` 表述为 `analysis_ready`。
 
 ## 15. AI_OUTPUT_CONTRACT
 
-使用本仓库回答数据集筛选问题时，建议输出：
+使用本仓库筛选数据集时，每个候选记录应尽量输出：
 
 ```yaml
 required_output_fields:
@@ -687,64 +687,46 @@ required_output_fields:
   - sequencing_type
   - organism
   - n_samples_as_GEO_entries
-  - estimated_or_verified_independent_subject_count_if_available
+  - independent_subject_count_if_verified
   - sample_source
   - study_design
   - relevant_boolean_flags
   - evidence_summary
-  - source_file
+  - source_files
+  - source_file_states
   - generated_at
+  - candidate_status
   - limitations
   - original_data_recheck_status
 ```
 
-候选状态必须区分：
+推荐措辞：
 
 ```yaml
-candidate_status:
-  annotated_candidate: 仓库标注提示可能符合
-  metadata_checked: 已进一步检查 GEO 样本级 metadata
-  publication_checked: 已检查关联论文或补充材料
-  analysis_ready: 已确认矩阵、分组、样本量和必要变量可获得
+preferred_language:
+  - 仓库标注显示该数据集可能支持……
+  - 当前公开元数据中可识别到……
+  - 仍需核对独立患者数、分组和样本级变量……
+  - 该 GSE 可作为候选，但尚不能仅凭标注确认可直接分析……
 ```
-
-除非已经完成相应核查，不得把 `annotated_candidate` 表述为 `analysis_ready`。
 
 ## 16. PROHIBITED_INFERENCES
 
 AI 不得仅凭本仓库直接推断：
 
-- 某 GSE 一定可以成功下载全部原始数据；
-- 某 GSE 一定含有用户指定的临床变量；
-- `n_samples` 等于患者或供体数；
+- 某 GSE 一定能够下载全部原始数据；
+- 某 GSE 一定包含用户指定的临床变量；
+- `n_samples` 等于患者数；
 - `case_vs_control_differential == true` 代表存在健康对照；
-- `survival_analysis == true` 代表生存字段无缺失；
-- `verified == true` 代表数据和结论已经复现；
-- 空 `datasets` 代表 GEO 中不存在相关数据；
+- `survival_analysis == true` 代表生存字段完整且无缺失；
+- `verified == true` 代表分析已经复现；
 - 专题文件之间互斥；
-- 编号文件和专题文件的数量可以直接相加；
-- 动物、细胞系、类器官、原代细胞和人体组织可以无条件合并；
-- 不同平台的表达值可以直接合并；
+- 编号文件与专题文件的数量可以直接累加；
+- 空文件、缺失文件和 `datasets == []` 具有相同含义；
+- 动物、细胞系、类器官和人体组织可以无条件合并；
+- 不同表达平台的数据可以直接合并；
 - 同一患者的多个样本可以作为独立个体；
-- 论文摘要中的分析一定能由 GEO 公开数据独立重现。
-
-## 17. MINIMUM_RESPONSE_LANGUAGE
-
-使用本仓库回答用户时，优先采用：
-
-```yaml
-preferred:
-  - 仓库标注显示该数据集可能支持……
-  - 当前公开元数据中可识别到……
-  - 该 GSE 可作为候选，但仍需核对矩阵、独立样本数、分组和样本级变量……
-  - 当前文件的 datasets 为空，表示该分类下暂未收录记录，不代表 GEO 中绝对不存在相关研究……
-
-avoid_without_full_verification:
-  - 该数据集一定可以用于……
-  - 该数据集包含完整的……
-  - 样本量为 n_samples 名患者……
-  - 已证明……
-```
+- 论文摘要中的分析一定能够由 GEO 公开数据独立重现。
 
 ---
 
