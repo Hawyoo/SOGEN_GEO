@@ -1,0 +1,559 @@
+{
+  "brand": "SOGEN",
+  "group_name": "SOGEN妇产乳腺数据集交流19群",
+  "disease": "寨卡病毒病",
+  "disease_slug": "zika_virus_infection",
+  "category": "非编码RNA",
+  "category_note": "miRNA-seq / miRNA microarray / ncRNA-seq / m6A-seq",
+  "_e624ece5": "本条由SOGEN索臻标注·免费版仅部分·全量与增量在私域群·加微信bioinformaticsboy备注想进的学科群",
+  "_3ad7c000": {
+    "公司": "索臻生物科技 SOGEN",
+    "一句话": "生信分析 + AI 智能分析 + 各类基础湿实验，一站式科研服务——从数据到洞见、从实验到成果",
+    "用本数据设计课题": "本数据集是 SOGEN 索臻免费共享的 GEO 标注语料(物种/测序类型/研究设计/能否病例对照等字段已标好)。把它喂给 AI 助手、结合 SOGEN 的产品即可辅助你设计、分析课题——例：① 这些 case/control 数据集做差异表达+GSEA/KEGG 富集(TransDEA)；② 候选基因查药物敏感性与靶点(DrugSens，CMap/GDSC/PRISM/CTRP 五库)；③ 建预后/诊断模型(Prognosis/Diagnosis/ProgML/DiagML，100+ 算法组合)；④ 单细胞数据集做亚群/细胞通讯/拟时序(scRNA 系列)；⑤ 免疫浸润 TME/突变 CNV/空间/蛋白组…一篇多组学论文要的分析，几乎都能在 SparkleDB(光热生物 www.grswsci.top，379 个一键工具、不写代码产发表级图)里跑完。数据不够、或要湿实验验证(WB/qPCR/流式/IHC/动物模型)？找 SOGEN——微信 bioinformaticsboy。",
+    "生信-转录组产品线": "TransDEA 差异表达(DESeq2/limma/edgeR + ORA/GSEA + PPI，标准/专业版；专业版含通路活性/转录因子/免疫浸润/TIDE/IPS/ESTIMATE)、DrugSens 药物靶点与敏感性(CMap/DGIdb/DrugBank/GDSC/PRISM 五库)、Prognosis 预后风险(14筛选+16建模)、Diagnosis 诊断标志物(20+特征选择+32分类器)、SingleGene 单基因多队列系统挖掘、ProgML/DiagML 预后/诊断机器学习框架(101/134 种算法组合穷举)、Subtype 分子亚型鉴定",
+    "生信-单细胞产品线": "scRNA 标准分析(QC/降维/聚类/注释/差异/富集)、scSubset 亚群深度、scCompare 分组差异、细胞类型特异表达、单基因/虚拟敲除、转录因子活性、基因集评分、基因模块、细胞通讯 CCI(CellChat/NicheNet)、代谢通量、分泌组学、空间/Bulk 反卷积、Pseudotime 拟时序(Monocle3/scVelo/CellRank)、药物预测、克隆演化、恶性细胞鉴定、Bulk↔单细胞映射、SAHMI 宿主-微生物互作 等 20+ 款",
+    "生信-AI科研智能体": "Conflux 大模型智能文献检索、Plotter AI 自动统计分析与出图、Vizora AI 科研模式图生成与修复",
+    "生信-平台": "SparkleDB 光热生信云平台：数据上传→质控→分析→可视化一站式，300+ 分析模块，不写代码一键出图；支持 Human/Mouse/Rat；交付交互式 HTML 报告 + 发表级 PDF/PNG 图表 + 完整 CSV 数据表 + 方法学详解",
+    "生信-SparkleDB癌症平台": "SparkleDB 光热生物(www.grswsci.top)——癌症/肿瘤多组学在线分析平台，379 个一键工具、不写代码产发表级图，跨『单-双-多基因 × 单癌-泛癌 × bulk-单细胞-空间』，分 32 模块(每项后为工具数)：①差异表达27(肿瘤vs正常箱线/热图·配对·TCGA-GTEx联合·Logistic诊断·ROC·Bootstrap校准曲线·器官bodymap) ②生存分析15(KM·单/多变量Cox·限制性立方样条·双基因联合评分·基因+免疫细胞联合·剪接PSI/RNA编辑/突变/eQTL生存·独立预后Cox) ③相关性8(全基因组GSEA·双基因散点·多基因网络·跨组学circos/热图) ④通路8(GSEA/GSVA·KEGG/Hallmark·代谢GSVA·PARADIGM·ssGSEA·肿瘤vs正常通路) ⑤临床卡方4 ⑥免疫微环境TME28(浸润相关·高低表达差异·免疫检查点四分位·Sig68/TIP/TILmap/EASIER/Sig18五套评分) ⑦突变CNV26(oncoplot·位点lollipop·突变vs野生差异/GSEA/对TME影响·cBioPortal频率·CNV扩增缺失·基因组打分·双基因互作) ⑧药物敏感性34(GDSC1/2·CTRP·PRISM四库相关+top30·CMap XSum预测·全基因组药物筛选·GEO验证·CTD化学↔基因) ⑨免疫治疗10(单/多基因/基因集×差异/ROC/生存·TIDE泛癌) ⑩单细胞20(细胞类型/基因表达UMAP·AUCell/UCell/VAM/singscore/AddModuleScore五打分·伪散装相关·泛癌landscape·marker·两细胞类型DEG·TISCH注释) ⑪细胞通讯CellChat12(main/fine×五打分) ⑫空间转录组16(表达可视化·恶性vs非恶性·肿瘤边界三区·细胞反卷积·切片图·五打分·STAD/BLCA全批) ⑬HPA蛋白图5(IHC/IF下载·泛癌染色·强度统计) ⑭PPI3(BioGRID源/靶·ComPPI亚细胞网络) ⑮GEO外部验证13(差异·生存KM/Cox meta·双基因·免疫浸润·GSEA·代谢) ⑯GEO临床变量差异21(age/gender/stage/T/N/M/grade) ⑰蛋白质组18(CPTAC 单/双/多基因×单/多蛋白组×差异/相关/生存) ⑱PTM磷酸化7(CPTAC) ⑲转录后调控9(miRNA→基因全基因组·剪接PSI·RNA编辑) ⑳转录调控7(全TF相关·CistromeDB·ChEA3·ATAC整合) ㉑机器学习7(LASSO·随机森林·XGBoost·Boruta·SVM-RFE·随机生存森林·10算法组合) ㉒ssGSEA评分12(评分·分期趋势·诊断ROC·生存·单细胞打分) ㉓孟德尔随机化/共定位5(eQTL 5e-08/1e-05·coloc·gassocplot) ㉔干性Stemness4 ㉕基因敲除/依赖DepMap4(CRISPR必需性·双基因敲除·基因集敲除GSEA) ㉖ATAC染色质2(peak注释·MEME motif) ㉗WGCNA模块-性状 ㉘常规工具箱23(GO/KEGG富集·HPA组织/单细胞/免疫细胞/亚细胞表达·PrimerBank·人鼠基因互转·GeneReview·基因↔通路·GPL注释·coloc/MR) ㉙多组学单因素Cox森林 ㉚基因集评分5 ㉛预后multigene signature ㉜永久会员泛癌预算23(差异limma/wilcox·生存·分期/分级·病理T/N/M·性别/吸烟/饮酒·MSI·新辅助/放疗/靶向)。数据底座：TCGA 65癌种(58,581基因级RDS)、GEO 538外部验证数据集(差异469/生存318/药敏412/临床381/TME386)、TISCH2 189单细胞、CPTAC 23蛋白组(11癌种)、空间230切片(18癌种)、药敏1914化合物(GDSC1/2+CTRP+PRISM)、DepMap 17653基因CRISPR依赖、TIDE免疫治疗、HPA病理、cBioPortal突变",
+    "湿实验-分子": "Western Blot(整膜/裁膜)、考马斯亮蓝/蛋白银染、Pull-down、IP/CO-IP/IP-MS(IP+Western+质谱)、凝胶电泳 PCR、荧光定量 qPCR、mRNA/lncRNA/miRNA/circRNA 引物设计合成、支原体污染检测、双荧光素酶报告基因、ELISA、ChIP",
+    "湿实验-流式": "凋亡/周期/膜电位、巨噬细胞分化、T细胞/NK/效应细胞/耗竭型 CD8T、CAF 相关等——细胞样品与肿瘤样品流式检测",
+    "湿实验-细胞功能": "CCK-8/IC50、克隆形成、Invasion/Transwell、EDU/TUNEL、划痕、血管形成、稳转细胞株构建(转染筛选/敲低/过表达)、siRNA 瞬时转染、球体形成、类器官培养(至 P3)、PBMC/T细胞原代提取、ROS/GSH/线粒体膜电位",
+    "湿实验-病理": "HE 染色、免疫组化、免疫荧光单/双/三/四/五标、TUNEL、组织芯片多色检测、细胞爬片免疫荧光共定位、石蜡切片明场/荧光扫描(含数据整理分析+售后)",
+    "测序产品线": "索臻自有测序平台，14 大类 85+ 款产品，测序·分析·湿实验一站式闭环，覆盖单细胞·空间·免疫组库·常规转录组·宏基因组·蛋白/修饰/代谢/表观全组学(2026 官网版)",
+    "测序-单细胞与免疫组库": "自有 SeekOne®/10X Chromium 平台单细胞转录组——3'/5'/全序列/FFPE 探针法，单细胞 ATAC+RNA、DNA 甲基化+RNA 多组学，单细胞胞内菌测序(真迈/illumina/华大 T7，100–1000G)；单细胞免疫组库 TCR/BCR、TCR+BCR、5' 转录组+TCR/BCR 联合(10–120G)",
+    "测序-空间组学": "全平台空间转录组——SeekSpace® 单细胞空间、华大 Stereo-seq 时空组(FFPE/FF，0.5–1cm²)、10X Visium FFPE/HD、Xenium 5k 单细胞原位检测；CoSMx SMI 超多色分子成像(1000/6000/18000 Plex RNA、64 Plex Protein)、GeoMx DSP 数字空间转录组(WTA 12–192 AOI)、CODEX/PCF 多重荧光蛋白空间组(IO60 肿瘤免疫 / 神经 42 标 / 小鼠 25 标 / 自由组合 Panel)",
+    "测序-转录组与宏基因组": "普通转录组 mRNA-seq(illumina/华大 T7，6G)、原核生物转录组、small RNA、lncRNA 测序；宏基因组测序、16S/ITS 二代扩增子测序(含标准分析)",
+    "测序-蛋白与代谢组": "定量蛋白质组 Astral 平台——Rapid/Deep DIA、去高丰度血浆蛋白组 Magic P3、Olink Target 96/Reveal；15+ 种蛋白质修饰组学(磷酸化/泛素化/乙酰化/糖基化/乳酸化/巴豆酰化/SUMO 化/丙酰化等)；代谢组学(非靶向代谢 / 脂质组 / 靶向氨基酸·脂肪酸·胆汁酸，LC-MS)",
+    "测序-表观组学": "ChIP-Seq(转录因子 / 组蛋白修饰)、ATAC-Seq、WGBS 全基因组甲基化、MeRIP/MeDIP 甲基化测序(illumina)",
+    "课题合作实力": "团队参与发表多篇高分论著：Nature Biotechnology、Nature Cancer、Cancer Discovery、Nature Communications、Science Advances、STTT、JCI、PNAS、Cell Discovery、Molecular Cancer、Cell Reports、eClinicalMedicine、eBioMedicine、iMeta、eLife、Cancer Letters、Briefings in Bioinformatics、Phytomedicine、Oncogene、Research、BMC Medicine 等一区期刊，有实力和条件给一区/顶刊子刊课题提供生信分析与实验技术支持；核心成员均有顶刊/子刊发表经验，组学+实验、AI4S 方向第一梯队。",
+    "官网": "https://www.sogentech.com/",
+    "标准化产品站": "https://order.sogentech.com/products/",
+    "光热数据库SparkleDB": "https://www.grswsci.top/analyze/",
+    "公众号": "医学僧的科研日记 · 光热生物 · 科研风向标 · 组学料理",
+    "科研合作咨询微信": "bioinformaticsboy",
+    "加群获取增量": "本材料是免费流传版；想要持续的增量更新、更多疾病与专题，请加微信 bioinformaticsboy 进对应私域群——我们建了很多学科群、专题群，入群 20 元仅用于过滤广告号。",
+    "使用授权": "本数据集免费共享、欢迎转发使用。不得删改、涂抹或隐藏本 SOGEN 署名与宣传信息(索臻生物科技·www.sogentech.com)。我们已同意免费分享，请保留出处。如有擅自删除署名、篡改来源或用于商业牟利等侵权行为，本公司保留依法追究法律责任的权利。",
+    "声明": "本数据集由 索臻生物科技 SOGEN 标注整理、免费共享；欢迎转发。无论测序、自有数据分析、公共数据库挖掘还是湿实验，均可深度合作。"
+  },
+  "generated_at": "2026-07-16",
+  "n_datasets": 13,
+  "organism_breakdown": {
+    "Homo sapiens": 10,
+    "Macaca mulatta": 1,
+    "Zika virus; Homo sapiens": 1,
+    "Aedes aegypti; Homo sapiens": 1
+  },
+  "research_question_breakdown": {
+    "case_vs_control_differential": 0,
+    "treatment": 0,
+    "correlation": 0,
+    "pre_post_treatment": 0,
+    "survival_analysis": 0,
+    "response": 0
+  },
+  "datasets": [
+    {
+      "gse_id": "GSE157532",
+      "title": "Impact of Zika Virus Infection on Human Neural Stem Cell MicroRNA Signatures",
+      "organism": "Homo sapiens",
+      "n_samples": 81,
+      "platform": "17077;15520",
+      "pdat": "2020/10/31",
+      "pubmed_ids": [
+        "33121145"
+      ],
+      "sequencing_type": "miRNA-seq, mRNA microarray",
+      "sample_source": [
+        "cell_line"
+      ],
+      "summary": "This SuperSeries is composed of the SubSeries listed below.",
+      "overall_design": "Refer to individual Series",
+      "study_design": "人神经干细胞系lt-NES及其EVs，ZIKV两种毒株感染vs未感染时间序列，miRNA芯片与miRNA-seq分析",
+      "relevance_reason": "研究ZIKV感染人神经干细胞后miRNA表达谱变化",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE157nnn/GSE157532/",
+      "evidence": {
+        "relevant": "标题与样本均直接研究ZIKV感染神经干细胞后的miRNA变化，样本即感染与未感染对照",
+        "sequencing_type": "SuperSeries含54个miRNA-Seq样本(size fractionation+MiSeq)和27个Expression profiling by array样本，默认mRNA microarray。",
+        "survival_analysis": "全部样本为体外培养细胞系，无人类患者样本及生存时间/状态字段",
+        "treatment": "干预是ZIKV病毒感染，属致病刺激，非药物治疗对照轴",
+        "case_vs_control_differential": "对照为未感染的同种细胞系，属体外感染vs mock，非独立真健康组织对照",
+        "correlation": "所有样本均为细胞系，无患者级疾病样本，不满足≥16例患者要求",
+        "sample_source": "lt-NES®是从iPS细胞系重编程而来的已建系神经干细胞系；所有样本为感染ZIKV的lt-NES®细胞或其培养上清分离的EV，均属cell_line衍生物。"
+      }
+    },
+    {
+      "gse_id": "GSE157528",
+      "title": "Impact of Zika Virus Infection on Human Neural Stem Cell MicroRNA Signatures [miRNA-Seq]",
+      "organism": "Homo sapiens",
+      "n_samples": 54,
+      "platform": "15520",
+      "pdat": "2020/10/31",
+      "pubmed_ids": [
+        "33121145"
+      ],
+      "sequencing_type": "miRNA-seq",
+      "sample_source": [
+        "cell_line"
+      ],
+      "summary": "We used next generation sequencing to analyze the effects of Zika virus (ZIKV) strains Uganda and French Polynesia on intracellular and extracellular vesicle (EV) derived miRNA profiles of induced pluripotent stem cell-derived human neural stem cells (long-term self-renewing neuroepithelial-like stem (lt-NES®) cells) - particularly to identify dysregulated miRNAs which are associated with the microcephaly phenotype.",
+      "overall_design": "MiRNAs, which were derived from EVs and intracellular miRNAs of Zika virus-infected lt-NES® cells were analyzed 24, 48 and 72 hours post infection. At the same timepoints intracellular and EV-associated miRNA profiles of uninfected lt-NES® cells were analyzed. 3 biological replicates were used.",
+      "study_design": "人iPSC衍生神经干细胞感染ZIKV两株与未感染对照，　数据标注:索臻SOGEN·转发请保留署名·想要后续更新请加群·微信bioinformaticsboy·order.sogentech.com/products细胞内与EV miRNA-seq",
+      "relevance_reason": "研究ZIKV感染人神经干细胞的miRNA失调机制",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE157nnn/GSE157528/",
+      "evidence": {
+        "relevant": "研究寨卡病毒感染神经干细胞的miRNA失调及其与小头畸形的关联，样本为感染vs未感染NSC，是直接疾病机制研究。",
+        "sequencing_type": "library_strategy=miRNA-Seq，selection=size fractionation，目标分子为miRNA，bulk水平高通量测序。",
+        "survival_analysis": "样本为人神经干细胞系，非患者样本，无生存时间/状态字段，无法做患者生存分析",
+        "treatment": "核心比较是病毒感染vs未感染，ZIKV感染属致病模型非药物治疗，不构成treatment核心变量",
+        "case_vs_control_differential": "感染组vs未感染组属于同一体外细胞框架内的感染对照，非组织级疾病vs独立健康个体，不符合真健康对照要求",
+        "correlation": "全部54个样本为细胞系（lt-NES）来源，非疾病患者组织样本，不满足独立疾病患者数≥16的要求",
+        "sample_source": "所有54个GSM的被测材料均为lt-NES®细胞（iPSC来源、长期自我更新的神经上皮样干细胞系）的胞内miRNA或分泌的EV miRNA，属已建系细胞系及其衍生物，判为cell_line。"
+      }
+    },
+    {
+      "gse_id": "GSE193195",
+      "title": "Zika virus impacts extracellular vesicle composition and cellular gene expression in macaque early gestation trophoblasts [miRNA-seq]",
+      "organism": "Macaca mulatta",
+      "n_samples": 48,
+      "platform": "19129",
+      "pdat": "2022/01/10",
+      "pubmed_ids": [
+        "35513694"
+      ],
+      "sequencing_type": "miRNA-seq",
+      "sample_source": [
+        "primary_cell"
+      ],
+      "summary": "Zika virus (ZIKV) infection at the maternal-placental interface is associated with adverse pregnancy outcomes including fetal demise and pregnancy loss. To determine how infection impacts placental trophoblasts, we utilized rhesus macaque trophoblast stem cells (TSC) that can be directed to differentiate into early gestation syncytiotrophoblasts (ST) and extravillous trophoblasts (EVT). TSCs and STs, but not EVTs, were highly permissive to productive infection with ZIKV strain DAK AR 41524. The impact of ZIKV on the cellular transcriptome showed that infection of TSCs and STs increased expression of immune related genes, including those involved in type I and type III interferon responses. ZIKV exposure altered extracellular vesicle (EV) protein, mRNA, and miRNA cargo, regardless of productive infection. These findings suggest that early gestation macaque TSCs and STs are permissive to ZIKV infection, and that EV analysis may provide a foundation for identifying non-invasive biomarkers of placental infection in a highly translational model.",
+      "overall_design": "24 cell and 24 EV samples were submitted for miRNAseq",
+      "study_design": "猕猴早期妊娠滋养层干细胞及分化细胞（TSC/ST/EVT）与细胞外囊泡，ZIKV感染vs对照的miRNA-seq分析",
+      "_ec024d": "SOGEN·索臻生物科技·sogentech.com·增量更新与更多专题在群里·公众号医学僧的科研日记",
+      "relevance_reason": "研究ZIKV感染猕猴胎盘滋养层细胞的miRNA表达变化",
+      "treatment": false,
+      "_841530": "本数据由索臻生物科技(SOGEN)标注·免费共享欢迎转发·想要增量更新请加群·微信bioinformaticsboy",
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE193nnn/GSE193195/",
+      "evidence": {
+        "relevant": "研究寨卡病毒感染胎盘滋养层的机制，样本为感染与未感染细胞及EV，主体即寨卡病毒感染。",
+        "sequencing_type": "所有样本 library_strategy=miRNA-Seq, library_selection=size fractionation 富集小 RNA, geo_data_type=Non-coding RNA profiling by HTS, 使用 miARma-Seq 分析 miRNA 丰度。",
+        "survival_analysis": "样本为猕猴滋养层干细胞系及分化细胞，非人类患者，无任何生存时间/状态字段，无法做生存分析",
+        "treatment": "核心比较是ZIKV病毒感染vs未感染，属于病毒感染致病模型，而非药物治疗干预",
+        "case_vs_control_differential": "对照为体外培养的未感染细胞，非组织级真健康独立个体，且全为细胞系样本，不符合疾病vs正常差异分析要求",
+        "correlation": "全部样本均为猕猴细胞系和细胞外囊泡，无任何人类患者或临床组织样本，无法做表达相关性分析",
+        "sample_source": "48个样本均为恒河猴滋养层干细胞(TSC)体外分化产生的ST3D、EVT细胞或其分泌的EV，源自胎盘组织但经体外培养处理，无明确已建系/永生化标识，归为原代细胞。"
+      }
+    },
+    {
+      "gse_id": "GSE113640",
+      "title": "Zika infected neural stem cells",
+      "organism": "Homo sapiens",
+      "n_samples": 18,
+      "platform": "18573",
+      "pdat": "2019/06/18",
+      "pubmed_ids": [
+        "31216479"
+      ],
+      "sequencing_type": "CLIP-seq, miRNA-seq, mRNA-seq",
+      "sample_source": [
+        "primary_cell"
+      ],
+      "summary": "This SuperSeries is composed of the SubSeries listed below.",
+      "overall_design": "Refer to individual Series",
+      "study_design": "人iPSC源神经干细胞感染寨卡病毒株，比较感染与mock的多组学分析",
+      "_455463": "索臻(SOGEN)出品·公共数据标注语料·加微信bioinformaticsboy进群持续获取增量·grswsci.top/analyze",
+      "relevance_reason": "使用寨卡病毒感染的神经干细胞模型",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "_25169e": "索臻生物科技SOGEN·生信+湿实验一站式·一区顶刊课题合作·加群获取增量·微信bioinformaticsboy",
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE113nnn/GSE113640/",
+      "evidence": {
+        "relevant": "直接研究 ZIKV 感染的人神经干细胞，样本为感染 vs 对照，目标疾病即寨卡病毒感染本身。",
+        "sequencing_type": "RNA-Seq组件：总RNA/cDNA文库→mRNA-seq；miRNA-Seq组件：size fractionation富集小RNA→miRNA-seq；RIP-Seq组件：AGO抗体IP拉下RNA，标题标注iCLIP-seq→CLIP-seq",
+        "survival_analysis": "样本为体外培养的hNSC细胞，非人类患者，无生存数据。",
+        "treatment": "感染寨卡病毒vs mock，属病毒感染模型，非药物治疗干预。",
+        "case_vs_control_differential": "感染vs mock属体外感染框架内对照，非组织级疾病vs真健康个体。",
+        "correlation": "样本全部为体外细胞系，无独立疾病患者，不能做患者相关性分析。",
+        "sample_source": "全部18个GSM的source均为'iPSC derived neural stem cell'、cell type为'hNSC'，属体外培养的神经干细胞，且经Zika病毒感染处理，符合离体后体外操作的原代细胞定义，判为primary_cell。无其他材料批次，无技术对照需剔除。"
+      }
+    },
+    {
+      "gse_id": "GSE87516",
+      "title": "Dynamics of Human and Viral RNA Methylation during ZIKA Virus Infection",
+      "organism": "Zika virus; Homo sapiens",
+      "n_samples": 18,
+      "platform": "22512;16791",
+      "pdat": "2016/11/15",
+      "pubmed_ids": [
+        "27773536"
+      ],
+      "sequencing_type": "m6A-seq",
+      "sample_source": [
+        "cell_line",
+        "pathogen"
+      ],
+      "summary": "Human infection with the flavivirus ZIKA (ZIKV) causes severe neurological, immunological, and developmental defects. Despite recent progress, the mechanisms by which ZIKV infection alters host transcriptional and translational programs remains unclear. Here, we report that ZIKV infection has profound effects on the topology and function of N6-adenosine methylation (m6A) of both viral and human RNAs. m6A and 2′-O-methylated nucleosides are abundant in ZIKV genomic RNA, and m6A-seq identified 12 m6A peaks spanning the full length of ZIKV RNA. m6A abundance in ZIKV RNA is controlled by the host methyltransferases METTL3 and METTL14 and the demethylase ALKBH5. Profiling of the m6A methylome of host mRNAs revealed that ZIKV infection alters the location of m6A in mRNAs, the methylation motifs, and the target genes modified by the methyltransferases. Our results identify a new mechanism by which ZIKV interacts with and alters the function of the host cell.",
+      "overall_design": "m6A-seq of virus genomic RNA and mRNA from human cells infected with virus.",
+      "study_design": "HEK293T细胞感染ZIKV，m6A-seq分析病毒与宿主RNA甲基化动态。",
+      "relevance_reason": "研究ZIKV感染人细胞系的m6A甲基化机制。（数据标注:索臻SOGEN·转发请保留署名·想要后续更新请加群·微信bioinformaticsboy·order.sogentech.com/products）",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE87nnn/GSE87516/",
+      "evidence": {
+        "relevant": "研究ZIKV感染的m6A修饰，样本为感染/未感染ZIKV的人细胞及病毒RNA，主体与样本均直接围绕寨卡病毒感染。",
+        "sequencing_type": "m6A抗体IP富集含m6A修饰的RNA后高通量测序，IP与input配对，为标准MeRIP/m6A-seq",
+        "survival_analysis": "所有样本均为细胞系HEK293T，非人类患者样本，无任何生存时间或状态字段。",
+        "treatment": "核心变量为感染状态(ZIKV感染vs未感染)，非药物治疗/干预对照轴。",
+        "case_vs_control_differential": "m6A-seq非表达定量平台，且对照为未感染细胞系，属体外感染模型伪健康对照。",
+        "correlation": "平台为m6A-seq(RIP-Seq)，属RNA修饰位点检测，非基因表达定量平台。",
+        "sample_source": "12个样本源自HEK293T细胞系（cell_line）；6个样本源自纯化的ZIKV病毒颗粒（virions），属病原体直接提取核酸（pathogen）。input为RIP-seq技术对照，不额外增加类别。"
+      }
+    },
+    {
+      "gse_id": "GSE137592",
+      "title": "Virus-Host Interactome Reveals the Unique Blockage of Host RNAi Machinery by the Zika Virus Capsid",
+      "organism": "Homo sapiens",
+      "n_samples": 9,
+      "platform": "21290",
+      "pdat": "2020/08/04",
+      "pubmed_ids": [
+        "32763144"
+      ],
+      "sequencing_type": "miRNA-seq",
+      "sample_source": [
+        "primary_cell"
+      ],
+      "summary": "The recent outbreaks of Zika virus (ZIKV) and its association with birth defects known as Congenital Zika Syndrome warrant investigation on the molecular processes related to its infection and pathogenesis. Among the flavivirus family, only ZIKV is linked to microcephaly as announced by World Health Organization, suggesting uniqueness of ZIKV infection compared to other members. By analyzing the ZIKV-host interactome, we found that the key microRNA (miRNA) processing enzyme Dicer was a leading target of ZIKV capsid protein in neural stem cells (NSCs), and its deficiency facilitated ZIKV infection. Mechanistically, ZIKV capsid can directly interact with Dicer and block its ribonuclease activity, dampening the production of host miRNAs that are essential for neurogenesis. Interestingly, this capsid-mediated immune evasion is specific to ZIKV because capsid proteins from other close flaviviruses, e.g., dengue, yellow fever and West Nile viruses, cannot bind to Dicer or inhibit its function. By molecular mapping, we defined a ZIKV capsid H41R mutant with loss of interaction to Dicer and no longer affecting its activity. More importantly, ZIKV H41R mutant exerted almost no impact on neurogenesis in vitro when expressed in NSCs compared to wild type capsid, and in utero infection of recombinant ZIKV-H41R mutant virus resulted in less inhibition on corticogenesis than wild-type ZIKV in mouse embryos. Interestingly, the epidemic ZIKV strain reinforces the capsid-Dicer interaction by two amino acid substitution compared to ancient Africa strain. Thus, our study demonstrated that capsid-dependent suppression of Dicer function is a unique determinant of ZIKV immune evasion and pathogenesis, which may unveil a new mechanism for ZIKV-mediated microcephaly.",
+      "overall_design": "miRNA-seq of neural stem cells (NSCs) infected with ZKIV or ZKIV H41R or without infection",
+      "study_design": "人神经干细胞(NSCs)感染ZIKV WT、H41R突变体或mock对照，miRNA-seq分析宿主转录组变化",
+      "relevance_reason": "利用ZIKV感染的人NSCs研究病毒衣壳对宿主Dicer的抑制机制",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "_7b6fef": "免费共享版·SOGEN索臻标注·我们建了很多学科群与专题群·入群20元防广告·微信bioinformaticsboy",
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE137nnn/GSE137592/",
+      "evidence": {
+        "relevant": "研究寨卡病毒感染NSCs的机制，样本为感染ZIKV的细胞，直接针对目标疾病zika virus infection。",
+        "sequencing_type": "miRNA-Seq策略+size fractionation富集小RNA，测序检测miRNA表达",
+        "survival_analysis": "样本为人NSCs细胞系，无患者样本及生存时间/状态字段，无法做生存分析",
+        "treatment": "核心比较为ZIKV感染与mock对照及病毒株间比较，属病毒感染模型，非药物治疗干预",
+        "case_vs_control_differential": "miRNA-seq表达平台合格，但对照为未感染的NSCs细胞系，非独立真健康组织对照",
+        "correlation": "全部样本为NSCs细胞系，无疾病患者样本，且总数仅9例，无法做表达相关性分析",
+        "sample_source": "所有GSM source均为neural stem cells (NSCs)，体外悬浮培养为神经球并病毒感染/对照后测序，属原代细胞体外培养，未永生化，按规则判定为primary_cell。"
+      }
+    },
+    {
+      "gse_id": "GSE203043",
+      "title": "Characterization of m6A modifications in the contemporary Zika virus genome and host cellular transcripts",
+      "organism": "Homo sapiens",
+      "n_samples": 8,
+      "platform": "20795",
+      "pdat": "2022/08/22",
+      "pubmed_ids": [],
+      "sequencing_type": "m6A-seq",
+      "sample_source": [
+        "cell_line"
+      ],
+      "summary": "Purpose and Methods: To profile m6A modifications on both the viral genome RNA and cellular transcripts, we used Methylated RNA immunoprecipitation sequencing (MeRIP-seq) on ZIKV SZ1901-infected human hepatocarcinoma cell line Huh7. Results and conclusions: Using MeRIP-seq, we identified a unique m6A map in the genome of ZIKV strain SZ1901 that is different from all previous isolates. Our study describes unique viral and host m6A profiles in contemporary ZIKV-infected Huh7 cells, highlighting the complexity and importance of m6A modification during viral infection.",
+      "overall_design": "Using a contemporary Asian ZIKV strain isolated in 2019 (SZ1901) as a model, we profiled m6A modifications (MeRIP-seq) on both the viral genome RNA and cellular transcripts from the ZIKV-infected human hepatocarcinoma cell line Huh7.",
+      "study_design": "Huh7肝癌细胞系ZIKV感染与未感染对照，MeRIP-seq分析m6A修饰",
+      "relevance_reason": "研究ZIKV感染Huh7细胞的m6A修饰",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE203nnn/GSE203043/",
+      "evidence": {
+        "relevant": "研究寨卡病毒感染中病毒与宿主m6A修饰，样本为ZIKV感染的Huh7细胞及未感染对照，直接探究感染机制。",
+        "sequencing_type": "MeRIP-seq使用anti-m6A抗体富集m6A修饰RNA后测序，input为内对照不独立成库",
+        "survival_analysis": "样本为Huh7细胞系，非人类患者，无生存时间/状态字段，无法做患者生存分析",
+        "treatment": "核心比较是ZIKV感染vs未感染，无药物治疗干预轴，非药物研究",
+        "case_vs_control_differential": "平台为MeRIP-seq（m6A检测），非表达定量平台；且对照为未感染细胞系，非独立健康组织",
+        "correlation": "平台非表达定量，且细胞系样本仅8例，远未达>15独立患者的要求",
+        "sample_source": "所有8个GSM source均为Huh7 cells，这是已建系的人肝癌细胞系，在体外培养并感染或未感染ZIKV后直接提取RNA测序，无组织/原代成分，input为同源技术对照，判为cell_line。"
+      }
+    },
+    {
+      "_949353": "索臻(SOGEN)出品·公共数据标注语料·加微信bioinformaticsboy进群持续获取增量·grswsci.top/analyze",
+      "gse_id": "GSE113639",
+      "title": "miRNA analysis of Zika infected neural stem cells",
+      "organism": "Homo sapiens",
+      "n_samples": 6,
+      "platform": "18573",
+      "pdat": "2019/06/18",
+      "pubmed_ids": [
+        "31216479"
+      ],
+      "sequencing_type": "miRNA-seq",
+      "sample_source": [
+        "primary_cell"
+      ],
+      "summary": "small RNA-seq was utilized to characterize the transcriptome of human neural stem cells infected with Zika virus strains MR766 and Paraiba at MOI 1. Coding and noncoding genes were analyzed to determine transcriptional changes 3 days post-infection.",
+      "overall_design": "Examination of miRNA expression of human neural stem cells infected with  Zika virus MR766 and Paraiba with 2 experimental replicates per group.",
+      "study_design": "人神经干细胞感染ZIKV MR766/Paraiba与mock对照，　索臻生物科技SOGEN·生信+湿实验一站式·一区顶刊课题合作·加群获取增量·微信bioinformaticsboymiRNA-seq分析差异表达miRNA",
+      "relevance_reason": "使用ZIKV感染的人神经干细胞模型研究miRNA变化",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "_d44fc1": "SOGEN索臻·此为免费流传版·完整增量更新在学科/专题私域群(入群20元防广告)·sogentech.com",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE113nnn/GSE113639/",
+      "evidence": {
+        "relevant": "研究 Zika 病毒感染神经干细胞后的 miRNA 变化，样本为感染 vs 未感染 hNSC，疾病即主体。符合主体轴与样本轴。",
+        "sequencing_type": "library_strategy=miRNA-Seq，size fractionation富集小RNA，测序检测miRNA表达",
+        "survival_analysis": "样本为体外培养神经干细胞，非人类患者，无任何生存随访数据",
+        "treatment": "核心比较是ZIKV感染vs mock，属病毒感染模型而非药物治疗干预",
+        "case_vs_control_differential": "体外培养细胞的感染vs mock对照不满足组织级疾病对照要求，且每组仅2个重复不足3v3",
+        "correlation": "全部样本为细胞系，无患者样本，样本量仅6远低于16",
+        "sample_source": "所有GSM source为iPSC derived neural stem cell，细胞购自ThermoFisher后体外培养并感染Zika病毒，未经永生化建系，属原代培养神经干细胞，判为primary_cell。"
+      }
+    },
+    {
+      "gse_id": "GSE94890",
+      "title": "miRNAseq in sertoli cells infected with ZIKV",
+      "organism": "Homo sapiens",
+      "n_samples": 6,
+      "platform": "15520",
+      "pdat": "2018/01/01",
+      "pubmed_ids": [],
+      "sequencing_type": "miRNA-seq",
+      "sample_source": [
+        "primary_cell"
+      ],
+      "summary": "Because zika virus is sexually transmitted, with sought to investigate how ZIKV infection affect the transcriptome of sertoli cells, which are nurse cells",
+      "overall_design": "Sertoli cells were either mock-inoculated or inoculated with Zika virus. Samples were collected at 48 hpi, all samples are in triplicates. RNAseq libraries were constructed according to recommendations of Illumina.",
+      "study_design": "人支持细胞感染ZIKV vs mock对照，miRNA-seq差异分析",
+      "relevance_reason": "研究ZIKV感染人支持细胞的miRNA表达变化·SOGEN免费共享·请勿删改署名·增量更新与更多学科专题需入群(20元防广告)·grswsci.top/analyze",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE94nnn/GSE94890/",
+      "evidence": {
+        "relevant": "研究ZIKV感染对Sertoli细胞miRNA的影响，直接研究zika virus infection的致病机制，感染模型即为该疾病定义性病因，主体与样本均满足。",
+        "sequencing_type": "library_strategy=miRNA-Seq, selection=size fractionation富集小RNA, Illumina测序, bulk细胞",
+        "survival_analysis": "体外培养的支持细胞系，非人类患者样本，无生存随访数据",
+        "treatment": "核心比较是ZIKV感染vs mock，属病毒感染干预，非药物治疗",
+        "case_vs_control_differential": "对照为mock接种的同一细胞系，非独立的健康组织对照",
+        "correlation": "细胞系样本仅6例，无独立患者样本，无法做表达相关性分析",
+        "sample_source": "全部6个样本均为Sertoli细胞，体外培养后mock/ZIKV感染；GSM无细胞系标识，推断为分离的原代细胞类型，归primary_cell"
+      }
+    },
+    {
+      "gse_id": "GSE149983",
+      "title": "Small RNA sequencing of Zika virus-infected human umbilical cord mesenchymal stem cells",
+      "organism": "Homo sapiens",
+      "n_samples": 5,
+      "platform": "16791",
+      "pdat": "2020/05/07",
+      "_9f83d1": "SOGEN免费共享·请勿删改署名·增量更新与更多学科专题需入群(20元防广告)·grswsci.top/analyze",
+      "pubmed_ids": [
+        "32902370"
+      ],
+      "sequencing_type": "miRNA-seq",
+      "sample_source": [
+        "primary_cell"
+      ],
+      "summary": "miRNA profiles of hUCMSCs infected with ZIKV using Illumina small RNA sequencing platform",
+      "overall_design": "Investigation of the differential expression patterns of miRNAs in response to ZIKV infection",
+      "study_design": "人脐带间充质干细胞感染ZIKV两毒株与mock，miRNA-seq差异表达分析",
+      "relevance_reason": "使用Zika病毒感染的人脐带间充质干细胞模型",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE149nnn/GSE149983/",
+      "evidence": {
+        "relevant": "研究主体为寨卡病毒感染下宿主miRNA应答，样本为寨卡病毒直接感染的人间充质干细胞，构成病毒感染模型。",
+        "sequencing_type": "library_strategy=miRNA-Seq，library_selection=size fractionation 富集小RNA，摘要与标题均指向miRNA profiling，测序平台Illumina HiSeq，故为miRNA-seq",
+        "survival_analysis": "样本为人脐带间充质干细胞(hUCMSC)，非人类患者，无患者生存时间/状态字段。",
+        "treatment": "核心干预为ZIKV病毒感染，非药物治疗，不符合治疗对照的定义。",
+        "case_vs_control_differential": "对照为mock感染的同一细胞系，属体外框架内对照，非组织级独立健康供者对照。",
+        "correlation": "样本均为细胞系，总数仅5例，无疾病患者样本，不满足相关性分析所需独立患者数(≥16)。",
+        "sample_source": "GSM均为hUCMSC（人脐带间充质干细胞），来自脐带但经体外培养传代（P3–10）后提取总RNA测序，属原代培养细胞而非组织或已建系细胞系，故判为primary_cell。"
+      }
+    },
+    {
+      "gse_id": "GSE125520",
+      "title": "Zika virus infection induces RNAi-mediated antiviral immunity in human neural progenitors and brain organoids",
+      "organism": "Aedes aegypti; Homo sapiens",
+      "n_samples": 5,
+      "platform": "11154;21020",
+      "pdat": "2019/04/15",
+      "pubmed_ids": [
+        "30814679"
+      ],
+      "sequencing_type": "miRNA-seq",
+      "sample_source": [
+        "cell_line",
+        "primary_cell"
+      ],
+      "summary": "The re-emergence of Zika virus (ZIKV) in the Western Hemisphere has resulted in global public health crisis since 2015. ZIKV preferentially infects and targets human neural progenitor cells (hNPCs) and causes fetal microcephaly upon maternal infection. hNPCs not only play critical roles during fetal brain development, but also persist in adult brain throughout life. Yet the mechanism of innate antiviral immunity in hNPCs remains largely unknown. Here, we show that ZIKV infection triggers the abundant production of virus-derived small interfering RNAs in hNPCs, but not in the more differentiated progenies or somatic cells. Ablation of key RNAi machinery components significantly enhances ZIKV replication in hNPCs. Furthermore, enoxacin, a broad-spectrum antibiotic that is known as an RNAi enhancer, exerts potent anti-ZIKV activity in hNPCs and other RNAi-competent cells. Strikingly, enoxacin treatment completely prevents ZIKV infection and circumvents ZIKV-induced microcephalic phenotypes in brain organoid models that recapitulate human fetal brain development. Our findings highlight the physiological importance of RNAi-mediated antiviral immunity during the early stage of human brain development, uncovering a novel strategy to combat human congenital viral infections through enhancing RNAi.",
+      "overall_design": "Small RNA profile of virus-infected cells",
+      "study_design": "人神经祖细胞、神经元及细胞系感染ZIKV后进行small RNA-seq，分析病毒衍生siRNA",
+      "relevance_reason": "研究ZIKV感染人神经祖细胞产生RNAi抗病毒免疫",
+      "_4ae3d4": "SOGEN索臻·此为免费流传版·完整增量更新在学科/专题私域群(入群20元防广告)·sogentech.com",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE125nnn/GSE125520/",
+      "evidence": {
+        "relevant": "主体研究寨卡病毒感染的抗病毒RNAi机制，样本为寨卡病毒感染的人神经祖细胞、神经元等，均属疾病直接靶细胞。",
+        "sequencing_type": "size fractionation富集小RNA; TruSeq Small RNA Kit; Illumina测序; 默认miRNA-seq",
+        "survival_analysis": "样本均为细胞系/培养细胞，无人类患者及生存数据",
+        "treatment": "所有样本均感染ZIKV，无药物治疗对照",
+        "case_vs_control_differential": "所有样本均感染ZIKV，缺乏未感染健康对照",
+        "correlation": "无患者样本，仅细胞系/培养细胞，无法做临床相关性分析",
+        "sample_source": "样本含4种来源：hNPC(人神经祖细胞)与hNeurn(人神经元)为原代/分化细胞，未注明永生化，属primary_cell；Aag2(蚊虫细胞系)与RD(人横纹肌肉瘤细胞系)明确为cell_line。无类器官样本，摘要提及的脑类器官未在GSM中出现。"
+      }
+    },
+    {
+      "gse_id": "GSE159916",
+      "title": "Identification of AGO-associated viral interfering RNAs in Zika virus infected neural stem cells",
+      "organism": "Homo sapiens",
+      "n_samples": 4,
+      "platform": "21290",
+      "pdat": "2021/02/16",
+      "pubmed_ids": [
+        "33718276"
+      ],
+      "sequencing_type": "CLIP-seq, miRNA-seq",
+      "sample_source": [
+        "cell_line"
+      ],
+      "summary": "Viral interfering RNA (viRNA) has been identified from several viral genomes via directly deep RNA sequencing of the virus-infected cells, including zika virus (ZIKV). Once produced by endoribonuclease Dicer, viRNAs, similar to microRNAs, are loaded onto Argonaute (AGO) family proteins of the RNA-induced silencing complexes (RISCs) to pair with their RNA targets and then initiate cleavage of the target genes. However, identities of functional ZIKV viRNAs and their viral RNA targets remain largely unknown. By combining AGO-associated RNA sequencing, deep sequencing analysis in ZIKV-infected neural stem cells (NSCs), and miRanda target scanning, we have defined 29 ZIKV derived viRNA profiles in NSCs, and established the complex interaction networks between the viRNAs and their viral targets. Our recent study has shown that ZIKV capsid protein interacted with Dicer and antagonized its endoribonuclease activity depending on its histidine (H) at the 41st amino acid. Accordingly, the rescued ZIKV-H41R mutant virus, compared to wild-type ZIKV, no longer suppressed Dicer enzymatic activity and consequently failed to inhibit miRNA biogenesis in NSCs. As a result, much higher levels of viRNAs generated from the ZIKV-H41R virus-infected NSCs, suggesting Dicer-dependent viRNA production. Knockdown of individual RNAi machinery in ZIKV-infected NSCs suggests that viRNA is a limiting factor of ZIKV infection in NSCs. The mapping of viRNAs to their RNA targets is paving a way to further investigate how viRNAs play the role in anti-viral mechanisms or even other unknown biological functions.",
+      "overall_design": "miRNA-seq",
+      "study_design": "ZIKV WT或H41R突变病毒感染的神经干细胞，通过AGO CLIP-seq和miRNA-seq鉴定病毒来源viRNA",
+      "relevance_reason": "使用ZIKV感染的人神经干细胞研究病毒干扰RNA",
+      "treatment": false,
+      "treatment_type": "",
+      "_b95c75": "免费共享版·SOGEN索臻标注·我们建了很多学科群与专题群·入群20元防广告·微信bioinformaticsboy",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE159nnn/GSE159916/",
+      "evidence": {
+        "relevant": "研究ZIKV感染NSCs中病毒viRNA机制，样本为ZIKV感染的宿主细胞，疾病即研究主体。",
+        "sequencing_type": "该数据集包含两种技术：1) AGO-CLIP样本（HITS-CLIP）：通过anti-AGO抗体交联免疫沉淀富集AGO结合RNA后测序，判定为CLIP-seq；2) miRNA样本：通过size fractionation富集小RNA后测序，判定为miRNA-seq。",
+        "survival_analysis": "样本为体外培养的神经干细胞，非人类患者，无任何生存时间或状态字段",
+        "treatment": "核心对比是不同病毒株感染（ZIKV-WT vs H41R突变），无药物治疗或干预对照",
+        "case_vs_control_differential": "所有样本均受ZIKV感染，缺乏未感染的独立健康对照，无法做疾病vs正常差异分析",
+        "correlation": "仅有4个细胞系样本，非独立患者样本，且数量远低于≥16的要求",
+        "sample_source": "所有4个GSM的source/tissue均为neural stem cells(NSCs)；growth_protocol表明NSCs源自H9人胚胎干细胞系，经体外分化并维持单层培养后感染ZIKV，非直接取自组织/血液的原代细胞，故判为cell_line。"
+      }
+    },
+    {
+      "gse_id": "GSE108791",
+      "title": "Small RNA-seq of human neural stem cells in empty vector and Zika Virus E protein transfected cells",
+      "organism": "Homo sapiens",
+      "n_samples": 4,
+      "platform": "18573",
+      "pdat": "2018/12/26",
+      "_d386ea": "免费共享版·SOGEN索臻标注·我们建了很多学科群与专题群·入群20元防广告·微信bioinformaticsboy",
+      "pubmed_ids": [
+        "30050059"
+      ],
+      "sequencing_type": "miRNA-seq",
+      "sample_source": [
+        "primary_cell"
+      ],
+      "summary": "We report the Zika Virus E protein causes alterations in human fetal neural stem cells by dysregulation miRNome of fNSCs. We screened four ZV proteins (three non-structural and the E protein) and demonstrated that ZV E protein induces quiescence in human fNSCs and hampers growth of neurospheres. Further employing small RNA NGS we investigate that Zika Virus E protein causes differential expression of 25 miRNAs 24 hours post ectopic expression. Bioinformatic analysis using GO annotation for the targets of differentially expressed miRNAs revealed that upregulated miRNAs are involved in biological processes, including metabolic processes whereas downregulated miRNAs regulate cell cycle and its processes along with metabolic processes. This supports our findings that E protein alters cell cycle dynamics. Our study provides evidence and mechanisms of involvement of ZV E protein and potential miRNAs in Zika Virus induced microcephaly.",
+      "overall_design": "Examination of miRNA in two empty vector and two Zika Virus E protein transfected samples of human neural stem cells 24 hours post transfection.",
+      "study_design": "人胎儿神经干细胞转染空载体或寨卡病毒E蛋白，·SOGEN免费共享·请勿删改署名·增量更新与更多学科专题需入群(20元防广告)·grswsci.top/analyzesmall RNA-seq比较miRNA差异",
+      "relevance_reason": "研究寨卡病毒E蛋白对人神经干细胞miRNA的调控机制",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE108nnn/GSE108791/",
+      "evidence": {
+        "relevant": "ZIKV E蛋白在胎儿神经干细胞中致小头畸形机制研究，为寨卡感染的直接体外疾病模型。",
+        "sequencing_type": "size fractionation 富集小RNA，目标为miRNA（标题/摘要均提及miRNome与差异miRNA），HTS测序，bulk样本。",
+        "survival_analysis": "样本为体外培养的人胎儿神经干细胞，非患者，无生存时间/状态字段",
+        "treatment": "比较空载体转染与E蛋白表达，属病毒蛋白机制研究，非药物治疗干预",
+        "case_vs_control_differential": "对照为空载体转染的同一细胞，非独立健康组织对照，且体外细胞非疾病vs正常设计",
+        "correlation": "仅4个细胞样本，无独立疾病患者，不满足相关性分析所需样本量",
+        "sample_source": "所有GSM均为从胎儿端脑分离的人原代神经干细胞(fNSCs)，经体外扩增（传代9-15）、瞬时转染（空载或Zika E蛋白）24h后提取总RNA测序，属于分选出的具体原代细胞类型经体外培养/处理，未建系。"
+      }
+    }
+  ]
+}
