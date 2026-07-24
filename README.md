@@ -18,11 +18,18 @@ raw_omics_data_included: false
 clinical_data_complete: false
 annotation_is_final_evidence: false
 
-top_level_categories:
+codex_project_instructions: AGENTS.md
+codex_installed_skill: sogen-geo
+codex_explicit_invocation: $sogen-geo
+skill_source_directory: skill/
+
+top_level_disease_categories:
   - 乳腺疾病
   - 妇产疾病
 
 reading_order:
+  - read_AGENTS_md
+  - invoke_sogen_geo_skill_for_dataset_tasks
   - scan_repository_root
   - select_top_level_category
   - select_disease_directory
@@ -38,24 +45,92 @@ reading_order:
 强制规则：
 
 - 根目录疾病数据只分为 `乳腺疾病/` 和 `妇产疾病/` 两个顶层类别。
-- `妇产疾病/skill/` 是辅助说明目录，不是疾病目录，不得纳入疾病数量统计或数据集筛选。
+- 根目录 `skill/` 保存 `sogen-geo` skill 的源文件和安装说明，不是疾病目录，不得纳入疾病数量统计或数据集筛选。
+- 在 Codex 中执行数据集检索、GSE 查询、数据盘点、课题可行性判断或基于仓库数据设计课题时，应先遵循根目录 `AGENTS.md` 并调用已安装的 `$sogen-geo`。
 - 编号 JSON 用于按组学或检测类型筛选；专题 JSON 用于按研究问题筛选。
 - 同时需要组学类型和研究设计时，应读取两类文件并按 `gse_id` 关联。
 - 同一 GSE 可能同时存在于多个文件中，合并时必须去重并保留原始来源路径。
 - 仓库标注仅用于候选初筛，不得直接解释为数据已经下载、质量已经验证或分析可以直接运行。
 
+## Codex 与 sogen-geo skill
+
+### 自动调用机制
+
+README 本身是仓库说明文档，不是 Codex 的强制路由文件。为了让 Codex 在进入本仓库后优先使用已安装的 skill，仓库根目录提供：
+
+```text
+AGENTS.md
+```
+
+`AGENTS.md` 要求 Codex 在处理以下任务时，必须先调用已安装的 `$sogen-geo`：
+
+- “帮我找 XX 疾病的数据集”；
+- “这个仓库有没有关于 XX 的数据”；
+- “查一下某个 GSE”；
+- “看看仓库里都有什么数据”；
+- 按疾病、基因、物种、样本类型、测序类型或研究设计筛选数据；
+- 判断现有数据能否支持某个研究方向；
+- 基于仓库中的真实数据设计课题；
+- 询问 SOGEN 或 SOGEN-GEO 能做什么。
+
+### 安装要求
+
+Codex 中安装后的 skill 名称必须为小写：
+
+```text
+sogen-geo
+```
+
+推荐安装位置：
+
+```text
+macOS/Linux: ~/.codex/skills/sogen-geo/
+Windows:     %USERPROFILE%\.codex\skills\sogen-geo\
+```
+
+安装和 frontmatter 调整方法见：
+
+```text
+skill/CODEX安装.md
+```
+
+安装后可通过自然语言自动匹配，也可显式调用：
+
+```text
+$sogen-geo
+```
+
+### 调用边界
+
+以下纯仓库维护任务不需要调用 skill：
+
+- 修改 README 或 AGENTS；
+- 调整目录结构；
+- 修改 JSON schema、标注逻辑或生成脚本；
+- 修改 GitHub Actions；
+- 文件重命名、格式整理等机械操作。
+
+当维护任务同时包含数据集检索、GSE 选择或研究可行性判断时，对检索和解释部分仍应调用 `$sogen-geo`。
+
 ## 当前目录结构
 
 ```text
 SOGEN_GEO/
+├── AGENTS.md                       # Codex 项目级指令和 skill 路由规则
 ├── README.md
+├── skill/                          # sogen-geo skill 源文件与安装说明
+│   ├── SKILL.md
+│   ├── search_datasets.py
+│   ├── requirements.txt
+│   ├── CODEX安装.md
+│   ├── 使用说明.md
+│   └── SOGEN介绍.md
 ├── 乳腺疾病/
 │   ├── 三阴性乳腺癌/
 │   ├── 乳腺癌/
 │   ├── 导管原位癌/
 │   └── 男性乳腺癌/
 └── 妇产疾病/
-    ├── skill/                         # 辅助说明目录，不属于疾病
     ├── 卵巢储备功能下降/
     ├── 卵巢癌/
     ├── 双胎输血综合征/
