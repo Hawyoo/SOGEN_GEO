@@ -1,0 +1,194 @@
+name: Restructure SOGEN data directories
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/restructure_sogen_data.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  restructure:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Move disease directories into two categories
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mkdir -p "乳腺疾病" "妇产疾病"
+
+          # 当前仓库根目录中的普通文件夹均视为疾病目录。
+          # 名称包含“乳腺”或等于“导管原位癌”的目录归入乳腺疾病；其余归入妇产疾病。
+          find . -mindepth 1 -maxdepth 1 -type d -print0 | while IFS= read -r -d '' dir; do
+            name="$(basename "$dir")"
+
+            case "$name" in
+              .git|.github|乳腺疾病|妇产疾病)
+                continue
+                ;;
+            esac
+
+            if [[ "$name" == *"乳腺"* || "$name" == "导管原位癌" ]]; then
+              target="乳腺疾病/$name"
+            else
+              target="妇产疾病/$name"
+            fi
+
+            if [[ -e "$target" ]]; then
+              echo "目标目录已存在，停止迁移以避免覆盖: $target" >&2
+              exit 1
+            fi
+
+            git mv "$dir" "$target"
+          done
+
+      - name: Regenerate root README from current directory tree
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+
+          root = Path('.')
+          categories = ['乳腺疾病', '妇产疾病']
+
+          disease_map = {}
+          for category in categories:
+              category_dir = root / category
+              diseases = sorted(
+                  [p.name for p in category_dir.iterdir() if p.is_dir()],
+                  key=lambda x: x.encode('utf-8')
+              ) if category_dir.exists() else []
+              disease_map[category] = diseases
+
+          lines = []
+          lines.append('# SOGEN_data')
+          lines.append('')
+          lines.append('SOGEN_data 是面向乳腺疾病及妇产疾病研究的 GEO 公共数据集结构化标注仓库。仓库用于帮助研究者和 AI 快速定位候选 GSE、理解研究设计并判断可能支持的分析方向；仓库不包含原始表达矩阵、原始测序文件或完整临床数据。')
+          lines.append('')
+          lines.append('---')
+          lines.append('')
+          lines.append('## AI_READER_PROTOCOL')
+          lines.append('')
+          lines.append('```yaml')
+          lines.append('repository_role: GEO_dataset_annotation_index')
+          lines.append('primary_consumer: AI_agent_and_researcher')
+          lines.append('primary_data_format: JSON')
+          lines.append('secondary_data_format: XLSX')
+          lines.append('raw_omics_data_included: false')
+          lines.append('clinical_data_complete: false')
+          lines.append('annotation_is_final_evidence: false')
+          lines.append('reading_order:')
+          lines.append('  - select_top_level_category')
+          lines.append('  - select_disease_directory')
+          lines.append('  - inspect_target_file_state')
+          lines.append('  - read_numbered_JSON_for_omics_type')
+          lines.append('  - read_topic_JSON_for_research_design')
+          lines.append('  - join_records_by_gse_id')
+          lines.append('  - verify_with_GEO_and_publication')
+          lines.append('```')
+          lines.append('')
+          lines.append('## 当前目录结构')
+          lines.append('')
+          lines.append('```text')
+          lines.append('SOGEN_data/')
+          lines.append('├── README.md')
+          for ci, category in enumerate(categories):
+              category_prefix = '├──' if ci < len(categories) - 1 else '└──'
+              lines.append(f'{category_prefix} {category}/')
+              diseases = disease_map[category]
+              for di, disease in enumerate(diseases):
+                  child_prefix = '│   ├──' if ci < len(categories) - 1 else '    ├──'
+                  if di == len(diseases) - 1:
+                      child_prefix = '│   └──' if ci < len(categories) - 1 else '    └──'
+                  lines.append(f'{child_prefix} {disease}/')
+          lines.append('```')
+          lines.append('')
+          lines.append('### 疾病分类清单')
+          lines.append('')
+          for category in categories:
+              lines.append(f'#### {category}')
+              lines.append('')
+              diseases = disease_map[category]
+              if diseases:
+                  for disease in diseases:
+                      lines.append(f'- `{category}/{disease}/`')
+              else:
+                  lines.append('- 当前无疾病目录')
+              lines.append('')
+
+          lines.append('## 疾病目录内文件规则')
+          lines.append('')
+          lines.append('每个疾病目录通常按照以下模式组织；并非所有目录都一定包含全部文件。')
+          lines.append('')
+          lines.append('```text')
+          lines.append('<疾病名称>/')
+          lines.append('├── SOGEN_<疾病名称>_01_转录组测序.json')
+          lines.append('├── SOGEN_<疾病名称>_02_转录组芯片.json')
+          lines.append('├── SOGEN_<疾病名称>_03_单细胞单核.json')
+          lines.append('├── SOGEN_<疾病名称>_04_表观基因组学.json')
+          lines.append('├── SOGEN_<疾病名称>_05_非编码RNA.json')
+          lines.append('├── SOGEN_<疾病名称>_06_其他长尾.json')
+          lines.append('├── SOGEN_<疾病名称>_07_空间转录组.json')
+          lines.append('├── SOGEN_<疾病名称>_专题_免疫浸润.json')
+          lines.append('├── SOGEN_<疾病名称>_专题_差异表达.json')
+          lines.append('├── SOGEN_<疾病名称>_专题_治疗干预.json')
+          lines.append('├── SOGEN_<疾病名称>_专题_液体活检.json')
+          lines.append('├── SOGEN_<疾病名称>_专题_相关性.json')
+          lines.append('└── SOGEN_<疾病名称>_数据集清单.xlsx')
+          lines.append('```')
+          lines.append('')
+          lines.append('## 文件语义')
+          lines.append('')
+          lines.append('- `01`–`07` 编号 JSON：按检测或组学类型组织候选数据集。')
+          lines.append('- `专题` JSON：按研究问题或分析设计组织候选数据集。')
+          lines.append('- 同一 GSE 可能同时存在于编号文件和多个专题文件中，跨文件合并时应以 `gse_id` 去重并保留来源路径。')
+          lines.append('- XLSX 文件主要用于人工浏览；AI 解析时优先读取 JSON 中的标准字段及 `datasets` 数组。')
+          lines.append('')
+          lines.append('## 使用与证据边界')
+          lines.append('')
+          lines.append('- 仓库标注用于候选数据集初筛，不等同于原始数据已下载、质量已验证或分析流程可直接运行。')
+          lines.append('- 缺失文件、零字节文件、无效 JSON 与 `datasets == []` 是不同状态，不得混为一谈。')
+          lines.append('- 最终研究设计应回到 GEO 原始记录、样本级元数据、关联论文和补充材料进行核验。')
+          lines.append('- 用户要求最新数据时，应同时检查仓库最新提交和 GEO 当前页面。')
+          lines.append('')
+          lines.append('---')
+          lines.append('')
+          lines.append('## 联系方式')
+          lines.append('')
+          lines.append('**索臻生物科技 SOGEN**')
+          lines.append('')
+          lines.append('- 微信：`bioinformaticsboy`')
+
+          Path('README.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
+
+          print(json.dumps(disease_map, ensure_ascii=False, indent=2))
+          PY
+
+      - name: Commit restructured repository
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Restructure diseases into breast and obstetrics-gynecology categories"
+          git push origin HEAD:main
