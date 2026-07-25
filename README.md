@@ -1,12 +1,15 @@
-# SOGEN_data
+# SOGEN_GEO
 
-SOGEN_data 是面向乳腺疾病及妇产疾病研究的 GEO 公共数据集结构化标注仓库。仓库用于帮助研究者和 AI 快速定位候选 GSE、理解研究设计并判断可能支持的分析方向；仓库不包含原始表达矩阵、原始测序文件或完整临床数据。
+> 面向乳腺疾病与妇产疾病研究的 GEO 公共数据集结构化标注仓库。仓库原名为 `SOGEN_data`。
+
+本仓库用于帮助研究者和 AI 快速定位候选 GSE、理解研究设计，并初步判断数据可能支持的分析方向。仓库主要保存结构化 JSON 标注和便于人工浏览的 XLSX 清单，不包含原始表达矩阵、原始测序文件或完整临床数据。
 
 ---
 
 ## AI_READER_PROTOCOL
 
 ```yaml
+repository_name: SOGEN_GEO
 repository_role: GEO_dataset_annotation_index
 primary_consumer: AI_agent_and_researcher
 primary_data_format: JSON
@@ -14,28 +17,120 @@ secondary_data_format: XLSX
 raw_omics_data_included: false
 clinical_data_complete: false
 annotation_is_final_evidence: false
+
+codex_project_instructions: AGENTS.md
+codex_installed_skill: sogen-geo
+codex_explicit_invocation: $sogen-geo
+skill_source_directory: skill/
+
+top_level_disease_categories:
+  - 乳腺疾病
+  - 妇产疾病
+
 reading_order:
+  - read_AGENTS_md
+  - invoke_sogen_geo_skill_for_dataset_tasks
+  - scan_repository_root
   - select_top_level_category
   - select_disease_directory
   - inspect_target_file_state
   - read_numbered_JSON_for_omics_type
   - read_topic_JSON_for_research_design
   - join_records_by_gse_id
-  - verify_with_GEO_and_publication
+  - preserve_source_paths
+  - deduplicate_by_gse_id
+  - verify_with_GEO_publication_and_sample_metadata
 ```
+
+强制规则：
+
+- 根目录疾病数据只分为 `乳腺疾病/` 和 `妇产疾病/` 两个顶层类别。
+- 根目录 `skill/` 保存 `sogen-geo` skill 的源文件和安装说明，不是疾病目录，不得纳入疾病数量统计或数据集筛选。
+- 在 Codex 中执行数据集检索、GSE 查询、数据盘点、课题可行性判断或基于仓库数据设计课题时，应先遵循根目录 `AGENTS.md` 并调用已安装的 `$sogen-geo`。
+- 编号 JSON 用于按组学或检测类型筛选；专题 JSON 用于按研究问题筛选。
+- 同时需要组学类型和研究设计时，应读取两类文件并按 `gse_id` 关联。
+- 同一 GSE 可能同时存在于多个文件中，合并时必须去重并保留原始来源路径。
+- 仓库标注仅用于候选初筛，不得直接解释为数据已经下载、质量已经验证或分析可以直接运行。
+
+## Codex 与 sogen-geo skill
+
+### 自动调用机制
+
+README 本身是仓库说明文档，不是 Codex 的强制路由文件。为了让 Codex 在进入本仓库后优先使用已安装的 skill，仓库根目录提供：
+
+```text
+AGENTS.md
+```
+
+`AGENTS.md` 要求 Codex 在处理以下任务时，必须先调用已安装的 `$sogen-geo`：
+
+- “帮我找 XX 疾病的数据集”；
+- “这个仓库有没有关于 XX 的数据”；
+- “查一下某个 GSE”；
+- “看看仓库里都有什么数据”；
+- 按疾病、基因、物种、样本类型、测序类型或研究设计筛选数据；
+- 判断现有数据能否支持某个研究方向；
+- 基于仓库中的真实数据设计课题；
+- 询问 SOGEN 或 SOGEN-GEO 能做什么。
+
+### 安装要求
+
+Codex 中安装后的 skill 名称必须为小写：
+
+```text
+sogen-geo
+```
+
+推荐安装位置：
+
+```text
+macOS/Linux: ~/.codex/skills/sogen-geo/
+Windows:     %USERPROFILE%\.codex\skills\sogen-geo\
+```
+
+安装和 frontmatter 调整方法见：
+
+```text
+skill/CODEX安装.md
+```
+
+安装后可通过自然语言自动匹配，也可显式调用：
+
+```text
+$sogen-geo
+```
+
+### 调用边界
+
+以下纯仓库维护任务不需要调用 skill：
+
+- 修改 README 或 AGENTS；
+- 调整目录结构；
+- 修改 JSON schema、标注逻辑或生成脚本；
+- 修改 GitHub Actions；
+- 文件重命名、格式整理等机械操作。
+
+当维护任务同时包含数据集检索、GSE 选择或研究可行性判断时，对检索和解释部分仍应调用 `$sogen-geo`。
 
 ## 当前目录结构
 
 ```text
-SOGEN_data/
+SOGEN_GEO/
+├── AGENTS.md                       # Codex 项目级指令和 skill 路由规则
 ├── README.md
+├── skill/                          # sogen-geo skill 源文件与安装说明
+│   ├── SKILL.md
+│   ├── search_datasets.py
+│   ├── requirements.txt
+│   ├── CODEX安装.md
+│   ├── 使用说明.md
+│   └── SOGEN介绍.md
 ├── 乳腺疾病/
 │   ├── 三阴性乳腺癌/
 │   ├── 乳腺癌/
 │   ├── 导管原位癌/
 │   └── 男性乳腺癌/
 └── 妇产疾病/
-    ├── skill/
     ├── 卵巢储备功能下降/
     ├── 卵巢癌/
     ├── 双胎输血综合征/
@@ -76,18 +171,17 @@ SOGEN_data/
     └── 风疹/
 ```
 
-### 疾病分类清单
+## 疾病分类清单
 
-#### 乳腺疾病
+### 乳腺疾病（4 类）
 
 - `乳腺疾病/三阴性乳腺癌/`
 - `乳腺疾病/乳腺癌/`
 - `乳腺疾病/导管原位癌/`
 - `乳腺疾病/男性乳腺癌/`
 
-#### 妇产疾病
+### 妇产疾病（38 类）
 
-- `妇产疾病/skill/`
 - `妇产疾病/卵巢储备功能下降/`
 - `妇产疾病/卵巢癌/`
 - `妇产疾病/双胎输血综合征/`
@@ -129,10 +223,10 @@ SOGEN_data/
 
 ## 疾病目录内文件规则
 
-每个疾病目录通常按照以下模式组织；并非所有目录都一定包含全部文件。
+每个疾病目录通常按以下模式组织。不同疾病的数据基础不同，因此不保证每个目录均包含全部文件，也不保证每个文件均包含候选记录。
 
 ```text
-<疾病名称>/
+<顶层类别>/<疾病名称>/
 ├── SOGEN_<疾病名称>_01_转录组测序.json
 ├── SOGEN_<疾病名称>_02_转录组芯片.json
 ├── SOGEN_<疾病名称>_03_单细胞单核.json
@@ -150,17 +244,42 @@ SOGEN_data/
 
 ## 文件语义
 
-- `01`–`07` 编号 JSON：按检测或组学类型组织候选数据集。
-- `专题` JSON：按研究问题或分析设计组织候选数据集。
-- 同一 GSE 可能同时存在于编号文件和多个专题文件中，跨文件合并时应以 `gse_id` 去重并保留来源路径。
-- XLSX 文件主要用于人工浏览；AI 解析时优先读取 JSON 中的标准字段及 `datasets` 数组。
+### 编号文件
 
-## 使用与证据边界
+| 编号 | 主要内容 |
+|---|---|
+| `01_转录组测序` | bulk RNA-seq、mRNA-seq 及其他转录组测序 |
+| `02_转录组芯片` | 基因表达芯片、转录组芯片 |
+| `03_单细胞单核` | scRNA-seq、snRNA-seq |
+| `04_表观基因组学` | DNA 甲基化、ATAC-seq、ChIP-seq 等 |
+| `05_非编码RNA` | miRNA、lncRNA、circRNA、small RNA 等 |
+| `06_其他长尾` | 蛋白组、代谢组、免疫组库及其他少见类型 |
+| `07_空间转录组` | Visium、GeoMx、Stereo-seq 等空间表达数据 |
 
-- 仓库标注用于候选数据集初筛，不等同于原始数据已下载、质量已验证或分析流程可直接运行。
-- 缺失文件、零字节文件、无效 JSON 与 `datasets == []` 是不同状态，不得混为一谈。
-- 最终研究设计应回到 GEO 原始记录、样本级元数据、关联论文和补充材料进行核验。
-- 用户要求最新数据时，应同时检查仓库最新提交和 GEO 当前页面。
+### 专题文件
+
+| 文件 | 主要研究问题 |
+|---|---|
+| `专题_差异表达` | 病例与对照、分组间表达差异 |
+| `专题_治疗干预` | 药物、治疗、干预或疗效反应 |
+| `专题_相关性` | 表达与临床变量或连续变量的相关性 |
+| `专题_免疫浸润` | 免疫微环境、免疫细胞浸润及相关研究 |
+| `专题_液体活检` | 血液、血清、血浆、羊水、外泌体等体液样本 |
+
+编号文件回答“属于什么组学或检测类型”，专题文件回答“可能支持什么研究问题”；两类文件不是互斥集合。
+
+## 文件状态与证据边界
+
+- `missing`：路径或文件不存在。
+- `zero_byte`：文件存在但内容为空。
+- `invalid_json`：文件内容无法解析为完整 JSON。
+- `valid_json_empty_datasets`：JSON 合法且 `datasets == []`，仅表示当前标注规则下该文件暂无候选记录。
+- `valid_json_with_records`：JSON 合法且包含一个或多个候选数据集对象。
+- XLSX 文件主要用于人工浏览；AI 解析时优先读取 JSON 中的标准字段和 `datasets` 数组。
+- 缺失、零字节、无效 JSON 和空 `datasets` 是不同状态，均不能证明 GEO 中绝对不存在相关研究。
+- `n_datasets` 仅表示当前文件中的记录数，不代表唯一 GSE 数、样本数或患者数。
+- 最终研究设计必须回到 GEO 原始记录、样本级元数据、关联论文和补充材料进行核验。
+- 用户要求最新数据时，应同时检查仓库最新提交、文件生成时间和 GEO 当前记录。
 
 ---
 
