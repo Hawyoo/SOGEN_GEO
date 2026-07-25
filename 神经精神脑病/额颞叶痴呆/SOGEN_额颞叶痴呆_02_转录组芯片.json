@@ -1,0 +1,566 @@
+{
+  "_2bb97050": "索臻(SOGEN)·免费流传·想持续拿到更新就留在群里·入群20元只为挡广告号·微信bioinformaticsboy",
+  "brand": "SOGEN",
+  "_e56d4a03": "SOGEN免费共享·请勿删改署名·增量更新与更多学科专题需入群(20元防广告)·grswsci.top/analyze",
+  "group_name": "SOGEN神经·精神·脑病数据集交流9群",
+  "disease": "额颞叶痴呆",
+  "disease_slug": "frontotemporal_dementia",
+  "category": "转录组·芯片",
+  "category_note": "mRNA microarray 表达谱芯片",
+  "_cd39aede": {
+    "公司": "索臻生物科技 SOGEN",
+    "一句话": "生信分析 + AI 智能分析 + 各类基础湿实验，一站式科研服务——从数据到洞见、从实验到成果",
+    "用本数据设计课题": "本数据集是 SOGEN 索臻免费共享的 GEO 标注语料(物种/测序类型/研究设计/能否病例对照等字段已标好)。把它喂给 AI 助手、结合 SOGEN 的产品即可辅助你设计、分析课题——例：① 这些 case/control 数据集做差异表达+GSEA/KEGG 富集(TransDEA)；② 候选基因查药物敏感性与靶点(DrugSens，CMap/GDSC/PRISM/CTRP 五库)；③ 建预后/诊断模型(Prognosis/Diagnosis/ProgML/DiagML，100+ 算法组合)；④ 单细胞数据集做亚群/细胞通讯/拟时序(scRNA 系列)；⑤ 免疫浸润 TME/突变 CNV/空间/蛋白组…一篇多组学论文要的分析，几乎都能在 SparkleDB(光热生物 www.grswsci.top，379 个一键工具、不写代码产发表级图)里跑完。数据不够、或要湿实验验证(WB/qPCR/流式/IHC/动物模型)？找 SOGEN——微信 bioinformaticsboy。",
+    "生信-转录组产品线": "TransDEA 差异表达(DESeq2/limma/edgeR + ORA/GSEA + PPI，标准/专业版；专业版含通路活性/转录因子/免疫浸润/TIDE/IPS/ESTIMATE)、DrugSens 药物靶点与敏感性(CMap/DGIdb/DrugBank/GDSC/PRISM 五库)、Prognosis 预后风险(14筛选+16建模)、Diagnosis 诊断标志物(20+特征选择+32分类器)、SingleGene 单基因多队列系统挖掘、ProgML/DiagML 预后/诊断机器学习框架(101/134 种算法组合穷举)、Subtype 分子亚型鉴定",
+    "生信-单细胞产品线": "scRNA 标准分析(QC/降维/聚类/注释/差异/富集)、scSubset 亚群深度、scCompare 分组差异、细胞类型特异表达、单基因/虚拟敲除、转录因子活性、基因集评分、基因模块、细胞通讯 CCI(CellChat/NicheNet)、代谢通量、分泌组学、空间/Bulk 反卷积、Pseudotime 拟时序(Monocle3/scVelo/CellRank)、药物预测、克隆演化、恶性细胞鉴定、Bulk↔单细胞映射、SAHMI 宿主-微生物互作 等 20+ 款",
+    "生信-AI科研智能体": "Conflux 大模型智能文献检索、Plotter AI 自动统计分析与出图、Vizora AI 科研模式图生成与修复",
+    "生信-平台": "SparkleDB 光热生信云平台：数据上传→质控→分析→可视化一站式，300+ 分析模块，不写代码一键出图；支持 Human/Mouse/Rat；交付交互式 HTML 报告 + 发表级 PDF/PNG 图表 + 完整 CSV 数据表 + 方法学详解",
+    "生信-SparkleDB癌症平台": "SparkleDB 光热生物(www.grswsci.top)——癌症/肿瘤多组学在线分析平台，379 个一键工具、不写代码产发表级图，跨『单-双-多基因 × 单癌-泛癌 × bulk-单细胞-空间』，分 32 模块(每项后为工具数)：①差异表达27(肿瘤vs正常箱线/热图·配对·TCGA-GTEx联合·Logistic诊断·ROC·Bootstrap校准曲线·器官bodymap) ②生存分析15(KM·单/多变量Cox·限制性立方样条·双基因联合评分·基因+免疫细胞联合·剪接PSI/RNA编辑/突变/eQTL生存·独立预后Cox) ③相关性8(全基因组GSEA·双基因散点·多基因网络·跨组学circos/热图) ④通路8(GSEA/GSVA·KEGG/Hallmark·代谢GSVA·PARADIGM·ssGSEA·肿瘤vs正常通路) ⑤临床卡方4 ⑥免疫微环境TME28(浸润相关·高低表达差异·免疫检查点四分位·Sig68/TIP/TILmap/EASIER/Sig18五套评分) ⑦突变CNV26(oncoplot·位点lollipop·突变vs野生差异/GSEA/对TME影响·cBioPortal频率·CNV扩增缺失·基因组打分·双基因互作) ⑧药物敏感性34(GDSC1/2·CTRP·PRISM四库相关+top30·CMap XSum预测·全基因组药物筛选·GEO验证·CTD化学↔基因) ⑨免疫治疗10(单/多基因/基因集×差异/ROC/生存·TIDE泛癌) ⑩单细胞20(细胞类型/基因表达UMAP·AUCell/UCell/VAM/singscore/AddModuleScore五打分·伪散装相关·泛癌landscape·marker·两细胞类型DEG·TISCH注释) ⑪细胞通讯CellChat12(main/fine×五打分) ⑫空间转录组16(表达可视化·恶性vs非恶性·肿瘤边界三区·细胞反卷积·切片图·五打分·STAD/BLCA全批) ⑬HPA蛋白图5(IHC/IF下载·泛癌染色·强度统计) ⑭PPI3(BioGRID源/靶·ComPPI亚细胞网络) ⑮GEO外部验证13(差异·生存KM/Cox meta·双基因·免疫浸润·GSEA·代谢) ⑯GEO临床变量差异21(age/gender/stage/T/N/M/grade) ⑰蛋白质组18(CPTAC 单/双/多基因×单/多蛋白组×差异/相关/生存) ⑱PTM磷酸化7(CPTAC) ⑲转录后调控9(miRNA→基因全基因组·剪接PSI·RNA编辑) ⑳转录调控7(全TF相关·CistromeDB·ChEA3·ATAC整合) ㉑机器学习7(LASSO·随机森林·XGBoost·Boruta·SVM-RFE·随机生存森林·10算法组合) ㉒ssGSEA评分12(评分·分期趋势·诊断ROC·生存·单细胞打分) ㉓孟德尔随机化/共定位5(eQTL 5e-08/1e-05·coloc·gassocplot) ㉔干性Stemness4 ㉕基因敲除/依赖DepMap4(CRISPR必需性·双基因敲除·基因集敲除GSEA) ㉖ATAC染色质2(peak注释·MEME motif) ㉗WGCNA模块-性状 ㉘常规工具箱23(GO/KEGG富集·HPA组织/单细胞/免疫细胞/亚细胞表达·PrimerBank·人鼠基因互转·GeneReview·基因↔通路·GPL注释·coloc/MR) ㉙多组学单因素Cox森林 ㉚基因集评分5 ㉛预后multigene signature ㉜永久会员泛癌预算23(差异limma/wilcox·生存·分期/分级·病理T/N/M·性别/吸烟/饮酒·MSI·新辅助/放疗/靶向)。数据底座：TCGA 65癌种(58,581基因级RDS)、GEO 538外部验证数据集(差异469/生存318/药敏412/临床381/TME386)、TISCH2 189单细胞、CPTAC 23蛋白组(11癌种)、空间230切片(18癌种)、药敏1914化合物(GDSC1/2+CTRP+PRISM)、DepMap 17653基因CRISPR依赖、TIDE免疫治疗、HPA病理、cBioPortal突变",
+    "湿实验-分子": "Western Blot(整膜/裁膜)、考马斯亮蓝/蛋白银染、Pull-down、IP/CO-IP/IP-MS(IP+Western+质谱)、凝胶电泳 PCR、荧光定量 qPCR、mRNA/lncRNA/miRNA/circRNA 引物设计合成、支原体污染检测、双荧光素酶报告基因、ELISA、ChIP",
+    "湿实验-流式": "凋亡/周期/膜电位、巨噬细胞分化、T细胞/NK/效应细胞/耗竭型 CD8T、CAF 相关等——细胞样品与肿瘤样品流式检测",
+    "湿实验-细胞功能": "CCK-8/IC50、克隆形成、Invasion/Transwell、EDU/TUNEL、划痕、血管形成、稳转细胞株构建(转染筛选/敲低/过表达)、siRNA 瞬时转染、球体形成、类器官培养(至 P3)、PBMC/T细胞原代提取、ROS/GSH/线粒体膜电位",
+    "湿实验-病理": "HE 染色、免疫组化、免疫荧光单/双/三/四/五标、TUNEL、组织芯片多色检测、细胞爬片免疫荧光共定位、石蜡切片明场/荧光扫描(含数据整理分析+售后)",
+    "测序产品线": "索臻自有测序平台，14 大类 85+ 款产品，测序·分析·湿实验一站式闭环，覆盖单细胞·空间·免疫组库·常规转录组·宏基因组·蛋白/修饰/代谢/表观全组学(2026 官网版)",
+    "测序-单细胞与免疫组库": "自有 SeekOne®/10X Chromium 平台单细胞转录组——3'/5'/全序列/FFPE 探针法，单细胞 ATAC+RNA、DNA 甲基化+RNA 多组学，单细胞胞内菌测序(真迈/illumina/华大 T7，100–1000G)；单细胞免疫组库 TCR/BCR、TCR+BCR、5' 转录组+TCR/BCR 联合(10–120G)",
+    "测序-空间组学": "全平台空间转录组——SeekSpace® 单细胞空间、华大 Stereo-seq 时空组(FFPE/FF，0.5–1cm²)、10X Visium FFPE/HD、Xenium 5k 单细胞原位检测；CoSMx SMI 超多色分子成像(1000/6000/18000 Plex RNA、64 Plex Protein)、GeoMx DSP 数字空间转录组(WTA 12–192 AOI)、CODEX/PCF 多重荧光蛋白空间组(IO60 肿瘤免疫 / 神经 42 标 / 小鼠 25 标 / 自由组合 Panel)",
+    "测序-转录组与宏基因组": "普通转录组 mRNA-seq(illumina/华大 T7，6G)、原核生物转录组、small RNA、lncRNA 测序；宏基因组测序、16S/ITS 二代扩增子测序(含标准分析)",
+    "测序-蛋白与代谢组": "定量蛋白质组 Astral 平台——Rapid/Deep DIA、去高丰度血浆蛋白组 Magic P3、Olink Target 96/Reveal；15+ 种蛋白质修饰组学(磷酸化/泛素化/乙酰化/糖基化/乳酸化/巴豆酰化/SUMO 化/丙酰化等)；代谢组学(非靶向代谢 / 脂质组 / 靶向氨基酸·脂肪酸·胆汁酸，LC-MS)",
+    "测序-表观组学": "ChIP-Seq(转录因子 / 组蛋白修饰)、ATAC-Seq、WGBS 全基因组甲基化、MeRIP/MeDIP 甲基化测序(illumina)",
+    "课题合作实力": "团队参与发表多篇高分论著：Nature Biotechnology、Nature Cancer、Cancer Discovery、Nature Communications、Science Advances、STTT、JCI、PNAS、Cell Discovery、Molecular Cancer、Cell Reports、eClinicalMedicine、eBioMedicine、iMeta、eLife、Cancer Letters、Briefings in Bioinformatics、Phytomedicine、Oncogene、Research、BMC Medicine 等一区期刊，有实力和条件给一区/顶刊子刊课题提供生信分析与实验技术支持；核心成员均有顶刊/子刊发表经验，组学+实验、AI4S 方向第一梯队。",
+    "官网": "https://www.sogentech.com/",
+    "标准化产品站": "https://order.sogentech.com/products/",
+    "光热数据库SparkleDB": "https://www.grswsci.top/analyze/",
+    "公众号": "医学僧的科研日记 · 光热生物 · 科研风向标 · 组学料理",
+    "科研合作咨询微信": "bioinformaticsboy",
+    "加群获取增量": "本材料是免费流传版；想要持续的增量更新、更多疾病与专题，请加微信 bioinformaticsboy 进对应私域群——我们建了很多学科群、专题群，入群 20 元仅用于过滤广告号。",
+    "使用授权": "本数据集免费共享、欢迎转发使用。不得删改、涂抹或隐藏本 SOGEN 署名与宣传信息(索臻生物科技·www.sogentech.com)。我们已同意免费分享，请保留出处。如有擅自删除署名、篡改来源或用于商业牟利等侵权行为，本公司保留依法追究法律责任的权利。",
+    "声明": "本数据集由 索臻生物科技 SOGEN 标注整理、免费共享；欢迎转发。无论测序、自有数据分析、公共数据库挖掘还是湿实验，均可深度合作。"
+  },
+  "generated_at": "2026-07-11",
+  "n_datasets": 13,
+  "organism_breakdown": {
+    "Homo sapiens": 10,
+    "Mus musculus": 3
+  },
+  "research_question_breakdown": {
+    "case_vs_control_differential": 4,
+    "treatment": 0,
+    "correlation": 2,
+    "pre_post_treatment": 0,
+    "survival_analysis": 0,
+    "response": 0
+  },
+  "datasets": [
+    {
+      "gse_id": "GSE75083",
+      "title": "Progranulin Deficiency Promotes Circuit-Specific Synaptic Pruning by Microglia via Complement Activation",
+      "organism": "Mus musculus",
+      "n_samples": 169,
+      "platform": "10787;6885",
+      "pdat": "2016/03/31",
+      "pubmed_ids": [
+        "27114033"
+      ],
+      "sequencing_type": "mRNA microarray",
+      "sample_source": [
+        "primary_cell",
+        "tissue"
+      ],
+      "summary": "Microglia repair injury and maintain homeostasis in the brain, but whether aberrant microglial activation can contribute to neurodegeneration remains unclear. Here, we use transcriptome profiling to demonstrate that deficiency in frontotemporal dementia (FTD) gene progranulin (Grn) leads to an age-dependent, progressive up-regulation of lysosomal and innate immunity genes, increased complement production, and synaptic pruning activity in microglia. During aging, Grn-/- mice show profound accumulation of microglia and preferential elimination of inhibitory synapses in the ventral thalamus, which contribute to hyperexcitability in the thalamocortical circuits and obsessive-compulsive disorder (OCD)-like grooming behaviors. Remarkably, blocking complement activation by deleting C1qa gene significantly reduces synaptic pruning by Grn-/- microglia, and mitigates neurodegeneration, behavioral phenotypes and premature mortality in Grn-/- mice. These results uncover a previously unrecognized role of progranulin in suppressing microglia activation during aging, and support the idea that blocking complement activation is a promising therapeutic target for neurodegeneration caused by progranulin deficiency.",
+      "overall_design": "Gene expression study in multiple brain regions from a mouse model of progranulin deficiency",
+      "relevance_reason": "研究FTD相关基因Grn敲除导致的小胶质细胞神经退行机制",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE75nnn/GSE75083/",
+      "_6b6a4d": "数据标注:索臻SOGEN·转发请保留署名·想要后续更新请加群·微信bioinformaticsboy·order.sogentech.com/products",
+      "evidence": {
+        "relevant": "Grn-/-小鼠为FTD公认模型，研究PGRN缺乏的致病机制，直接关联FTD核心病理过程。",
+        "sequencing_type": "Expression profiling by array using total RNA from bulk tissue/microglia; default mRNA microarray for gene expression studies.",
+        "survival_analysis": "样本为小鼠模型，非人类患者，无患者生存时间/状态字段",
+        "treatment": "核心比较为Grn基因敲除与野生型，无药物治疗/干预组",
+        "case_vs_control_differential": "对照为遗传背景WT，非独立健康对照，属遗传工程模型伪对照",
+        "correlation": "样本为小鼠模型，非人类患者，不符合临床样本相关性分析要求",
+        "sample_source": "脑组织（ctx/hip/crb）直接取材测序→tissue；分选的小胶质细胞（microglia）未培养直接测序→primary_cell，共两批。"
+      },
+      "study_design": null
+    },
+    {
+      "gse_id": "GSE31840",
+      "title": "Gene Expression Study in Progranulin-Deficient Mice",
+      "organism": "Mus musculus",
+      "n_samples": 99,
+      "platform": "6885",
+      "_b92c71": "本条由SOGEN索臻标注·免费版仅部分·全量与增量在私域群·加微信bioinformaticsboy备注想进的学科群",
+      "pdat": "2011/09/01",
+      "pubmed_ids": [
+        "21943601"
+      ],
+      "sequencing_type": "mRNA microarray",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "Study of brain regions from GRN KO, Heterozygous and WT mice at different time points (2-6-9 months)",
+      "overall_design": "Cortex, cerebellum and hippocampus were dissected and studied at 2-6-9 months from KO (-/-), Het (-/+), and WT (+/+) animals",
+      "study_design": "GRN敲除、杂合及野生型小鼠皮层、海马、小脑在2/6/9月龄的表达谱芯片分析",
+      "relevance_reason": "研究GRN敲除小鼠脑组织基因表达，为额颞叶痴呆提供模型",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE31nnn/GSE31840/",
+      "evidence": {
+        "relevant": "GRN KO小鼠是FTD的公认动物模型，研究其脑区基因表达即研究FTD致病机制，满足🔑模型规则。",
+        "sequencing_type": "Expression profiling by array, total RNA, beadstudio, gene expression study → mRNA microarray",
+        "survival_analysis": "样本为小鼠脑组织，非人类患者，无生存时间/状态字段，无法做患者生存分析",
+        "treatment": "核心比较是基因型（KO/Het/WT）及脑区，无药物或治疗干预对照轴",
+        "case_vs_control_differential": "KO vs WT属遗传工程模型背景对照，非独立健康个体，不满足疾病vs正常差异条件",
+        "correlation": "全部样本为小鼠脑组织模型，无人类疾病患者样本，不满足疾病样本≥16的要求",
+        "sample_source": "全部GSM均取自基因敲除/杂合/野生型小鼠的皮层、海马、小脑，为整块脑组织直接提RNA，未分选细胞、未体外培养，属在体实体组织。"
+      }
+    },
+    {
+      "gse_id": "GSE195872",
+      "title": "Differential gene expression in sporadic and genetic forms of Alzheimer’s disease and frontotemporal dementia in brain tissue and lymphoblastoid cell lines. ",
+      "organism": "Homo sapiens",
+      "n_samples": 58,
+      "platform": "23126",
+      "pdat": "2022/12/12",
+      "pubmed_ids": [
+        "35962298"
+      ],
+      "sequencing_type": "mRNA microarray",
+      "sample_source": [
+        "cell_line",
+        "tissue"
+      ],
+      "summary": "We have performed gene expression microarray analysis of two types of dementia, Alzheimer's disease (AD) and frontotemporal dementia (FTD), using two kind of samples, frozen brain tissue and lymphoblastoid cell lines.",
+      "overall_design": "60 samples were included: 35 brain samples and 23 lymphoblastoid cell lines. AD group was divided in sporadic early onset and familial due to mutation in PSEN1 gene. FTD was divided in genetic by mutation in MAPT, GRN and C9orf72 genes, and sporadic with tau and TDP43 deposition. Gene expression was analyzed with Clariom D microarray (Affymetrix). Differentially expressed genes (DEG) were obtained adjusting a linear model with empirical Bayes moderation of the variance. Significance threshold was set at p-value <0.05 and fold change >1.5 and <1/1.5. In the final analysis, two samples FTD.M2.B1 and AD.MF.L3 were discarded as outliers, and thus are not included in the records.",
+      "study_design": "FTD患者（遗传及散发亚型）脑组织和淋巴母细胞系，与健康对照的Clariom D芯片差异表达分析",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": true,
+      "correlation": true,
+      "_d5b3d9": "SOGEN索臻·此为免费流传版·完整增量更新在学科/专题私域群(入群20元防广告)·sogentech.com",
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE195nnn/GSE195872/",
+      "evidence": {
+        "relevant": "FTD是核心研究疾病之一，样本直接来自FTD患者脑组织和淋巴母细胞系，研究其散发与遗传亚型的表达差异。",
+        "sequencing_type": "GEO数据类型为Expression profiling by array，使用Affymetrix Clariom D芯片检测total RNA，常规基因表达芯片默认mRNA microarray。",
+        "survival_analysis": "样本元数据无生存时间/状态字段，摘要无随访，无法生存分析",
+        "treatment": "无药物治疗，研究核心为基因突变亚型与健康对照的差异表达比较",
+        "case_vs_control_differential": "脑组织子集含FTD患者前额叶皮层(23例)与独立健康对照(5例)，均为体内样本，表达芯片平台，满足≥3v3。",
+        "correlation": "Affymetrix Clariom D 表达芯片；FTD患者脑组织样本共23例（MAPT 5, GRN 3, C9orf72 5, TDP43 5, Tau 5），>15。",
+        "sample_source": "两批材料：36个Frozen prefrontal cortex直接冷冻提RNA，未分选细胞→tissue；22个Immortalized lymphocyte B为EBV永生化B淋巴母细胞系，体外培养→cell_line。无技术对照需剔除。"
+      },
+      "relevance_reason": null
+    },
+    {
+      "gse_id": "GSE13162",
+      "title": "Expression data from postmortem human brain samples with and without FTLD-U",
+      "organism": "Homo sapiens",
+      "n_samples": 56,
+      "platform": "571",
+      "pdat": "2008/10/11",
+      "_27ca66": "免费共享版·SOGEN索臻标注·我们建了很多学科群与专题群·入群20元防广告·微信bioinformaticsboy",
+      "pubmed_ids": [
+        "18223198"
+      ],
+      "sequencing_type": "mRNA microarray",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "FTLD-U is the most common pathological correlate of the neurodegenerative dementia frontotemporal dementia We used microarrays to perform global expression profiling of FTLD-U brain samples  Keywords: disease",
+      "overall_design": "Postmortem brain samples were isolated from normal controls, FTLD-U patients with progranulin gene mutations (progranulin) and FTLD-U patients without progranulin gene mutations (sporadic).  Regional dissections were carried out from frontal cortex, hippocampus, and cerebellum.",
+      "study_design": "FTLD-U患者与正常对照死后脑组织多脑区表达谱芯片分析",
+      "relevance_reason": "使用FTLD-U患者（含GRN突变）脑组织",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": true,
+      "correlation": true,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE13nnn/GSE13162/",
+      "evidence": {
+        "relevant": "FTLD-U是FTD最常见的病理亚型，样本来自FTLD-U患者脑组织，直接研究目标疾病。",
+        "sequencing_type": "Expression profiling by array, total RNA, CEL/RMA, typical mRNA array, no specific ncRNA enrichment.",
+        "survival_analysis": "死后脑组织，无任何生存时间/状态字段，无法做患者生存分析",
+        "treatment": "无药物干预，纯观察性病理分型与正常对照比较",
+        "case_vs_control_differential": "样本source直接标有Normal（正常对照）和Progranulin/Sporadic（FTLD-U患者），均为人脑组织，两臂共存且样本量充足，可做差异分析。",
+        "correlation": "mRNA microarray (CEL/RMA); 39 FTLD-U patient brain samples from 16 independent individuals, >15",
+        "sample_source": "所有样本均为人死后脑组织区域（额叶皮层/海马/小脑），直接Trizol提总RNA，未进行细胞分选或体外培养，属于整块实体组织直接测序。"
+      }
+    },
+    {
+      "gse_id": "GSE104013",
+      "title": "ZFN engineered hiPSC with the FTDP-17 associated MAPT IVS10+16 mutation w/wo additional P301S mutation",
+      "organism": "Homo sapiens",
+      "n_samples": 48,
+      "platform": "24030",
+      "pdat": "2018/08/01",
+      "pubmed_ids": [
+        "30057263"
+      ],
+      "sequencing_type": "mRNA microarray",
+      "sample_source": [
+        "primary_cell"
+      ],
+      "summary": "The development of an effective therapy against tauopathies like Alzheimer’s disease (AD) and frontotemporal dementia (FTD) remains challenging, partly due to limited access to fresh brain tissue, the lack of translational in vitro disease models and the fact that underlying molecular pathways remain to be deciphered. Several genes play an important role in the pathogenesis of AD and FTD, one of them being the MAPT gene encoding the microtubule-associated protein tau. Over the past few years, it has been shown that induced pluripotent stem cells (iPSC) can be used to model various human disorders and can serve as translational in vitro tools. Therefore, we generated iPSC harboring the pathogenic FTDP-17 (frontotemporal dementia and parkinsonism linked to chromosome 17) associated mutations IVS10+16 with and without P301S in MAPT using Zinc Finger Nuclease technology. Whole transcriptome analysis of MAPT IVS10+16 neurons reveals neuronal subtype differences, reduced neural progenitor proliferation potential and aberrant WNT signaling. Notably, all phenotypes were recapitulated using patient-derived neurons. Finally, an additional P301S mutation causes an increased calcium bursting frequency, reduced lysosomal acidity and tau oligomerization. Altogether, these tau mutant iPSC lines allow us to study IVS10+16 and P301S mutations in an isogenic background and to unravel a potential link between pathogenic 4R tau expression and FTDP-17.",
+      "overall_design": "This study includes 48 samples. There are 16 treatments considered, each with at least three biological replicates.",
+      "relevance_reason": "使用携带FTDP-17致病MAPT突变的hiPSC神经元模型",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE104nnn/GSE104013/",
+      "evidence": {
+        "relevant": "研究FTDP-17（FTD亚型）关联MAPT IVS10+16和P301S突变的iPSC神经元模型，为该疾病特异致病机制研究。",
+        "sequencing_type": "Expression profiling by array (GEO type), Affymetrix U219 chip (CEL files), total RNA, RMA norm; default mRNA microarray.",
+        "survival_analysis": "样本为hiPSC来源神经元，非人类患者，无生存时间/状态字段",
+        "treatment": "处理为基因编辑引入MAPT突变，非药物治疗对照",
+        "case_vs_control_differential": "对照为同源野生型hiPSC神经元，属基因型对照，非组织级健康对照",
+        "correlation": "无人类患者样本，仅hiPSC细胞系，无法做患者间相关性分析",
+        "sample_source": "全部48个样本source均为“hiPSC derived neurons”，取自iPSC体外分化的神经前体与神经元，未经永生化建系，符合原代培养细胞定义，归primary_cell。"
+      },
+      "study_design": null
+    },
+    {
+      "gse_id": "GSE40378",
+      "title": "Induced pluripotent stem cell models of progranulin-deficient frontotemporal dementia uncover specific reversible neuronal defects.",
+      "organism": "Homo sapiens",
+      "n_samples": 32,
+      "platform": "10558",
+      "pdat": "2012/10/25",
+      "pubmed_ids": [
+        "23063362"
+      ],
+      "sequencing_type": "mRNA microarray",
+      "sample_source": [
+        "primary_cell"
+      ],
+      "summary": "Multiple FTD patient-specific iPSC lines were generated for the first time, Human neurons of progranulin haploinsufficiency have been established. PGRN S116X neurons are more sensitive to kinase inhibitors-induced cell stress, which can be rescued by ectopic progranulin expression, revealing progranulin-dependent cellular defects in FTD. Microarray analysis reveals that the serine/threonine kinase S6K2 (RPS6KB2) and other genes involved in MAPK signaling are dysregulated specifically in neurons with progranulin deficiency.",
+      "overall_design": "32 independent human neuronal cultures were analyzed in this study",
+      "relevance_reason": "使用FTD患者iPSC衍生神经元进行表达谱分析",
+      "treatment": false,
+      "_fe9393": "SOGEN·索臻·标注这道工序我们替你做了·增量更新加群·公众号光热生物/科研风向标/组学料理",
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE40nnn/GSE40378/",
+      "evidence": {
+        "relevant": "主体为FTD机制研究，样本包括散发性及GRN突变FTD患者iPSC衍生神经元，属于直接疾病模型。",
+        "sequencing_type": "表达谱芯片，Illumina BeadStudio处理，总RNA无特异富集，推断为mRNA表达芯片。",
+        "survival_analysis": "样本为iPSC衍生神经元，非人类患者组织，且无任何生存时间/状态字段，无法进行患者生存分析",
+        "treatment": "所有样本均为untreated，比较轴为疾病亚型vs对照，无药物干预对照设计",
+        "case_vs_control_differential": "全部样本为 iPSC 衍生的体外神经元培养物（growth_protocol: IPSC-derived neuronal cultures），属体外细胞模型，非组织级体内样本，命中 P5 陷阱",
+        "correlation": "全部样本为iPSC衍生神经元培养物，属细胞模型，按规则细胞系/模型样本不计入，因此不满足患者组织样本数≥16的要求",
+        "sample_source": "所有32个样本均为iPSC衍生的神经元培养物（iPSC-derived neuronal cultures）。iPSC是已建系干细胞，但其分化产生的神经元并非永生化细胞系，亦非直接从组织分离的原代细胞，不属于前9类，故归other。"
+      },
+      "study_design": null
+    },
+    {
+      "gse_id": "GSE79557",
+      "title": "CRISPR/Cas9 genome editing in human neural progenitor cells demonstrates astrocyte pathology in frontotemporal dementia caused by mutant TAU protein",
+      "organism": "Homo sapiens",
+      "n_samples": 30,
+      "platform": "10558",
+      "pdat": "2017/06/12",
+      "pubmed_ids": [
+        "28256506"
+      ],
+      "sequencing_type": "mRNA microarray",
+      "sample_source": [
+        "cell_line"
+      ],
+      "summary": "Astroglial pathology is seen in various neurodegenerative diseases including frontotemporal dementia (FTD), which can be caused by mutations in the MAPT gene encoding TAU. Here, we applied a stem cell model of FTD to examine if FTD astrocytes carry an intrinsic propensity to degeneration and to determine if they can induce non-cell-autonomous effects in neighboring neurons. We utilized CRISPR/Cas9 technology in human iPS cell-derived neural progenitor cells (NPCs) to repair the FTD-associated N279K MAPT mutation. While astrocytic differentiation was not impaired in FTD NPCs, FTD astrocytes appeared larger, expressed increased levels of 4R-TAU, demonstrated proteasome activation and increased oxidative stress and exhibited disease-associated changes in transcriptome profiles. Interestingly, co-culture experiments with FTD astrocytes revealed increased oxidative stress and robust changes in whole genome expression in previously healthy neurons. Our study expands the utility of CRISPR/Cas9 genome editing to human NPCs to study the pathogenesis of neurodegenerative diseases such as FTD. For whole genome expression analyses, RNA was isolated from cell lysates using the RNeasy kit (Qiagen) with on-column DNA digestion. 300 ng of total RNA was used as input for cRNA synthesis with the linear amplification protocol (Ambion) comprising the synthesis of T7-linked double-stranded cDNA and in vitro transcription for 12 hr incorporating biotin-labeled nucleotides. Following purification, labelled cRNA samples were hybridized onto HumanHT-12 v4 expression BeadChips (Illumina) for 18 hr following the manufacturer's protocol. The BeadChips were washed as recommended and subsequently stained with streptavidin-Cy3 (GE Healthcare) and scanned using the iScan reader (Illumina) and the associated software. All samples were hybridized as biological replicates. Data were processed by mapping bead intensities to the corresponding gene information using BeadStudio 3.2 (Illumina) and background correction was achieved by applying the Affymetrix Robust Multiarray Analysis (RMA) background correction model. Variance stabilization was performed using log2 scaling. Gene expression normalization was calculated using the quantile method implemented in the lumi package of R-Bioconductor. In-house developed functions in MATLAB were utilized for data post-processing and the generation of graphical representations. Hierarchical clustering analysis of genes and samples was performed with the one minus the sample correlation metric and the Unweighted Pair-Group Method using Average (UPGMA) linkage method as previously described.",
+      "overall_design": "30 samples were analyzed:",
+      "study_design": "人iPS来源NPC/星形胶质细胞FTD突变与基因校正对照的表达芯片分析　本数据由索臻生物科技(SOGEN)标注·免费共享欢迎转发·想要增量更新请加群·微信bioinformaticsboy",
+      "treatment": false,
+      "treatment_type": "",
+      "_0c1a92": "SOGEN·索臻生物科技·sogentech.com·增量更新与更多专题在群里·公众号医学僧的科研日记",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE79nnn/GSE79557/",
+      "evidence": {
+        "relevant": "FTD相关MAPT突变iPSC来源星形胶质细胞模型，直接研究FTD病理，主体与样本轴均满足。",
+        "sequencing_type": "总RNA与Illumina HumanHT-12 v4表达谱芯片杂交，RMA归一化，目的为全基因组表达分析，判为mRNA microarray。",
+        "survival_analysis": "样本为iPS细胞衍生的星形胶质细胞/神经元，非患者组织，无生存时间与状态字段",
+        "treatment": "核心比较轴为FTD突变与CRISPR基因校正对照，无药物治疗干预",
+        "case_vs_control_differential": "对照为同基因CRISPR校正细胞，非独立健康供者，无真健康对照",
+        "correlation": "所有样本均为体外细胞模型，非患者组织样本，无法用于患者相关性分析",
+        "sample_source": "所有30份样本均为iPS来源的神经祖细胞(NPC)及其分化的星形胶质细胞或神经元，经体外长期培养、CRISPR编辑及共培养，属于已建系的细胞模型，并非直接取自组织。"
+      },
+      "relevance_reason": null
+    },
+    {
+      "gse_id": "GSE62935",
+      "title": "Identification of early neurodegenerative changes in an induced pluripotent stem cell model of frontotemporal dementia linked to mutant tau protein",
+      "organism": "Homo sapiens",
+      "n_samples": 28,
+      "platform": "10558",
+      "pdat": "2017/02/10",
+      "pubmed_ids": [
+        "26143746"
+      ],
+      "sequencing_type": "mRNA microarray",
+      "sample_source": [
+        "cell_line"
+      ],
+      "summary": "Frontotemporal dementia (FTD) is a frequent form of early-onset dementia and can be caused by mutations in MAPT encoding the microtubule-associated protein tau. Due to limited availability of neural cells from patients` brains, however, the underlying mechanisms of neurodegeneration in FTD are still only poorly understood. Here, we derived induced pluripotent stem (iPS) cells from individuals with FTD-associated MAPT mutations and differentiated them into neurons for mechanistic studies. Patient-derived neurons demonstrated pronounced tau pathology with increased fragmentation and AT8-immunoreactivity, disturbed neurite extension and increased but reversible oxidative stress response to inhibition of mitochondrial respiration. Furthermore, FTD-neurons showed activation of the unfolded protein response and presented with distinct, disease-associated gene expression profiles in a whole-genome transcriptome analysis. These findings indicate distinct, early neurodegenerative changes in FTD caused by mutant tau and highlight the unique opportunity to use patient-specific iPS cells to identify potential targets for drug screening purposes and therapeutic intervention. RNA samples for microarray analysis were prepared using RNeasy columns (Qiagen, Germany) with on-column DNA digestion. 300 ng of total RNA per sample were used as the input in the linear amplification protocol (Ambion), which involved the synthesis of T7-linked double-stranded cDNAs and 12hrs of in vitro transcription incorporating biotin-labeled nucleotides. Purified and labeled cRNA was then hybridized for 18 hrs onto HumanHT-12 v4 expression BeadChips (Illumina, USA) following the manufacturer’s instructions. After the recommended washing, the chips were stained with streptavidin-Cy3 (GE Healthcare) and scanned using the iScan reader (Illumina) and the accompanying software. The samples were exclusively hybridized as biological replicates. The bead intensities were mapped to the corresponding gene information using BeadStudio 3.2 (Illumina) and background correction was performed using the Affymetrix Robust Multi-array Analysis (RMA) background correction model (Irizarry et al., 2003). Variance stabilization was performed using the log2 scaling, and gene expression normalization was calculated with the quantile method implemented in the lumi package of R-Bioconductor. Data post-processing and graphics were performed with in-house developed functions in MATLAB. Hierarchical clusters of genes and samples were performed with the one minus the sample correlation metric and the Unweighted Pair-Group Method using Average (UPGMA) linkage method.",
+      "overall_design": "28 samples were analyzed",
+      "study_design": "FTD患者与健康对照iPSC衍生神经元，表达芯片转录组差异分析",
+      "relevance_reason": "使用FTD患者iPSC衍生神经元模型研究tau病理基因表达",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE62nnn/GSE62935/",
+      "evidence": {
+        "relevant": "FTDP17患者来源iPSC/神经元模型研究FTD突变tau机制，样本与主体均为目标疾病，满足两轴。",
+        "sequencing_type": "总RNA经线性扩增为cRNA后，与Illumina HumanHT-12 v4表达芯片杂交，荧光扫描定量，检测全基因组转录本表达；无富集特定RNA亚型或单细胞证据，为标准表达谱芯片，判为mRNA microarray。",
+        "survival_analysis": "样本为iPSC及分化神经元，细胞模型无患者生存时间/状态字段",
+        "treatment": "核心比较为FTD突变vs对照神经元，无药物治疗对照轴",
+        "case_vs_control_differential": "体外iPSC衍生神经元模型，FTDP17突变患者来源 vs 健康对照来源的iPSC/神经元均为体外培养细胞，属P5陷阱，非组织级体内样本，不可判true。",
+        "correlation": "FTD疾病神经元仅来自2名患者，独立患者数远<16，无法做表达相关性分析",
+        "sample_source": "iPSC和ESC为已建系多能干细胞系，属cell_line；皮肤成纤维细胞为原代培养，属primary_cell；分化神经元来自iPSC/ESC但非永生且非原代分离，依规则归other。"
+      }
+    },
+    {
+      "gse_id": "GSE106075",
+      "title": "Comparison of FTDP-17 IVS10+16 patient derived hiPSC and ZFN engineered hiPSC",
+      "organism": "Homo sapiens",
+      "n_samples": 24,
+      "platform": "24030",
+      "pdat": "2018/08/01",
+      "pubmed_ids": [
+        "30057263"
+      ],
+      "sequencing_type": "mRNA microarray",
+      "sample_source": [
+        "cell_line"
+      ],
+      "summary": "The development of an effective therapy against tauopathies like Alzheimer’s disease (AD) and frontotemporal dementia (FTD) remains challenging, partly due to limited access to fresh brain tissue, the lack of translational in vitro disease models and the fact that underlying molecular pathways remain to be deciphered. Several genes play an important role in the pathogenesis of AD and FTD, one of them being the MAPT gene encoding the microtubule-associated protein tau. Over the past few years, it has been shown that induced pluripotent stem cells (iPSC) can be used to model various human disorders and can serve as translational in vitro tools. Therefore, we generated iPSC harboring the pathogenic FTDP-17 (frontotemporal dementia and parkinsonism linked to chromosome 17) associated mutations IVS10+16 with and without P301S in MAPT using Zinc Finger Nuclease technology. Whole transcriptome analysis of MAPT IVS10+16 neurons reveals neuronal subtype differences, reduced neural progenitor proliferation potential and aberrant WNT signaling. Notably, all phenotypes were recapitulated using patient-derived neurons. Finally, an additional P301S mutation causes an increased calcium bursting frequency, reduced lysosomal acidity and tau oligomerization. Altogether, these tau mutant iPSC lines allow us to study IVS10+16 and P301S mutations in an isogenic background and to unravel a potential link between pathogenic 4R tau expression and FTDP-17.",
+      "_fea477": "SOGEN索臻·此为免费流传版·完整增量更新在学科/专题私域群(入群20元防广告)·sogentech.com",
+      "overall_design": "This study includes 24 samples. There are 8 conditions considered, each with three biological replicates.",
+      "relevance_reason": "使用携带MAPT IVS10+16突变的FTD患者来源iPSC模型",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE106nnn/GSE106075/",
+      "evidence": {
+        "relevant": "FTDP-17是MAPT突变所致遗传性额颞叶痴呆，样本为患者来源及工程化携带该突变的iPSC神经元，属疾病模型，研究其致病机制。",
+        "sequencing_type": "Expression profiling by array, total RNA with no ncRNA-specific enrichment, RMA normalization on Affymetrix array → mRNA microarray.",
+        "survival_analysis": "样本为hiPSC衍生神经元，非人类患者样本，无生存时间/状态字段，无法进行生存分析",
+        "treatment": "比较轴为不同基因型及来源的细胞模型，无药物治疗干预对照",
+        "case_vs_control_differential": "无独立健康对照；所有样本均为携带FTD突变（患者/工程化）的同基因背景细胞，属基因型对照",
+        "correlation": "靶向性神经元培养模型，非独立疾病患者样本，无法做临床相关性分析",
+        "sample_source": "所有GSM的source均为'hiPSC derived neurons'，源自已建系iPSC（患者来源或基因编辑）体外分化的神经细胞，属细胞系模型，无原代组织或其它材料。"
+      },
+      "study_design": null
+    },
+    {
+      "gse_id": "GSE110226",
+      "title": "Comparative Transcriptomics of Choroid Plexus in Alzheimer's Disease, Huntington's Disease and Frontotemporal Dementia: Implications for CSF Homeostasis and Dynamics",
+      "organism": "Homo sapiens",
+      "n_samples": 20,
+      "platform": "10379",
+      "pdat": "2018/02/08",
+      "pubmed_ids": [
+        "29848382",
+        "30541599"
+      ],
+      "sequencing_type": "mRNA microarray",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "Background: In aging and Alzheimer’s disease there are striking changes in CSF composition that may relate to altered choroid plexus function.  Studying CP tissue gene expression at the BCSFB provides further insight into epithelial and stromal responses to aging and diseased states. Results: Highly significant differences in gene expression occurred in CP of advanced AD patients vs. normal controls.  Immune-related pathways including acute phase response, cytokine/JAK/STAT signaling and cell adhesion were the most significantly enriched among the genes upregulated in AD patients, while methionine degradation, and protein translation genes were most notably downregulated.  While the majority of gene expression changes in AD patients was also observed in FTD and HuD, there were significant differences among the disease groups.  AD had the most unique expression findings, these genes being enriched in upregulated VEGF signaling and immune response proteins, e.g., interleukins.  HuD/FTD patients uniquely displayed upregulated cadherin-mediated adhesion.  Conclusions: This unique database of changes in CP tissue gene expression provides mechanistic insight into the effects of neurodegenerative diseases on CSF dynamics and hydrocephalus, particularly in regards to choroidal immune activation, metabolic homeostasis and resiliency of the CP.",
+      "overall_design": "Methods: Transcriptome-wide Affymetrix microarrays were used to determine disease-related changes in gene expression within human choroid plexus.  Post-mortem tissue samples of the entire lateral ventricular choroid plexus were from 6 healthy controls and 7 patients with advanced (Braak & Braak stage III-VI) Alzheimer’s disease (AD), 4 with Frontotemporal dementia (FTD) and 3 with Huntington’s disease (HuD).",
+      "study_design": "死后人脉络丛组织Affymetrix芯片，正常对照（n=6）与AD（n=7）、FTD（n=4）、HD（n=3）差异表达比较",
+      "relevance_reason": "包含4例额颞叶痴呆（FTD）患者脉络丛样本",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": true,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "_517cfc": "本数据由索臻生物科技(SOGEN)标注·免费共享欢迎转发·想要增量更新请加群·微信bioinformaticsboy",
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE110nnn/GSE110226/",
+      "evidence": {
+        "relevant": "FTD患者脉络丛样本作为独立疾病组进行转录组比较，研究了FTD特异的基因表达变化，主体轴与样本轴均满足。",
+        "sequencing_type": "Affymetrix 表达谱芯片检测总 RNA 中 mRNA，用 RMA 归一化，芯片杂交读出，无特异富集，为 bulk 转录组。",
+        "survival_analysis": "死后脑组织样本，无任何生存时间或生存状态字段，下游无法做患者生存分析",
+        "treatment": "无药物或干预处理；比较的是不同神经退行性疾病与正常对照的转录组差异",
+        "case_vs_control_differential": "disease state 字段含 6 例 normal control 和 4 例 FTD（FTD/FTD & MND/FTD Pick's），均为独立真健康供者与 FTD 患者死后脉络丛样本，表达芯片平台，每组≥3，可做 FTD vs control 差异分析。",
+        "correlation": "FTD样本仅4例，总疾病样本14例，均不足16，无法进行可靠的相关性分析",
+        "sample_source": "所有20个GSM的source均为‘choroid plexus’，为死后人脑侧脑室脉络丛整块组织，速冻后直接提取total RNA进行芯片检测，未分选特定细胞、未体外培养，属实体组织。"
+      }
+    },
+    {
+      "gse_id": "GSE230447",
+      "_6a43bd": "SOGEN·索臻·标注这道工序我们替你做了·增量更新加群·公众号光热生物/科研风向标/组学料理",
+      "title": "Osteopontin drives neuroinflammation and cell loss in MAPT-N279K frontotemporal dementia patient neurons",
+      "organism": "Homo sapiens",
+      "n_samples": 18,
+      "platform": "17930",
+      "pdat": "2024/04/15",
+      "pubmed_ids": [
+        "38626772"
+      ],
+      "sequencing_type": "mRNA microarray",
+      "sample_source": [
+        "cell_line",
+        "tissue"
+      ],
+      "summary": "Frontotemporal dementia (FTD) is an incurable group of early-onset dementias that can be caused by deposition of hyperphosphorylated tau in patient brains. However, the mechanisms leading to neurodegeneration remain largely unknown. Here, we combined single-cell analyses of FTD patient brains with a stem cell culture and transplantation model of FTD. We identified disease phenotypes in FTD neurons carrying the MAPT-N279K mutation, which were related to oxidative stress, oxidative phosphorylation and neuroinflammation with an upregulation of the inflammation-associated protein osteopontin (OPN). Human FTD neurons survived less and elicited an increased microglial response after transplantation into the mouse forebrain, that we further characterized by single nucleus RNA-sequencing of microdissected grafts. Notably, downregulation of OPN in engrafted FTD neurons resulted in improved engraftment and reduced microglial infiltration, indicating an immune-modulatory role of OPN in patient neurons, which may represent a potential therapeutic target in FTD. ",
+      "overall_design": "Samples from both control and FTD samples were generated using either post mortem human brain samples or iPSC derived neurons",
+      "relevance_reason": "包含FTD患者死后脑组织及iPSC神经元表达数据",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": true,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE230nnn/GSE230447/",
+      "evidence": {
+        "relevant": "主体为FTD机制，样本包含FTD患者脑组织及iPSC神经元，标准疾病‑对照设计。",
+        "sequencing_type": "Affymetrix Human Gene 2.0 ST芯片，CEL文件RMA归一化，总RNA无富集，常规基因表达谱芯片，符合mRNA microarray。",
+        "survival_analysis": "样本总数18例(FTD 11例)，无生存时间或状态字段，无法做生存分析",
+        "treatment": "核心比较为FTD vs 对照，无药物处理对照轴，非药物干预研究",
+        "case_vs_control_differential": "包含生前脑组织样本：disease state为FTD的死后脑组织8例 vs Ctrl的死后脑组织4例，均为组织级体内样本，均为表达芯片(Human Gene 2.0 ST)，满足两臂共存且每组≥3，可做差异分析。",
+        "correlation": "FTD患者样本仅11例，未达相关性分析所需≥16例，不足做表达相关性",
+        "sample_source": "12例死后脑组织直接提取RNA（未分选），属tissue；6例iPSC衍生神经元来自重编程建系干细胞，属cell_line。无移植瘤样本，无技术对照需剔除。"
+      },
+      "study_design": null
+    },
+    {
+      "gse_id": "GSE56452",
+      "title": "SIRT1 deficiency in microglia contributes to cognitive decline in aging and neurodegeneration via epigenetic regulation of IL-1beta",
+      "organism": "Mus musculus",
+      "n_samples": 16,
+      "platform": "6885",
+      "pdat": "2014/10/01",
+      "pubmed_ids": [
+        "25589773"
+      ],
+      "sequencing_type": "mRNA microarray",
+      "sample_source": [
+        "primary_cell"
+      ],
+      "summary": "Aging is the predominant risk factor for neurodegenerative diseases. One key phenotype as brain ages is the aberrant innate immune response characterized by proinflammation. However, the molecular mechanisms underlying aging-associated proinflammation are poorly defined. Whether chronic inflammation plays a causal role in cognitive decline in aging and neurodegeneration has not been established. Here we established a mechanistic link between chronic inflammation and aging microglia, and demonstrated a causal role of aging microglia in neurodegenerative cognitive deficits. Expression of microglial SIRT1 reduces with the aging of microglia. Genetic reduction of microglial SIRT1 elevates IL-1β selectively, and exacerbates cognitive deficits in aging and in transgenic mouse models of frontotemporal dementia (FTD). Interestingly, the selective activation of IL-1β transcription by SIRT1 deficiency is likely mediated through hypomethylating the proximal promoter of IL-1β. Consistent with our findings in mice, selective hypomethylation of IL-1β at two CpG sites are found in normal aging humans and demented patients with tauopathy. Our findings reveal a novel epigenetic mechanism in aging microglia that contributes to cognitive deficits in neurodegenerative diseases.",
+      "overall_design": "Study of changes related to alterations of SIRT1 levels in microglia of young and aged animals and in models of neurodegenerative dementia",
+      "study_design": "小鼠小胶质细胞表达芯片，比较年轻/老年、SIRT1敲除/对照及FTD tau模型",
+      "treatment": false,
+      "_9029b7": "数据来自SOGEN索臻标注语料·sogentech.com·更多学科与专题私域群持续更新·微信bioinformaticsboy",
+      "_f73719": "数据来自SOGEN索臻标注语料·sogentech.com·更多学科与专题私域群持续更新·微信bioinformaticsboy",
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE56nnn/GSE56452/",
+      "evidence": {
+        "relevant": "包含FTD tau转基因小鼠模型小胶质细胞样本，直接研究FTD中SIRT1缺失的致病机制。",
+        "sequencing_type": "Expression profiling by array，提取 total RNA，标准化采用 quantile normalisation，是典型的 bulk mRNA 表达谱芯片，无 ncRNA 专用探针证据，判定为 mRNA microarray。",
+        "survival_analysis": "全小鼠小胶质细胞样本，无人类患者及生存时间/状态字段",
+        "treatment": "实验仅比较基因型与年龄，无药物干预对照轴",
+        "case_vs_control_differential": "TAU疾病模型组仅2只，无独立健康对照且不满足3v3",
+        "correlation": "样本均来自小鼠模型，非人类患者，无法做患者相关性分析",
+        "sample_source": "所有GSM均为从成年小鼠脑组织经酶解、磁珠分选获得的CD11b+小胶质细胞，离体后直接裂解提RNA、未培养。依据ENCODE规则，分选出某一具体细胞类型→primary_cell。"
+      },
+      "relevance_reason": null
+    },
+    {
+      "gse_id": "GSE31772",
+      "title": "Functional Genomic Analyses Identify Pathways Dysregulated by Progranulin Deficiency Implicating Wnt Signaling",
+      "organism": "Homo sapiens",
+      "n_samples": 12,
+      "platform": "6883",
+      "pdat": "2011/09/01",
+      "pubmed_ids": [
+        "21943601"
+      ],
+      "sequencing_type": "mRNA microarray",
+      "_11c087": "SOGEN免费共享·请勿删改署名·增量更新与更多学科专题需入群(20元防广告)·grswsci.top/analyze",
+      "sample_source": [
+        "primary_cell"
+      ],
+      "summary": "Progranulin (GRN) mutations cause frontotemporal dementia (FTD), but GRN's function in the CNS remains largely unknown. To identify the pathways downstream of GRN, we used weighted genome co-expression network analysis (WGCNA) to develop a systems-level view of transcriptional alterations in a human neural progenitor model of GRN-deficiency. This highlighted key pathways such as apoptosis and ubiquitination in GRN deficient human neurons, while revealing an unexpected major role for the Wnt signaling pathway, which was confirmed by analysis of gene expression data from postmortem FTD brain. Furthermore, we observed that the Wnt receptor Fzd2 was one of only a few genes up-regulated at 6 weeks in a GRN knockout mouse, and that FZD2 reduction caused increased apoptosis, while its upregulation promoted neuronal survival in vitro. Together, these in vitro and in vivo data point to an adaptive role for altered Wnt signaling in GRN deficiency-mediated FTD, representing a potential therapeutic target.",
+      "overall_design": "We therefore developed an in vitro model of GRN deficiency using primary human neural stem cells in which shRNA was used to diminish GRN levels to 50% or below.  We developed a tetracycline inducible system in which transactivator protein rtTA3 and PuroR genes were constituitively expressed under the UBC promoter, while RFP and shRNA were regulated by an inducible tet-On CMV promoter (Gossen and Bujard, 1992).   To control for off-target effects, two hairpins against GRN were used, and a scrambled hairpin was used as a control.",
+      "study_design": "人神经前体细胞shRNA敲低GRN vs 对照，（数据来自SOGEN索臻标注语料·sogentech.com·更多学科与专题私域群持续更新·微信bioinformaticsboy）表达芯片转录组分析",
+      "relevance_reason": "研究FTD致病基因GRN敲低的神经前体细胞转录改变",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE31nnn/GSE31772/",
+      "evidence": {
+        "relevant": "GRN缺陷模型研究FTD致病机制，样本为shRNA敲低GRN的人神经祖细胞，作为该病体外模型满足样本轴。",
+        "sequencing_type": "GEO类型为Expression profiling by array，分子为total RNA，BeadStudio处理，典型基因表达芯片，默认判mRNA microarray",
+        "survival_analysis": "样本为体外培养的人类神经前体细胞，非患者，无生存时间/状态字段，无法做患者生存分析",
+        "treatment": "核心比较是shRNA敲低GRN vs scrambled对照，属基因工具干预，非药物治疗",
+        "case_vs_control_differential": "比较轴为GRN敲低 vs 对照，均为同种神经前体细胞，无疾病组织与独立健康对照",
+        "correlation": "12个样本均为体外细胞系，无疾病患者样本，不符合≥16例独立患者的要求",
+        "sample_source": "所有样本均为Human neural progenitor cells(NHNPs)，源自17周胎儿脑组织，经体外分化培养和shRNA处理，属原代培养细胞，未建系，故归primary_cell。"
+      }
+    }
+  ],
+  "_13d96569": "数据来自SOGEN索臻标注语料·sogentech.com·更多学科与专题私域群持续更新·微信bioinformaticsboy"
+}

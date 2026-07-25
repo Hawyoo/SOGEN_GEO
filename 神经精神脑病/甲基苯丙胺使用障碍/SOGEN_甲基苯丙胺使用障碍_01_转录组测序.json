@@ -1,0 +1,449 @@
+{
+  "brand": "SOGEN",
+  "group_name": "SOGEN神经·精神·脑病数据集交流9群",
+  "_697273a8": "SOGEN·索臻·标注这道工序我们替你做了·增量更新加群·公众号光热生物/科研风向标/组学料理",
+  "disease": "甲基苯丙胺使用障碍",
+  "disease_slug": "methamphetamine_use_disorder",
+  "category": "转录组·测序",
+  "category_note": "bulk mRNA-seq / RNA-seq（含少量 bulk RNA-Seq 命名变体）",
+  "generated_at": "2026-07-11",
+  "_6cbda17d": "索臻(SOGEN)·免费流传·想持续拿到更新就留在群里·入群20元只为挡广告号·微信bioinformaticsboy",
+  "n_datasets": 10,
+  "organism_breakdown": {
+    "Rattus norvegicus": 7,
+    "Mus musculus": 2,
+    "Homo sapiens": 1
+  },
+  "_0f6a6768": {
+    "公司": "索臻生物科技 SOGEN",
+    "一句话": "生信分析 + AI 智能分析 + 各类基础湿实验，一站式科研服务——从数据到洞见、从实验到成果",
+    "用本数据设计课题": "本数据集是 SOGEN 索臻免费共享的 GEO 标注语料(物种/测序类型/研究设计/能否病例对照等字段已标好)。把它喂给 AI 助手、结合 SOGEN 的产品即可辅助你设计、分析课题——例：① 这些 case/control 数据集做差异表达+GSEA/KEGG 富集(TransDEA)；② 候选基因查药物敏感性与靶点(DrugSens，CMap/GDSC/PRISM/CTRP 五库)；③ 建预后/诊断模型(Prognosis/Diagnosis/ProgML/DiagML，100+ 算法组合)；④ 单细胞数据集做亚群/细胞通讯/拟时序(scRNA 系列)；⑤ 免疫浸润 TME/突变 CNV/空间/蛋白组…一篇多组学论文要的分析，几乎都能在 SparkleDB(光热生物 www.grswsci.top，379 个一键工具、不写代码产发表级图)里跑完。数据不够、或要湿实验验证(WB/qPCR/流式/IHC/动物模型)？找 SOGEN——微信 bioinformaticsboy。",
+    "生信-转录组产品线": "TransDEA 差异表达(DESeq2/limma/edgeR + ORA/GSEA + PPI，标准/专业版；专业版含通路活性/转录因子/免疫浸润/TIDE/IPS/ESTIMATE)、DrugSens 药物靶点与敏感性(CMap/DGIdb/DrugBank/GDSC/PRISM 五库)、Prognosis 预后风险(14筛选+16建模)、Diagnosis 诊断标志物(20+特征选择+32分类器)、SingleGene 单基因多队列系统挖掘、ProgML/DiagML 预后/诊断机器学习框架(101/134 种算法组合穷举)、Subtype 分子亚型鉴定",
+    "生信-单细胞产品线": "scRNA 标准分析(QC/降维/聚类/注释/差异/富集)、scSubset 亚群深度、scCompare 分组差异、细胞类型特异表达、单基因/虚拟敲除、转录因子活性、基因集评分、基因模块、细胞通讯 CCI(CellChat/NicheNet)、代谢通量、分泌组学、空间/Bulk 反卷积、Pseudotime 拟时序(Monocle3/scVelo/CellRank)、药物预测、克隆演化、恶性细胞鉴定、Bulk↔单细胞映射、SAHMI 宿主-微生物互作 等 20+ 款",
+    "生信-AI科研智能体": "Conflux 大模型智能文献检索、Plotter AI 自动统计分析与出图、Vizora AI 科研模式图生成与修复",
+    "生信-平台": "SparkleDB 光热生信云平台：数据上传→质控→分析→可视化一站式，300+ 分析模块，不写代码一键出图；支持 Human/Mouse/Rat；交付交互式 HTML 报告 + 发表级 PDF/PNG 图表 + 完整 CSV 数据表 + 方法学详解",
+    "生信-SparkleDB癌症平台": "SparkleDB 光热生物(www.grswsci.top)——癌症/肿瘤多组学在线分析平台，379 个一键工具、不写代码产发表级图，跨『单-双-多基因 × 单癌-泛癌 × bulk-单细胞-空间』，分 32 模块(每项后为工具数)：①差异表达27(肿瘤vs正常箱线/热图·配对·TCGA-GTEx联合·Logistic诊断·ROC·Bootstrap校准曲线·器官bodymap) ②生存分析15(KM·单/多变量Cox·限制性立方样条·双基因联合评分·基因+免疫细胞联合·剪接PSI/RNA编辑/突变/eQTL生存·独立预后Cox) ③相关性8(全基因组GSEA·双基因散点·多基因网络·跨组学circos/热图) ④通路8(GSEA/GSVA·KEGG/Hallmark·代谢GSVA·PARADIGM·ssGSEA·肿瘤vs正常通路) ⑤临床卡方4 ⑥免疫微环境TME28(浸润相关·高低表达差异·免疫检查点四分位·Sig68/TIP/TILmap/EASIER/Sig18五套评分) ⑦突变CNV26(oncoplot·位点lollipop·突变vs野生差异/GSEA/对TME影响·cBioPortal频率·CNV扩增缺失·基因组打分·双基因互作) ⑧药物敏感性34(GDSC1/2·CTRP·PRISM四库相关+top30·CMap XSum预测·全基因组药物筛选·GEO验证·CTD化学↔基因) ⑨免疫治疗10(单/多基因/基因集×差异/ROC/生存·TIDE泛癌) ⑩单细胞20(细胞类型/基因表达UMAP·AUCell/UCell/VAM/singscore/AddModuleScore五打分·伪散装相关·泛癌landscape·marker·两细胞类型DEG·TISCH注释) ⑪细胞通讯CellChat12(main/fine×五打分) ⑫空间转录组16(表达可视化·恶性vs非恶性·肿瘤边界三区·细胞反卷积·切片图·五打分·STAD/BLCA全批) ⑬HPA蛋白图5(IHC/IF下载·泛癌染色·强度统计) ⑭PPI3(BioGRID源/靶·ComPPI亚细胞网络) ⑮GEO外部验证13(差异·生存KM/Cox meta·双基因·免疫浸润·GSEA·代谢) ⑯GEO临床变量差异21(age/gender/stage/T/N/M/grade) ⑰蛋白质组18(CPTAC 单/双/多基因×单/多蛋白组×差异/相关/生存) ⑱PTM磷酸化7(CPTAC) ⑲转录后调控9(miRNA→基因全基因组·剪接PSI·RNA编辑) ⑳转录调控7(全TF相关·CistromeDB·ChEA3·ATAC整合) ㉑机器学习7(LASSO·随机森林·XGBoost·Boruta·SVM-RFE·随机生存森林·10算法组合) ㉒ssGSEA评分12(评分·分期趋势·诊断ROC·生存·单细胞打分) ㉓孟德尔随机化/共定位5(eQTL 5e-08/1e-05·coloc·gassocplot) ㉔干性Stemness4 ㉕基因敲除/依赖DepMap4(CRISPR必需性·双基因敲除·基因集敲除GSEA) ㉖ATAC染色质2(peak注释·MEME motif) ㉗WGCNA模块-性状 ㉘常规工具箱23(GO/KEGG富集·HPA组织/单细胞/免疫细胞/亚细胞表达·PrimerBank·人鼠基因互转·GeneReview·基因↔通路·GPL注释·coloc/MR) ㉙多组学单因素Cox森林 ㉚基因集评分5 ㉛预后multigene signature ㉜永久会员泛癌预算23(差异limma/wilcox·生存·分期/分级·病理T/N/M·性别/吸烟/饮酒·MSI·新辅助/放疗/靶向)。数据底座：TCGA 65癌种(58,581基因级RDS)、GEO 538外部验证数据集(差异469/生存318/药敏412/临床381/TME386)、TISCH2 189单细胞、CPTAC 23蛋白组(11癌种)、空间230切片(18癌种)、药敏1914化合物(GDSC1/2+CTRP+PRISM)、DepMap 17653基因CRISPR依赖、TIDE免疫治疗、HPA病理、cBioPortal突变",
+    "湿实验-分子": "Western Blot(整膜/裁膜)、考马斯亮蓝/蛋白银染、Pull-down、IP/CO-IP/IP-MS(IP+Western+质谱)、凝胶电泳 PCR、荧光定量 qPCR、mRNA/lncRNA/miRNA/circRNA 引物设计合成、支原体污染检测、双荧光素酶报告基因、ELISA、ChIP",
+    "湿实验-流式": "凋亡/周期/膜电位、巨噬细胞分化、T细胞/NK/效应细胞/耗竭型 CD8T、CAF 相关等——细胞样品与肿瘤样品流式检测",
+    "湿实验-细胞功能": "CCK-8/IC50、克隆形成、Invasion/Transwell、EDU/TUNEL、划痕、血管形成、稳转细胞株构建(转染筛选/敲低/过表达)、siRNA 瞬时转染、球体形成、类器官培养(至 P3)、PBMC/T细胞原代提取、ROS/GSH/线粒体膜电位",
+    "湿实验-病理": "HE 染色、免疫组化、免疫荧光单/双/三/四/五标、TUNEL、组织芯片多色检测、细胞爬片免疫荧光共定位、石蜡切片明场/荧光扫描(含数据整理分析+售后)",
+    "测序产品线": "索臻自有测序平台，14 大类 85+ 款产品，测序·分析·湿实验一站式闭环，覆盖单细胞·空间·免疫组库·常规转录组·宏基因组·蛋白/修饰/代谢/表观全组学(2026 官网版)",
+    "测序-单细胞与免疫组库": "自有 SeekOne®/10X Chromium 平台单细胞转录组——3'/5'/全序列/FFPE 探针法，单细胞 ATAC+RNA、DNA 甲基化+RNA 多组学，单细胞胞内菌测序(真迈/illumina/华大 T7，100–1000G)；单细胞免疫组库 TCR/BCR、TCR+BCR、5' 转录组+TCR/BCR 联合(10–120G)",
+    "测序-空间组学": "全平台空间转录组——SeekSpace® 单细胞空间、华大 Stereo-seq 时空组(FFPE/FF，0.5–1cm²)、10X Visium FFPE/HD、Xenium 5k 单细胞原位检测；CoSMx SMI 超多色分子成像(1000/6000/18000 Plex RNA、64 Plex Protein)、GeoMx DSP 数字空间转录组(WTA 12–192 AOI)、CODEX/PCF 多重荧光蛋白空间组(IO60 肿瘤免疫 / 神经 42 标 / 小鼠 25 标 / 自由组合 Panel)",
+    "测序-转录组与宏基因组": "普通转录组 mRNA-seq(illumina/华大 T7，6G)、原核生物转录组、small RNA、lncRNA 测序；宏基因组测序、16S/ITS 二代扩增子测序(含标准分析)",
+    "测序-蛋白与代谢组": "定量蛋白质组 Astral 平台——Rapid/Deep DIA、去高丰度血浆蛋白组 Magic P3、Olink Target 96/Reveal；15+ 种蛋白质修饰组学(磷酸化/泛素化/乙酰化/糖基化/乳酸化/巴豆酰化/SUMO 化/丙酰化等)；代谢组学(非靶向代谢 / 脂质组 / 靶向氨基酸·脂肪酸·胆汁酸，LC-MS)",
+    "测序-表观组学": "ChIP-Seq(转录因子 / 组蛋白修饰)、ATAC-Seq、WGBS 全基因组甲基化、MeRIP/MeDIP 甲基化测序(illumina)",
+    "课题合作实力": "团队参与发表多篇高分论著：Nature Biotechnology、Nature Cancer、Cancer Discovery、Nature Communications、Science Advances、STTT、JCI、PNAS、Cell Discovery、Molecular Cancer、Cell Reports、eClinicalMedicine、eBioMedicine、iMeta、eLife、Cancer Letters、Briefings in Bioinformatics、Phytomedicine、Oncogene、Research、BMC Medicine 等一区期刊，有实力和条件给一区/顶刊子刊课题提供生信分析与实验技术支持；核心成员均有顶刊/子刊发表经验，组学+实验、AI4S 方向第一梯队。",
+    "官网": "https://www.sogentech.com/",
+    "标准化产品站": "https://order.sogentech.com/products/",
+    "光热数据库SparkleDB": "https://www.grswsci.top/analyze/",
+    "公众号": "医学僧的科研日记 · 光热生物 · 科研风向标 · 组学料理",
+    "科研合作咨询微信": "bioinformaticsboy",
+    "加群获取增量": "本材料是免费流传版；想要持续的增量更新、更多疾病与专题，请加微信 bioinformaticsboy 进对应私域群——我们建了很多学科群、专题群，入群 20 元仅用于过滤广告号。",
+    "使用授权": "本数据集免费共享、欢迎转发使用。不得删改、涂抹或隐藏本 SOGEN 署名与宣传信息(索臻生物科技·www.sogentech.com)。我们已同意免费分享，请保留出处。如有擅自删除署名、篡改来源或用于商业牟利等侵权行为，本公司保留依法追究法律责任的权利。",
+    "声明": "本数据集由 索臻生物科技 SOGEN 标注整理、免费共享；欢迎转发。无论测序、自有数据分析、公共数据库挖掘还是湿实验，均可深度合作。"
+  },
+  "research_question_breakdown": {
+    "case_vs_control_differential": 1,
+    "treatment": 0,
+    "correlation": 1,
+    "pre_post_treatment": 0,
+    "survival_analysis": 0,
+    "response": 0
+  },
+  "datasets": [
+    {
+      "gse_id": "GSE301346",
+      "title": "RNA sequencing identified differentially expressed genes in the mesocorticolimbic and nigrostriatal systems of compulsive METH taking rats.",
+      "organism": "Rattus norvegicus",
+      "n_samples": 72,
+      "platform": "34877",
+      "pdat": "2025/09/30",
+      "pubmed_ids": [
+        "41002437"
+      ],
+      "sequencing_type": "mRNA-seq",
+      "sample_source": [
+        "tissue"
+      ],
+      "_78e8fe": "本数据由索臻生物科技(SOGEN)标注·免费共享欢迎转发·想要增量更新请加群·微信bioinformaticsboy",
+      "summary": "Methamphetamine (METH) is an extremely addictive drug which continues to cause significant harm to individuals and communities. Differences in patterns of abuse, amounts of METH taken, and in relapse rates exist among METH users who meet DSM-V criteria for METH use disorder (MUD). We are actively investigating the behavioral and molecular differences between compulsive and non-compulsive METH self-administering (SA) rats in the presence of a foot-shock which serves as an aversive stimulus. In the present study, we used male rats that were trained to self-administer METH (0.1 mg/kg/infusion, IV) on an FR-1 schedule for 20 days using a pattern of three 3-h sessions per day and followed by foot-shocks (0.18mA to 0.36mA) for the next 9 days. All the METH taking rats escalated their drug intake during the 20 days of training phase. During the foot-shock phase, a group of rats continued to self-administer METH in the presence of aversive stimuli and were called shock-resistant (SR, compulsive), whereas others who decreased their intake were termed shock-sensitive (SS, non-compulsive). Animals were euthanized 2 hours after the last SA session and the prefrontal cortex (PFC), nucleus accumbens (NAc), dorsal striatum (DStr) and midbrain (MBr) were isolated for RNA sequencing. RNA sequencing showed a large number of differentially expressed genes (DEGs) in all the brain regions. Our study supports the notion that studying multiple brain regions is critical for a comprehensive understanding of the interconnected neuroadaptive changes which are associated with substance use disorders (SUDs). The present study is of significant translational importance by further supporting the idea that targeting common DEGs identified across multiple brain regions might lead to the development of effective therapeutic approaches against MUD.",
+      "overall_design": "We trained rats to self-administer METH for 20 days. Then, under the same conditions, the rats continued to self-administer METH in the presence of a foot shock for 9 days.",
+      "study_design": "大鼠METH自我给药模型，四个脑区（PFC/NAc/DStr/MBr），比较对照、电击抵抗、电击敏感三组RNA-seq差异",
+      "relevance_reason": "使用METH自我给药大鼠模型研究强迫性用药行为的脑转录组变化",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "_6d18b1": "SOGEN·索臻·标注这道工序我们替你做了·增量更新加群·公众号光热生物/科研风向标/组学料理",
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE301nnn/GSE301346/",
+      "evidence": {
+        "relevant": "以大鼠强迫性METH自给药模型研究物质使用障碍，测序样本直接来自模型脑组织，满足主体与样本两轴。",
+        "sequencing_type": "polyA RNA（molecule）+ RNA-Seq（library_strategy）+ cDNA建库（library_selection）+ Illumina测序，典型polyA富集mRNA表达谱测序，无单细胞/空间证据，属mRNA-seq。",
+        "survival_analysis": "样本为大鼠脑组织，无人类患者，无任何生存时间/状态字段，无法做患者生存分析",
+        "treatment": "METH is the abused drug inducing addiction model, not a therapeutic intervention. Core comparison is SR vs SS (behavioral stratification under same METH background), fitting F4 trap.",
+        "case_vs_control_differential": "大鼠模型，对照为经历相同训练/手术的saline组，属操作对照而非真健康个体，不符疾病vs正常差异要求",
+        "correlation": "全样本为大鼠脑组织，动物模型样本不计入疾病患者数，无人类患者无法做相关性分析",
+        "sample_source": "大鼠活体静脉给药行为实验后处死，取前额叶、伏隔核、背侧纹状体、中脑四个脑区直接提取RNA测序；未进行细胞分选或体外培养，被测材料为整块脑组织。"
+      }
+    },
+    {
+      "gse_id": "GSE227204",
+      "title": "Identification of potential non-invasive biomarkers for diagnosing patients with methamphetamine use disorder",
+      "organism": "Homo sapiens",
+      "n_samples": 62,
+      "platform": "18573",
+      "pdat": "2023/05/31",
+      "pubmed_ids": [
+        "37240016"
+      ],
+      "sequencing_type": "mRNA-seq",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "To date, diagnosis of methamphetamine use disorder (MUD) is based primarily on the patient’s self-reports of drug-seeking behaviour and interviews with psychiatrists in the absence of objective biomarkers. As an effective clinical method for diagnosis of MUD is still not available, the development of potential biomarkers for more accurate diagnosis is imperative. Transcription profiling and discovery of biomarkers in the treatment and recovery periods of MUD patients can be used as scientific basis to provide a greater understanding of the disease and to facilitate decisions on whether to continue or not. In this study, RNA sequencing analysis was performed to profile transcripts from hair follicle cells of healthy controls and patients with MUD, and biomarkers were discovered at each transition states to be used to diagnose MUD. This study will present an important information to diagnose MUD using non-invasive biomarkers for human addicts and it will help to develop better pharmacological treatment of MUD in the future.",
+      "overall_design": "RNA samples were extracted from hair follicles for 33 current patients with methamphetamine use disorders (CPs), 22 former patients with methamphetamine use disorders (FPs) and 30 healthy controls (HCs).",
+      "study_design": "MUD患者（当前/既往）与健康对照毛囊细胞RNA-seq，寻找诊断生物标志物",
+      "relevance_reason": "使用甲基苯丙胺使用障碍患者毛囊细胞转录组",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": true,
+      "correlation": true,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE227nnn/GSE227204/",
+      "_b46096": "本条由SOGEN索臻标注·免费版仅部分·全量与增量在私域群·加微信bioinformaticsboy备注想进的学科群",
+      "evidence": {
+        "relevant": "研究主体为MUD诊断，样本直接来自MUD患者和对照毛囊，疾病即核心问题。",
+        "sequencing_type": "RNA-Seq, total RNA, cDNA selection, expression profiling by HTS; 无特殊富集但默认判mRNA-seq，bulk组织",
+        "survival_analysis": "样本级元数据仅有疾病状态，无生存时间或状态字段，无法进行生存分析",
+        "treatment": "核心比较为疾病状态（当前/既往MUD vs 健康），无药物干预对照轴",
+        "case_vs_control_differential": "state字段含healthy(28)与current patients with MUD(23)，均为独立人毛囊RNA-Seq，满足病例对照差异分析条件",
+        "correlation": "Bulk mRNA-seq (RNA-Seq); 34 MUD clinical samples (23 current+11 former) >15",
+        "sample_source": "所有GSM的source均为hair follicle，直接提取总RNA测序，未分选特定细胞类型，未体外培养，属实体组织。"
+      }
+    },
+    {
+      "gse_id": "GSE280589",
+      "title": "RNA sequencing analysis identifies sex differences in transcriptional signatures in the dorsal striatum of female and male rats after withdrawal from methamphetamine self-administration",
+      "_b8e5b6": "本数据由索臻生物科技(SOGEN)标注·免费共享欢迎转发·想要增量更新请加群·微信bioinformaticsboy",
+      "organism": "Rattus norvegicus",
+      "n_samples": 34,
+      "platform": "22396",
+      "pdat": "2025/06/16",
+      "pubmed_ids": [
+        "40280491"
+      ],
+      "sequencing_type": "mRNA-seq",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "Significant methamphetamine (METH)-induced behavioral differences exist between the two sexes of humans and other animals. These dissimilarities may be related to sexual dimorphism in baseline molecular and biochemical mechanisms in brain reward neuroanatomical pathways. As a first step towards identifying sex-based differences in methamphetamine-induced transcriptional signatures, we used RNA sequencing analysis to measure genome-wide changes in gene expression in the dorsal striatum of rats that had self-administered METH. We trained rats to self-administer METH (0.1 mg/kg/infusion, i.v.) using two 3-hr daily sessions (with 30 minutes time out between session) for 20 days. Control rats self-administered saline under similar conditions. This was followed by drug seeking tests on withdrawal days 3 (WD3) and 30 (WD30). Behavioral results show that male rats took more METH than female rats. In both male and female rats, some animals escalated (high-takers) whereas others did not escalate (low-takers) their METH intake during the behavioral experiment.  Rats were euthanized 24 hours after the second drug seeking test. RNA was extracted from the dorsal striatum (dSTR) and used in RNA sequencing analysis. The data identified substantial baseline differences in gene expression between female and male control rats. In addition, METH use and withdrawal were associated with significant sex-related differences in changes in striatal gene expression, with minimal overlaps of altered mRNAs. Thus, the present results provide further supporting evidence for sexually dimorphic responses to METH exposure. These observations support the notion of sex-specific approaches to the treatment of patients who suffer from METH use disorder.",
+      "overall_design": "We trained rats to self-administer METH (0.1 mg/kg/infusion, i.v.) using two 3-hr daily sessions (with 30 minutes time out between session) for 20 days. Control rats self-administered saline under similar conditions. This was followed by drug seeking tests on withdrawal days 3 (WD3) and 30 (WD30).",
+      "study_design": "大鼠METH自我给药戒断后，背侧纹状体RNA-seq比较用药vs saline及性别差异",
+      "relevance_reason": "研究METH自我给药大鼠戒断后脑区转录组变化",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE280nnn/GSE280589/",
+      "evidence": {
+        "relevant": "大鼠METH自我给药戒断模型研究转录组性别差异，直接模拟甲基苯丙胺使用障碍，主体与样本均符合。",
+        "sequencing_type": "总RNA提取、cDNA文库构建、Illumina HiSeq表达谱测序，bulk组织样本无单细胞证据，符合常规mRNA-seq机制",
+        "survival_analysis": "大鼠模型，无人类患者生存数据，无法做生存分析",
+        "treatment": "METH是滥用药物，用于建立成瘾模型，属于致病刺激而非治疗干预；研究目的为比较滥用药物暴露后转录变化，不涉及疗效评估。",
+        "case_vs_control_differential": "对照为saline自我给药大鼠，属操作/vehicle对照，非独立真健康对照",
+        "correlation": "全部样本为大鼠模型，无人类疾病患者样本，无法做患者相关性分析",
+        "sample_source": "所有GSM取自大鼠背侧纹状体组织，直接提取总RNA测序，未分选特定细胞类型，无体外培养或刺激处理，符合整块组织直接测序的tissue定义。"
+      }
+    },
+    {
+      "gse_id": "GSE203268",
+      "title": "Transcriptional profile of brain reward circuits following methamphetamine self-administration",
+      "organism": "Rattus norvegicus",
+      "n_samples": 30,
+      "platform": "22396",
+      "pdat": "2023/02/01",
+      "pubmed_ids": [
+        "36710935"
+      ],
+      "sequencing_type": "mRNA-seq",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "Methamphetamine (METH) is a powerful stimulant that has caused addiction (compulsive drug seeking and taking behavior) in millions of people world-wide. METH abuse is also associated with negative impact on the brain. One feature of addiction is uncontrollable drug seeking despite adverse consequences and becomes habitual. To mimic this in a rat model, rats with a history of METH use are given the opportunity to earn METH accompanied by aversive shocks on their feet. Rats that continue to take METH are shock-resistant (SR) and rats that reduce their METH intake are shock-sensitive (SS ).Rats that self-administered saline are controls (CT). In addition, we used controls for shock paradigm. For this purpose, when METH SA rat received a shock, the saline SA rat was also shocked. The separate groups of rats that were yoked (Y) to the corresponding METH shock-resistant (SR) and shock-sensitive (SS) rats are termed YSR and YSS, respectively.",
+      "overall_design": "Rats self-administered (SA) METH for 21 days followed by footshocks for 8 days. The drug-naïve control rats (CT) will be the same as the METH-trained rats except sterile saline is infused after the active lever press. The control animals for footshock also received saline but were yoked to the METH-trained rats that receive contingent shocks. There were separate groups of rats that were yoked (Y) to the corresponding METH shock-resistant (SR) and shock-sensitive (SS) rats. They are termed YSR and YSS, respectively.",
+      "study_design": "大鼠脑奖赏环路背侧纹状体，bulk RNA-seq，比较METH自我给药后电击抵抗/敏感鼠的转录差异。",
+      "relevance_reason": "使用METH自我给药大鼠模型，　索臻生物科技SOGEN·生信+湿实验一站式·一区顶刊课题合作·加群获取增量·微信bioinformaticsboy探究成瘾习惯化与惩罚抵抗的脑内转录机制。",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "_a60bc4": "本条由SOGEN索臻标注·免费版仅部分·全量与增量在私域群·加微信bioinformaticsboy备注想进的学科群",
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE203nnn/GSE203268/",
+      "evidence": {
+        "relevant": "大鼠METH自我给药模型直接研究METH使用障碍的强迫性用药和脑转录变化，主体与样本均为目标疾病模型。",
+        "sequencing_type": "常规转录组表达谱测序，total RNA/cDNA文库，默认mRNA-seq，无ncRNA富集特征",
+        "survival_analysis": "样本为SD大鼠模型，非人类患者，且无任何生存时间/状态字段，完全无法做患者生存分析。",
+        "treatment": "METH虽为药物但非核心比较轴，核心是比较电击条件下不同行为表型（SR/SS）的转录差异，无METH vs Vehicle对照。",
+        "case_vs_control_differential": "对照组(CT)为注射生理盐水的操作/vehicle对照大鼠，非独立真健康个体，且全部处于同一实验框架下，不符合疾病vs正常DEG要求。",
+        "correlation": "样本均为大鼠模型，无人类疾病患者样本，不符合相关性分析对独立疾病患者观测数的要求（动物模型不计入）。",
+        "sample_source": "所有GSM source和tissue字段均为'Dorsal striatum'，直接取自大鼠脑区，离体后仅冻存提RNA，未培养/分选，属于实体组织。"
+      }
+    },
+    {
+      "gse_id": "GSE157112",
+      "title": "Transcriptional profiling of whisker follicles and of the striatum in methamphetamine self-administered rats",
+      "organism": "Rattus norvegicus",
+      "n_samples": 24,
+      "platform": "18694",
+      "pdat": "2021/08/27",
+      "pubmed_ids": [
+        "33238484"
+      ],
+      "sequencing_type": "mRNA-seq",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "This study provides the first data on gene expression levels in whisker follicles and in the striatum in relation to MA reward and thereby may accelerate the research on the whisker follicle as an alternative source of biomarkers for the diagnosis of MA use disorder.",
+      "overall_design": "Four groups - striatum or whisker follicle treated with saline or methamphetamine",
+      "study_design": "大鼠纹状体与胡须毛囊，RNA-seq比较甲基苯丙胺自我给药组与盐水对照组",
+      "relevance_reason": "使用大鼠甲基苯丙胺自我给药模型研究物质使用障碍相关基因表达·SOGEN索臻·此为免费流传版·完整增量更新在学科/专题私域群(入群20元防广告)·sogentech.com",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "_cb3f10": "本条由SOGEN索臻标注·免费版仅部分·全量与增量在私域群·加微信bioinformaticsboy备注想进的学科群",
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE157nnn/GSE157112/",
+      "evidence": {
+        "relevant": "甲基苯丙胺自我给药大鼠是MA use disorder的公认模型，研究MA奖赏机制及诊断标志物，主体和样本均直接相关。",
+        "sequencing_type": "提取总RNA后，用TruSeq polyA磁珠富集mRNA建库（明确 polyA capture），Illumina 测序，bulk 组织，标准 mRNA 表达谱测序。",
+        "survival_analysis": "样本为大鼠，非人类患者，无生存时间或状态字段",
+        "treatment": "methamphetamine 在本研究中为成瘾建模剂 (self-administration)，属于致病刺激而非治疗干预 (F1④)，无治疗性比较轴。",
+        "case_vs_control_differential": "动物模型，对照为盐水操作对照（vehicle），非独立真健康供者",
+        "correlation": "全部样本来自大鼠模型，无人类疾病患者，不满足≥16例要求",
+        "sample_source": "所有GSM的source为striatum或whisker follicle，直接取自大鼠实体组织，未经细胞分选或体外培养即提取总RNA测序，属于tissue。"
+      }
+    },
+    {
+      "_2b074d": "本数据由索臻生物科技(SOGEN)标注·免费共享欢迎转发·想要增量更新请加群·微信bioinformaticsboy",
+      "gse_id": "GSE220896",
+      "title": "Compulsive methamphetamine taking is associated with differential expression of HDAC2-regulated genes in the rat dorsal striatum",
+      "organism": "Rattus norvegicus",
+      "n_samples": 23,
+      "platform": "22396",
+      "pdat": "2024/09/25",
+      "pubmed_ids": [
+        "38351172"
+      ],
+      "sequencing_type": "mRNA-seq",
+      "_8bfcdf": "SOGEN免费共享·请勿删改署名·增量更新与更多学科专题需入群(20元防广告)·grswsci.top/analyze",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "Methamphetamine (METH) use disorder (MUD) is a neuropsychiatric disorder with loss of self-control over drug intake despite of negative consequences. The behavioral consequences of long-term METH intake on compulsive and non-compulsive individuals remain unclear. Herein we trained rats to self-administered METH 1st for 22 days than 8 days of foot-shock and 15 days of abstinence. Which was followed by 12 days of reinstatement to METH self-administration then 3 days of foot-shock and 15 days of abstinence. After 1st foot-shock phase we found two phenotypes based on their METH intake i.e., shock resistance (SR, compulsive), and shock sensitive (SS, non-compulsive). Interestingly during reinstatement of METH self-administration then foot-shock, some (resurgent shock resistance, RSR) non-compulsive rats, displayed compulsive METH intake behavior. During both abstinence period rats were tested for drug seeking behavior and SR rats displayed higher METH seeking then RSR and SS. 24 hour after 2nd withdrawal day testing, we compared transcriptional and epigenetic changes in dorsal striatum.",
+      "overall_design": "Herein we trained rats to self-administered METH 1st for 22 days than 8 days of foot-shock and 15 days of abstinence. Which was followed by 12 days of reinstatement to METH self-administration then 3 days of foot-shock and 15 days of abstinence.",
+      "study_design": "大鼠背侧纹状体RNA-seq，比较METH强迫性使用不同行为表型（SR/SS/RSR）",
+      "relevance_reason": "使用大鼠METH自我给药模型研究强迫性用药分子机制",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE220nnn/GSE220896/",
+      "evidence": {
+        "relevant": "大鼠METH自给药强迫性用药模型，研究methamphetamine use disorder的行为与分子机制，样本直接来自疾病模型脑区。",
+        "sequencing_type": "总RNA经RNeasy提取、cDNA建库，HiSeq 4000测序，研究基因差异表达，无单细胞/非编码富集证据，默认为mRNA-seq。",
+        "survival_analysis": "全为大鼠样本，无人类患者，无生存时间与状态字段，无法做患者生存分析",
+        "treatment": "核心比较为METH强迫性表型（SR/SS/RSR）之间差异，无药物处理vs对照的核心轴",
+        "case_vs_control_differential": "对照组为saline自我给药（vehicle对照），非独立真健康对照，不满足疾病vs正常差异分析",
+        "correlation": "无人类患者样本，全为大鼠模型，疾病样本数不满足>15的要求，无法做表达相关性分析",
+        "sample_source": "所有23个GSM source均为大鼠背侧纹状体组织，直接提取总RNA测序，未分选特定细胞类型，未体外培养，属实体组织直接取材。"
+      }
+    },
+    {
+      "gse_id": "GSE245951",
+      "title": "Microglia contribute to methamphetamine reinforcement and reflect persistent transcriptional and morphological adaptations to the drug",
+      "organism": "Mus musculus",
+      "n_samples": 23,
+      "platform": "24247",
+      "pdat": "2024/06/11",
+      "pubmed_ids": [
+        "38838836"
+      ],
+      "sequencing_type": "mRNA-seq",
+      "sample_source": [
+        "primary_cell"
+      ],
+      "summary": "Methamphetamine use disorder (MUD) is a chronic, relapsing disease that is characterized by repeated drug use despite negative consequences for which there are currently no FDA approved cessation therapeutics. Repeated methamphetamine (METH) use induces long-term gene expression changes in brain regions associated with reward processing and drug-seeking behavior, and recent evidence suggests that methamphetamine-induced neuroinflammation may also shape behavioral and molecular responses to the drug. Microglia, the resident immune cells in the brain, are principal drivers of neuroinflammatory responses and contribute to the pathophysiology of substance use disorders. Here, we investigated transcriptional and morphological changes in striatal microglia in response to methamphetamine-taking and during methamphetamine abstinence, as well as their functional contribution to drug-taking behavior. We show that methamphetamine self-administration induces transcriptional changes related to protein folding, mRNA processing, immune signaling, and neurotransmission in striatal microglia. Importantly, many of these transcriptional changes persist through abstinence, a finding supported by morphological analysis. Functionally, we report that microglial ablation increases methamphetamine-taking, possibly involving neuroimmune and neurotransmitter regulation. In contrast, microglial depletion did not alter methamphetamine-seeking behavior following 21 days of abstinence, highlighting the complexity of drug-seeking behaviors. Taken together, these results suggest that methamphetamine induces both short and long-term changes in striatal microglia that contribute to altered drug-taking behavior and may be leveraged for preclinical development of methamphetamine cessation therapeutics.",
+      "overall_design": "Mice were permitted to intravenously self-administer methamphetamine (0.05 mg/kg/inf dissolved in 0.9% saline) or saline during 15 daily 2-hr sessions. After 15 days of IVSA (Acquisition and Maintenance), mice underwent 21 days of forced home cage abstinence. Striatal microglia were isolated immediately after the final maintenance session (MN and SAL) and following abstinence (ABS).",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "_1e8641": "数据标注:索臻SOGEN·转发请保留署名·想要后续更新请加群·微信bioinformaticsboy·order.sogentech.com/products",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "_663dc6": "SOGEN·索臻生物科技·sogentech.com·增量更新与更多专题在群里·公众号医学僧的科研日记",
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE245nnn/GSE245951/",
+      "evidence": {
+        "relevant": "研究主体为MUD，样本来自甲苯丙胺自我给药小鼠模型，属该病公认动物模型",
+        "sequencing_type": "GEO类型为Expression profiling by HTS，分离纹状体小胶质细胞做转录组测序，无单细胞证据，按表达谱测序默认规则判mRNA-seq（证据有限，可能为mRNA-seq）",
+        "survival_analysis": "小鼠模型，非人类患者，不存在患者生存数据",
+        "treatment": "METH为滥用药物，属致病刺激而非治疗干预，对照为saline vehicle",
+        "case_vs_control_differential": "对照为saline vehicle，属操作对照，非疾病vs健康",
+        "correlation": "小鼠样本无人类疾病患者，无法进行患者相关性分析",
+        "sample_source": "从小鼠纹状体分离微胶质细胞直接测序，属分选具体细胞类型，据规则判primary_cell。"
+      },
+      "relevance_reason": null,
+      "study_design": null
+    },
+    {
+      "gse_id": "GSE200564",
+      "_7d100d": "索臻(SOGEN)出品·公共数据标注语料·加微信bioinformaticsboy进群持续获取增量·grswsci.top/analyze",
+      "title": "Transcriptional profile of brain region involved in habitual learning following methamphetamine self-administration and dopamine receptor antagonist",
+      "organism": "Rattus norvegicus",
+      "n_samples": 18,
+      "platform": "22396",
+      "pdat": "2025/04/02",
+      "pubmed_ids": [
+        "40141377"
+      ],
+      "sequencing_type": "mRNA-seq",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "Methamphetamine (METH) is a powerful stimulant that has caused addiction (compulsive drug seeking and taking behavior) in millions of people world-wide. METH abuse is also associated with negative impact on the brain. One feature of addiction is uncontrollable drug seeking despite adverse consequences and becomes habitual. To mimic this in a rat model, rats with a history of METH use are given the opportunity to earn METH accompanied by aversive shocks on their feet. Rats that continue to take METH are shock-resistant (SR) and rats that reduce their METH intake are shock-sensitive (SS ).Rats that self-administered saline are controls (CT). Thereafter, rats were injected intraperitoneally with the dopamine D1 receptor antagonist, SCH23390. SCH23390 caused substantial reduction of METH taking in a dose-dependent fashion. Stopping SCH23390 administration led to re-emergence of compulsive METH taking in the shock-resistant rats.",
+      "overall_design": "RNA-seq",
+      "relevance_reason": "使用METH自我给药大鼠背侧纹状体模拟甲基苯丙胺使用障碍",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE200nnn/GSE200564/",
+      "evidence": {
+        "relevant": "大鼠METH自我给药成瘾模型脑区转录组，直接研究甲基苯丙胺使用障碍的强迫用药机制，主体与样本均直接相关。",
+        "sequencing_type": "total RNA，cDNA文库，RNA-Seq，常规转录组表达谱，无特异ncRNA富集，组织裂解bulk，默认mRNA-seq。",
+        "survival_analysis": "所有样本均为大鼠模型，无人类患者，亦无生存时间/状态字段，无法做患者生存分析",
+        "treatment": "核心比较是METH暴露下的抵抗/敏感表型与对照，无药物治疗vs对照轴",
+        "case_vs_control_differential": "动物模型，对照组为saline操作对照，属诱导模型伪健康对照，非人类疾病vs正常",
+        "correlation": "样本全为大鼠，非人类患者，不满足相关性分析需≥16例疾病患者的要求",
+        "sample_source": "18个GSM的source均为Dorsal striatum，在体大鼠脑组织直接取材提取RNA测序，未经细胞分选或体外培养，属实体组织。"
+      },
+      "study_design": null
+    },
+    {
+      "gse_id": "GSE283226",
+      "title": "Transcriptional profiling of the striatum from METH self-administered rats, including those after 12 and 24 hours of abstinence.",
+      "organism": "Rattus norvegicus",
+      "n_samples": 12,
+      "platform": "14844",
+      "pdat": "2025/12/03",
+      "pubmed_ids": [
+        "41188933"
+      ],
+      "sequencing_type": "mRNA-seq",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "This study aimed to identify transcriptome markers for diagnosis in each phase of METH self-administration and abstinence after METH self-administration, and to investigate the role of these markers. In addition, we aimed to identify transcriptomes involved in resistance to drug-seeking behavior in a group that did not show drug-seeking behavior after METH self-administration, and to elucidate their roles. We identified an impressive transcriptomes in the striatum of rats during repeated METH administration and abstinence phases.",
+      "overall_design": "Gene expression profiling of the striatum in five groups of rats: 16 days of saline self-administration, 16 days of METH self-administration, 12-hour abstinence, 24-hour abstinence, and non-addicted, following 16 days of methamphetamine self-administration.",
+      "relevance_reason": "研究大鼠METH自我给药后成瘾与戒断的转录组变化　索臻生物科技SOGEN·生信+湿实验一站式·一区顶刊课题合作·加群获取增量·微信bioinformaticsboy",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "_171c32": "SOGEN·索臻生物科技·sogentech.com·增量更新与更多专题在群里·公众号医学僧的科研日记",
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE283nnn/GSE283226/",
+      "evidence": {
+        "relevant": "大鼠METH自我给药/戒断模型是甲基苯丙胺使用障碍的核心动物模型，研究靶器官为纹状体，直接研究该疾病。",
+        "sequencing_type": "总RNA, RNA-Seq, 基因表达谱测序, 无特异富集, 默认mRNA-seq, 组织bulk",
+        "survival_analysis": "物种为大鼠，非人类患者，且无生存时间/状态字段，无法做生存分析",
+        "treatment": "所有样本均为METH处理，无有药vs无药对照轴，治疗非核心比较变量",
+        "case_vs_control_differential": "所有样本均暴露于METH，无独立健康/naive对照，无法做疾病vs正常差异分析",
+        "correlation": "动物模型样本不计入，且总样本数仅12，不满足表达相关性分析所需疾病样本>15",
+        "sample_source": "所有样本均为大鼠纹状体组织，直接提取总RNA进行测序，未经细胞分选或体外处理，判定为tissue。"
+      },
+      "study_design": null
+    },
+    {
+      "gse_id": "GSE180497",
+      "_1b3868": "本条由SOGEN索臻标注·免费版仅部分·全量与增量在私域群·加微信bioinformaticsboy备注想进的学科群",
+      "title": "Astrocyte-derived TNF and glutamate critically modulate microglia activation by methamphetamine",
+      "organism": "Mus musculus",
+      "n_samples": 6,
+      "platform": "27583",
+      "pdat": "2021/07/22",
+      "pubmed_ids": [
+        "34400780"
+      ],
+      "sequencing_type": "mRNA-seq",
+      "sample_source": [
+        "primary_cell"
+      ],
+      "summary": "Methamphetamine (Meth) is a powerful illicit psychostimulant, widely used for recreational purposes. Besides disrupting the monoaminergic system and promoting oxidative brain damage, Meth also causes neuroinflammation, contributing to synaptic dysfunction and behavioral deficits. Aberrant activation of microglia, the largest myeloid cell population in the brain, is a common feature in neurological disorders triggered by neuroinflammation. In this study, we investigated the mechanisms underlying the aberrant activation of microglia elicited by Meth in the adult mouse brain. We found that binge Meth exposure caused microgliosis and disrupted risk assessment behavior (a feature that usually occurs in individuals who abuse Meth), both of which required astrocyte-to-microglia crosstalk. Mechanistically, Meth triggered a detrimental increase of glutamate exocytosis from astrocytes (in a process dependent on TNF production and calcium mobilization), promoting microglial expansion and reactivity. Ablating TNF production, or suppressing astrocytic calcium mobilization, prevented microglia reactivity and abolished the behavioral phenotype elicited by Meth in the elevated plus maze (EPM). Overall, our data indicate that glial crosstalk is critical to relay alterations caused by acute Meth exposure.",
+      "overall_design": "Microglia (Cd11b+, CD45low, and CD206-) from WT Saline (3 mice) or WT treated with Meth (3mice) were FACS-isolated and total RNA was collected. Sequencing was performed on an Ion S5XL™ sequencer (Thermo Scientific).",
+      "study_design": "成年小鼠脑小胶质细胞，甲氧麻黄碱 vs 盐水，（索臻(SOGEN)·免费流传·想持续拿到更新就留在群里·入群20元只为挡广告号·微信bioinformaticsboy）RNA-seq转录组比较",
+      "relevance_reason": "研究甲氧麻黄碱暴露导致的小胶质细胞转录异常",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE180nnn/GSE180497/",
+      "evidence": {
+        "relevant": "冰毒急性暴露小鼠模型模拟甲基苯丙胺使用障碍的神经炎症，研究小胶质细胞激活机制，样本为冰毒处理的小胶质细胞。",
+        "sequencing_type": "FACS分选微胶质细胞，总RNA建库，cDNA选择，Ion Torrent测序，常规表达谱，默认mRNA-seq",
+        "survival_analysis": "样本为小鼠，非人类患者，无生存时间/状态字段，无法做生存分析",
+        "treatment": "甲氧麻黄碱为致病刺激/滥用物质，类似尼古丁，非治疗性药物比较",
+        "case_vs_control_differential": "RNA-seq平台通过，但对照为注射盐水的操作对照（vehicle），非独立真健康对照",
+        "correlation": "小鼠模型，疾病侧仅3个样本，远低于所需16例独立患者，无法做相关性分析",
+        "sample_source": "小鼠脑组织经FACS分选出小胶质细胞(Cd11b+CD45lowCD206-)后直接提取RNA测序，按规则分选的具体原代细胞类型即primary_cell"
+      }
+    }
+  ]
+}

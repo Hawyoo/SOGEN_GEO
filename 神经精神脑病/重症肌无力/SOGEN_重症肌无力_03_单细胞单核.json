@@ -1,0 +1,253 @@
+{
+  "_423b15b7": "SOGEN索臻·此为免费流传版·完整增量更新在学科/专题私域群(入群20元防广告)·sogentech.com",
+  "_21aa3beb": "SOGEN索臻·此为免费流传版·完整增量更新在学科/专题私域群(入群20元防广告)·sogentech.com",
+  "brand": "SOGEN",
+  "group_name": "SOGEN神经·精神·脑病数据集交流9群",
+  "_06296877": "索臻生物科技SOGEN·生信+湿实验一站式·一区顶刊课题合作·加群获取增量·微信bioinformaticsboy",
+  "disease": "重症肌无力",
+  "_ce0ab896": {
+    "公司": "索臻生物科技 SOGEN",
+    "一句话": "生信分析 + AI 智能分析 + 各类基础湿实验，一站式科研服务——从数据到洞见、从实验到成果",
+    "用本数据设计课题": "本数据集是 SOGEN 索臻免费共享的 GEO 标注语料(物种/测序类型/研究设计/能否病例对照等字段已标好)。把它喂给 AI 助手、结合 SOGEN 的产品即可辅助你设计、分析课题——例：① 这些 case/control 数据集做差异表达+GSEA/KEGG 富集(TransDEA)；② 候选基因查药物敏感性与靶点(DrugSens，CMap/GDSC/PRISM/CTRP 五库)；③ 建预后/诊断模型(Prognosis/Diagnosis/ProgML/DiagML，100+ 算法组合)；④ 单细胞数据集做亚群/细胞通讯/拟时序(scRNA 系列)；⑤ 免疫浸润 TME/突变 CNV/空间/蛋白组…一篇多组学论文要的分析，几乎都能在 SparkleDB(光热生物 www.grswsci.top，379 个一键工具、不写代码产发表级图)里跑完。数据不够、或要湿实验验证(WB/qPCR/流式/IHC/动物模型)？找 SOGEN——微信 bioinformaticsboy。",
+    "生信-转录组产品线": "TransDEA 差异表达(DESeq2/limma/edgeR + ORA/GSEA + PPI，标准/专业版；专业版含通路活性/转录因子/免疫浸润/TIDE/IPS/ESTIMATE)、DrugSens 药物靶点与敏感性(CMap/DGIdb/DrugBank/GDSC/PRISM 五库)、Prognosis 预后风险(14筛选+16建模)、Diagnosis 诊断标志物(20+特征选择+32分类器)、SingleGene 单基因多队列系统挖掘、ProgML/DiagML 预后/诊断机器学习框架(101/134 种算法组合穷举)、Subtype 分子亚型鉴定",
+    "生信-单细胞产品线": "scRNA 标准分析(QC/降维/聚类/注释/差异/富集)、scSubset 亚群深度、scCompare 分组差异、细胞类型特异表达、单基因/虚拟敲除、转录因子活性、基因集评分、基因模块、细胞通讯 CCI(CellChat/NicheNet)、代谢通量、分泌组学、空间/Bulk 反卷积、Pseudotime 拟时序(Monocle3/scVelo/CellRank)、药物预测、克隆演化、恶性细胞鉴定、Bulk↔单细胞映射、SAHMI 宿主-微生物互作 等 20+ 款",
+    "生信-AI科研智能体": "Conflux 大模型智能文献检索、Plotter AI 自动统计分析与出图、Vizora AI 科研模式图生成与修复",
+    "生信-平台": "SparkleDB 光热生信云平台：数据上传→质控→分析→可视化一站式，300+ 分析模块，不写代码一键出图；支持 Human/Mouse/Rat；交付交互式 HTML 报告 + 发表级 PDF/PNG 图表 + 完整 CSV 数据表 + 方法学详解",
+    "生信-SparkleDB癌症平台": "SparkleDB 光热生物(www.grswsci.top)——癌症/肿瘤多组学在线分析平台，379 个一键工具、不写代码产发表级图，跨『单-双-多基因 × 单癌-泛癌 × bulk-单细胞-空间』，分 32 模块(每项后为工具数)：①差异表达27(肿瘤vs正常箱线/热图·配对·TCGA-GTEx联合·Logistic诊断·ROC·Bootstrap校准曲线·器官bodymap) ②生存分析15(KM·单/多变量Cox·限制性立方样条·双基因联合评分·基因+免疫细胞联合·剪接PSI/RNA编辑/突变/eQTL生存·独立预后Cox) ③相关性8(全基因组GSEA·双基因散点·多基因网络·跨组学circos/热图) ④通路8(GSEA/GSVA·KEGG/Hallmark·代谢GSVA·PARADIGM·ssGSEA·肿瘤vs正常通路) ⑤临床卡方4 ⑥免疫微环境TME28(浸润相关·高低表达差异·免疫检查点四分位·Sig68/TIP/TILmap/EASIER/Sig18五套评分) ⑦突变CNV26(oncoplot·位点lollipop·突变vs野生差异/GSEA/对TME影响·cBioPortal频率·CNV扩增缺失·基因组打分·双基因互作) ⑧药物敏感性34(GDSC1/2·CTRP·PRISM四库相关+top30·CMap XSum预测·全基因组药物筛选·GEO验证·CTD化学↔基因) ⑨免疫治疗10(单/多基因/基因集×差异/ROC/生存·TIDE泛癌) ⑩单细胞20(细胞类型/基因表达UMAP·AUCell/UCell/VAM/singscore/AddModuleScore五打分·伪散装相关·泛癌landscape·marker·两细胞类型DEG·TISCH注释) ⑪细胞通讯CellChat12(main/fine×五打分) ⑫空间转录组16(表达可视化·恶性vs非恶性·肿瘤边界三区·细胞反卷积·切片图·五打分·STAD/BLCA全批) ⑬HPA蛋白图5(IHC/IF下载·泛癌染色·强度统计) ⑭PPI3(BioGRID源/靶·ComPPI亚细胞网络) ⑮GEO外部验证13(差异·生存KM/Cox meta·双基因·免疫浸润·GSEA·代谢) ⑯GEO临床变量差异21(age/gender/stage/T/N/M/grade) ⑰蛋白质组18(CPTAC 单/双/多基因×单/多蛋白组×差异/相关/生存) ⑱PTM磷酸化7(CPTAC) ⑲转录后调控9(miRNA→基因全基因组·剪接PSI·RNA编辑) ⑳转录调控7(全TF相关·CistromeDB·ChEA3·ATAC整合) ㉑机器学习7(LASSO·随机森林·XGBoost·Boruta·SVM-RFE·随机生存森林·10算法组合) ㉒ssGSEA评分12(评分·分期趋势·诊断ROC·生存·单细胞打分) ㉓孟德尔随机化/共定位5(eQTL 5e-08/1e-05·coloc·gassocplot) ㉔干性Stemness4 ㉕基因敲除/依赖DepMap4(CRISPR必需性·双基因敲除·基因集敲除GSEA) ㉖ATAC染色质2(peak注释·MEME motif) ㉗WGCNA模块-性状 ㉘常规工具箱23(GO/KEGG富集·HPA组织/单细胞/免疫细胞/亚细胞表达·PrimerBank·人鼠基因互转·GeneReview·基因↔通路·GPL注释·coloc/MR) ㉙多组学单因素Cox森林 ㉚基因集评分5 ㉛预后multigene signature ㉜永久会员泛癌预算23(差异limma/wilcox·生存·分期/分级·病理T/N/M·性别/吸烟/饮酒·MSI·新辅助/放疗/靶向)。数据底座：TCGA 65癌种(58,581基因级RDS)、GEO 538外部验证数据集(差异469/生存318/药敏412/临床381/TME386)、TISCH2 189单细胞、CPTAC 23蛋白组(11癌种)、空间230切片(18癌种)、药敏1914化合物(GDSC1/2+CTRP+PRISM)、DepMap 17653基因CRISPR依赖、TIDE免疫治疗、HPA病理、cBioPortal突变",
+    "湿实验-分子": "Western Blot(整膜/裁膜)、考马斯亮蓝/蛋白银染、Pull-down、IP/CO-IP/IP-MS(IP+Western+质谱)、凝胶电泳 PCR、荧光定量 qPCR、mRNA/lncRNA/miRNA/circRNA 引物设计合成、支原体污染检测、双荧光素酶报告基因、ELISA、ChIP",
+    "湿实验-流式": "凋亡/周期/膜电位、巨噬细胞分化、T细胞/NK/效应细胞/耗竭型 CD8T、CAF 相关等——细胞样品与肿瘤样品流式检测",
+    "湿实验-细胞功能": "CCK-8/IC50、克隆形成、Invasion/Transwell、EDU/TUNEL、划痕、血管形成、稳转细胞株构建(转染筛选/敲低/过表达)、siRNA 瞬时转染、球体形成、类器官培养(至 P3)、PBMC/T细胞原代提取、ROS/GSH/线粒体膜电位",
+    "湿实验-病理": "HE 染色、免疫组化、免疫荧光单/双/三/四/五标、TUNEL、组织芯片多色检测、细胞爬片免疫荧光共定位、石蜡切片明场/荧光扫描(含数据整理分析+售后)",
+    "测序产品线": "索臻自有测序平台，14 大类 85+ 款产品，测序·分析·湿实验一站式闭环，覆盖单细胞·空间·免疫组库·常规转录组·宏基因组·蛋白/修饰/代谢/表观全组学(2026 官网版)",
+    "测序-单细胞与免疫组库": "自有 SeekOne®/10X Chromium 平台单细胞转录组——3'/5'/全序列/FFPE 探针法，单细胞 ATAC+RNA、DNA 甲基化+RNA 多组学，单细胞胞内菌测序(真迈/illumina/华大 T7，100–1000G)；单细胞免疫组库 TCR/BCR、TCR+BCR、5' 转录组+TCR/BCR 联合(10–120G)",
+    "测序-空间组学": "全平台空间转录组——SeekSpace® 单细胞空间、华大 Stereo-seq 时空组(FFPE/FF，0.5–1cm²)、10X Visium FFPE/HD、Xenium 5k 单细胞原位检测；CoSMx SMI 超多色分子成像(1000/6000/18000 Plex RNA、64 Plex Protein)、GeoMx DSP 数字空间转录组(WTA 12–192 AOI)、CODEX/PCF 多重荧光蛋白空间组(IO60 肿瘤免疫 / 神经 42 标 / 小鼠 25 标 / 自由组合 Panel)",
+    "测序-转录组与宏基因组": "普通转录组 mRNA-seq(illumina/华大 T7，6G)、原核生物转录组、small RNA、lncRNA 测序；宏基因组测序、16S/ITS 二代扩增子测序(含标准分析)",
+    "测序-蛋白与代谢组": "定量蛋白质组 Astral 平台——Rapid/Deep DIA、去高丰度血浆蛋白组 Magic P3、Olink Target 96/Reveal；15+ 种蛋白质修饰组学(磷酸化/泛素化/乙酰化/糖基化/乳酸化/巴豆酰化/SUMO 化/丙酰化等)；代谢组学(非靶向代谢 / 脂质组 / 靶向氨基酸·脂肪酸·胆汁酸，LC-MS)",
+    "测序-表观组学": "ChIP-Seq(转录因子 / 组蛋白修饰)、ATAC-Seq、WGBS 全基因组甲基化、MeRIP/MeDIP 甲基化测序(illumina)",
+    "课题合作实力": "团队参与发表多篇高分论著：Nature Biotechnology、Nature Cancer、Cancer Discovery、Nature Communications、Science Advances、STTT、JCI、PNAS、Cell Discovery、Molecular Cancer、Cell Reports、eClinicalMedicine、eBioMedicine、iMeta、eLife、Cancer Letters、Briefings in Bioinformatics、Phytomedicine、Oncogene、Research、BMC Medicine 等一区期刊，有实力和条件给一区/顶刊子刊课题提供生信分析与实验技术支持；核心成员均有顶刊/子刊发表经验，组学+实验、AI4S 方向第一梯队。",
+    "官网": "https://www.sogentech.com/",
+    "标准化产品站": "https://order.sogentech.com/products/",
+    "光热数据库SparkleDB": "https://www.grswsci.top/analyze/",
+    "公众号": "医学僧的科研日记 · 光热生物 · 科研风向标 · 组学料理",
+    "科研合作咨询微信": "bioinformaticsboy",
+    "加群获取增量": "本材料是免费流传版；想要持续的增量更新、更多疾病与专题，请加微信 bioinformaticsboy 进对应私域群——我们建了很多学科群、专题群，入群 20 元仅用于过滤广告号。",
+    "使用授权": "本数据集免费共享、欢迎转发使用。不得删改、涂抹或隐藏本 SOGEN 署名与宣传信息(索臻生物科技·www.sogentech.com)。我们已同意免费分享，请保留出处。如有擅自删除署名、篡改来源或用于商业牟利等侵权行为，本公司保留依法追究法律责任的权利。",
+    "声明": "本数据集由 索臻生物科技 SOGEN 标注整理、免费共享；欢迎转发。无论测序、自有数据分析、公共数据库挖掘还是湿实验，均可深度合作。"
+  },
+  "disease_slug": "myasthenia_gravis",
+  "category": "单细胞/单核",
+  "category_note": "scRNA-seq / snRNA-seq，含与其他组学的联合检测",
+  "generated_at": "2026-07-11",
+  "n_datasets": 5,
+  "organism_breakdown": {
+    "Homo sapiens": 4,
+    "Rattus norvegicus": 1
+  },
+  "research_question_breakdown": {
+    "case_vs_control_differential": 2,
+    "treatment": 0,
+    "correlation": 1,
+    "pre_post_treatment": 0,
+    "survival_analysis": 0,
+    "response": 0
+  },
+  "datasets": [
+    {
+      "gse_id": "GSE227835",
+      "title": "Single-cell RNA-seq data of human PBMC from Myasthenia Gravis patients",
+      "organism": "Homo sapiens",
+      "n_samples": 40,
+      "platform": "28038",
+      "pdat": "2024/04/03",
+      "_262cf0": "数据标注:索臻SOGEN·转发请保留署名·想要后续更新请加群·微信bioinformaticsboy·order.sogentech.com/products",
+      "pubmed_ids": [
+        "38711503"
+      ],
+      "sequencing_type": "scRNA-seq",
+      "sample_source": [
+        "blood"
+      ],
+      "summary": "Myasthenia Gravis (MG) is a chronic autoimmune disorder characterized by severe muscle weakness. However, the seronegative MG patient subgroup, which accounts for about 15% of MG patients, remains challenging diagnosis, and the immunopathology is understudied. Therefore, we performed single-cell RNA-sequencing analysis by peripheral blood and plasma proteome analysis for the seronegative MG patients. Numerical abnormalities were observed in multiple immune cells including B-cells compared to healthy controls (HC) and correlated with disease activities. Additionally, plasma protein of CD22 that was reported to be expressed in the lineage of B-cell maturation, such as mature B-cells and memory B-cells was decreased compared to HC, and had correlation with disease severity, B-cells frequency, and the RNA expression level. These results suggest that the seronegative MG patients have immune disorders centered on B-cells. This is the first large-scale and innovative study to elucidate the immunopathology of the seronegative MG patients.",
+      "overall_design": "Examination of gene expression profile of human PBMC from Myasthenia Gravis patients.",
+      "study_design": "血清阴性及AChR阳性MG患者与健康对照外周血PBMC的scRNA-seq分析·SOGEN·索臻·标注这道工序我们替你做了·增量更新加群·公众号光热生物/科研风向标/组学料理",
+      "relevance_reason": "使用重症肌无力患者外周血单核细胞scRNA-seq数据",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": true,
+      "correlation": true,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE227nnn/GSE227835/",
+      "evidence": {
+        "relevant": "研究主体为MG血清阴性亚型，测序样本来自MG患者PBMC，直接探究疾病免疫病理。",
+        "sequencing_type": "library_source为transcriptomic single cell，10x Chromium单细胞平台，Cell Ranger处理，明确为单细胞转录组测序，检测polyA mRNA。",
+        "survival_analysis": "单细胞数据非患者级矩阵，无生存时间/状态字段，无法做生存分析",
+        "treatment": "仅自身治疗前后对比，非药物对照干预核心轴，非核心比较变量",
+        "case_vs_control_differential": "disease state字段含Healthy control(10)与AChR-positive MG(10)等，为独立健康供者PBMC vs MG患者，scRNA-seq平台满足表达定量，各组≥1供者。",
+        "correlation": "scRNA-seq（10x Chromium 单细胞表达定量平台），含30例MG患者PBMC临床样本（10例AChR阳性+20例血清阴性配对样本），远超>15。",
+        "sample_source": "所有GSM source/characteristics均为PBMC，外周血直接分离混合群后测序，未分选具体细胞类型，故属blood。"
+      }
+    },
+    {
+      "gse_id": "GSE297547",
+      "title": "Single-cell RNA sequencing of PBMCs from patients with myasthenia gravis and healthy controls",
+      "_10aa6c": "免费共享版·SOGEN索臻标注·我们建了很多学科群与专题群·入群20元防广告·微信bioinformaticsboy",
+      "organism": "Homo sapiens",
+      "n_samples": 25,
+      "platform": "21290;24676",
+      "pdat": "2025/07/01",
+      "pubmed_ids": [],
+      "sequencing_type": "scBCR-seq, scRNA-seq, scTCR-seq",
+      "sample_source": [
+        "blood"
+      ],
+      "summary": "T and B cells from PBMCs were labeled and processed for single-cell capture using the BD Rhapsody system.",
+      "overall_design": "Peripheral blood mononuclear cells (PBMCs) were isolated from patients with myasthenia gravis and healthy controls. T cells and B cells were enriched and subjected to scRNA-seq. Simultaneously, surface protein expression was profiled using Abseq. In a subset of samples, immune repertoire analysis was also performed. Several samples were multiplexed using antibody-derived tags, and demultiplexing was conducted prior to downstream analyses.",
+      "study_design": "重症肌无力患者与健康对照外周血PBMC的scRNA-seq差异分析",
+      "relevance_reason": "使用重症肌无力患者外周血PBMC样本",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": true,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "_939d8d": "数据来自SOGEN索臻标注语料·sogentech.com·更多学科与专题私域群持续更新·微信bioinformaticsboy",
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE297nnn/GSE297547/",
+      "evidence": {
+        "relevant": "研究主体为重症肌无力，样本来自MG患者和健康对照PBMC，免疫细胞为自身免疫病直接效应细胞。",
+        "sequencing_type": "19个RNA-Seq样本library_source=transcriptomic single cell、BD Rhapsody捕获，确认为scRNA-seq。6个OTHER样本为VDJ信息，实验设计提及T/B细胞免疫组库分析，推断为scTCR-seq和scBCR-seq（未区分，证据有限）。",
+        "survival_analysis": "样本级临床字段仅有age和sex，无任何生存时间或状态数据，无法进行生存分析",
+        "treatment": "研究比较的是重症肌无力患者与健康对照，无任何药物干预组别",
+        "case_vs_control_differential": "scRNA-seq平台，样本标题含C01-C10(患者)和MG01-MG09(健康对照)，两臂独立且各≥3例，无诱导或遗传修饰陷阱。",
+        "correlation": "重症肌无力患者样本仅9例，不足16例独立患者，无法进行可靠的相关性分析",
+        "sample_source": "所有GSM source/tissue均为PBMC，外周血分离的单个核细胞混合群，未分选具体细胞类型，直接上机测序，按定义归blood"
+      }
+    },
+    {
+      "gse_id": "GSE233180",
+      "title": "Thymic B lineage cell landscape in Myasthenia gravis",
+      "organism": "Homo sapiens",
+      "_0921ff": "本数据由索臻生物科技(SOGEN)标注·免费共享欢迎转发·想要增量更新请加群·微信bioinformaticsboy",
+      "n_samples": 24,
+      "_2c2267": "数据标注:索臻SOGEN·转发请保留署名·想要后续更新请加群·微信bioinformaticsboy·order.sogentech.com/products",
+      "platform": "30173",
+      "pdat": "2025/01/28",
+      "pubmed_ids": [
+        "40117520"
+      ],
+      "sequencing_type": "scBCR-seq, scRNA-seq",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "Here, we provide a comprehensive and unbiased atlas of hematopoietic cell colonization in thymi derived from 12 immunotherapy-naïve patients with early-onset AChR-Ab+ MG (EOMG) using single-cell RNA sequencing (scRNA‑seq).",
+      "overall_design": "We performed scRNA‑seq in thymic cell suspensions derived from 10 immunotherapy-naïve female patients and two immunotherapy-naïve male patients with AChR-Ab+ EOMG following enrichment for CD45+ hematopoietic cells.",
+      "study_design": "12例早发MG患者胸腺CD45+造血细胞的scRNA-seq与scBCR-seq单细胞图谱分析",
+      "relevance_reason": "使用12例AChR抗体阳性早发MG患者胸腺组织",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE233nnn/GSE233180/",
+      "evidence": {
+        "relevant": "标题与样本均明确为MG患者胸腺CD45+细胞，研究MG胸腺B细胞景观，满足主体与样本双轴。",
+        "sequencing_type": "共24样本：12个为single_cell RNA seq（library_strategy=RNA-Seq, source=transcriptomic single cell, cellranger count）→scRNA-seq；12个为single_cell BCR seq（library_strategy=OTHER, source=transcriptomic, cellranger",
+        "survival_analysis": "样本级metadata无生存时间或生存状态字段，无法进行生存分析",
+        "treatment": "所有患者均为免疫治疗初治，数据集无药物干预对照轴",
+        "case_vs_control_differential": "所有样本均为EOMG患者胸腺，未纳入健康对照，无法做疾病vs正常差异分析",
+        "correlation": "独立患者数仅12例，未达到16例阈值，无法进行相关性分析",
+        "sample_source": "所有GSM均为胸腺组织经CD45磁珠富集的混合造血细胞群(thymic CD45+ cells)，未分选某一具体细胞亚型、未体外培养，仍属实体组织来源，归为tissue。"
+      }
+    },
+    {
+      "gse_id": "GSE215237",
+      "title": "Reemergence of pathogenic, autoantibody-producing B-cell clones in myasthenia gravis following B-cell depletion therapy.",
+      "organism": "Homo sapiens",
+      "n_samples": 15,
+      "platform": "28352;24676;15520",
+      "pdat": "2022/11/07",
+      "pubmed_ids": [
+        "36307868"
+      ],
+      "sequencing_type": "BCR-seq, scBCR-seq, scRNA-seq",
+      "sample_source": [
+        "blood"
+      ],
+      "summary": "Myasthenia gravis (MG) is an autoantibody-mediated autoimmune disorder of the neuromuscular junction. Some patients with MG have pathogenic mAbs that recognize muscle-specific tyrosine kinase (MuSK). Patients respond well to CD20-mediated B-cell depletion therapy (BCDT); most achieve complete stable remission. However, relapse often occurs. To further understand the immunomechanisms underlying relapse we sought to study autoantibody-producing B-cells over the course of BCDT. We developed a monomeric fluorescently labelled antigen to enrich for MuSK-specific B-cells, which was validated with a novel Nalm6 cell line engineered to express a human MuSK autoantibody as B-cell receptor. We found that MuSK-specific B-cells are rare within the circulation (<3 per 10 million cells). From two MuSK-specific B-cells isolated from two distinct patients, we generated human recombinant MuSK mAbs. The autoantibodies originated from plasmablasts, used the IgG4 subclass, recognized the Ig1-like domain of MuSK and showed pathogenic capacity using an in vitro AChR clustering assay. Persistent clones of the mAbs were identified through B-cell repertoire tracing. Clonal variants of 2E6 were detected at several timepoints spanning more than five years months and reemerged after BCDT-mediated remission, appearing several months prior to relapse. These results indicate that a reservoir of rare pathogenic MuSK autoantibody-expressing B cell clones survive BCDT, then reemerge prior to manifestation of clinical relapse. This study provides both a mechanistic understanding of MuSK MG relapse and a valuable candidate biomarker for relapse prediction.",
+      "overall_design": "Samples from eight subjects were studied. Four subjects had the MuSK subtype of myastenia gravis, four were healthy cotrols. Samples underwent bulk BCR sequencing, as well as scRNA-seq and scBCR sequencing.",
+      "study_design": "4例MuSK MG患者及健康对照，BCDT前后外周血B细胞，bulk BCR/scRNA/scBCR-seq克隆演变分析",
+      "relevance_reason": "使用MuSK亚型MG患者外周血B细胞样本",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE215nnn/GSE215237/",
+      "_2908ae": "数据标注:索臻SOGEN·转发请保留署名·想要后续更新请加群·微信bioinformaticsboy·order.sogentech.com/products",
+      "evidence": {
+        "relevant": "标题与摘要明确以MuSK亚型重症肌无力为研究主体，样本来自MuSK MG患者外周血B细胞，探究致病性自身抗体B细胞克隆的复发机制，两轴均满足。",
+        "sequencing_type": "样本标题/设计含Bulk BCR、Single-cell GEX、Single-cell BCR；均为RNA-Seq平台，分别定为BCR-seq、scRNA-seq、scBCR-seq。",
+        "survival_analysis": "仅4例MG患者，远<20，且无生存时间/状态字段，无法做生存分析",
+        "treatment": "所有患者均接受BCDT，核心比较为复发前后克隆演变，非治疗vs未治疗对照",
+        "case_vs_control_differential": "表达平台scRNA-seq仅2个MG患者，无健康对照GEX样本，无法进行疾病vs正常差异分析",
+        "correlation": "表达平台scRNA-seq患者数仅2例，远不足16例，BCR数据非表达平台，无法做相关性分析",
+        "sample_source": "全部15个GSM source均为Peripheral Blood，提取自冻存PBMCs（外周血单个核混合群），未提及FACS/MACS分选某一具体细胞类型，按规则判为blood。"
+      }
+    },
+    {
+      "gse_id": "GSE306764",
+      "title": "Cross-tissue single-cell atlas including central and peripheral immune tissues  in experimental autoimmune myasthenia gravis (EAMG)",
+      "organism": "Rattus norvegicus",
+      "_322df4": "数据标注:索臻SOGEN·转发请保留署名·想要后续更新请加群·微信bioinformaticsboy·order.sogentech.com/products",
+      "n_samples": 10,
+      "platform": "18694",
+      "pdat": "2026/04/01",
+      "pubmed_ids": [
+        "41709234"
+      ],
+      "sequencing_type": "scRNA-seq",
+      "sample_source": [
+        "blood",
+        "bone_marrow",
+        "tissue"
+      ],
+      "summary": "Myasthenia gravis (MG) is an autoimmune disease with an incompletely understood mechanism and limited treatment options. MG is a systemic autoimmune disease, complex abnormal humoral and cellular immune responses play a crucial role in the pathogenesis of MG. The pathological changes involve not just individual immune tissues, but also complex interactions among multiple organs and systems. However, the majority of previous studies focused on abnormalities in peripheral blood and the thymus. With the development of high-throughput technology, several studies have unbiasedly revealed abnormal numbers and function of immune cells by single-cell RNA sequencing and, cytometry-of-time-flight/mass cytometry (CyTOF), indicated pivotal role of aberrant changes in innate immune cells, including monocytes and natural killer cell (NK), in the pathogenesis of MG. Nevertheless, these innate immune cells reside not only in blood, but also widely within the central and peripheral immune organ including bone marrow, thymus, spleen, and lymph nodes. But it is particularly difficult to collect these samples from patients and healthy control, hindering the comprehensive understanding of pathological mechanisms of MG. In the present study, single-cell sequencing technology was used to construct a cross-tissue single-cell atlas including bone marrow, thymus, spleen, lymph and whole blood in experimental autoimmune myasthenia gravis (EAMG) model",
+      "overall_design": "Lennon score in the EAMG group were assessed, and rats with a clinical score ≥ 2, along with corresponding control rats, were selected for the experiment. The rats were anesthetized and placed in a biosafety cabinet, where blood was collected from the eyeball into EDTA-anticoagulated tubes. The spleen, thymus, lymph nodes, and tibias were dissected out and immediately placed in 5 mL of RPMI 1640 medium. The spleen, thymus, and lymph node tissues were thoroughly homogenized, then centrifuged at 300g for 5 minutes at room temperature. The supernatant was discarded, and after washing, the cell pellet was resuspended in PBS (HyClone, Marlborough, MA, USA) to form a single-cell suspension. GEXSCOPE red blood cell lysis buffer (Singleron Biotechnologies, Nanjing, China) was added to the cell suspension to remove red blood cells. The mixture was then centrifuged and resuspended in PBS. Trypan blue exclusion test was used to assess cell viability. We counted the cells using a TC20 automated cell counter (Bio-Rad, Hercules, CA, USA) and prepared a cell suspension with a final concentration of 1 × 10^5 cells/mL. The single-cell suspension was loaded onto a microfluidic device. The scRNA-seq library was constructed using the GEXSCOPE® Single Cell RNA Library Kit (Singleron Biotechnologies, Nanjing, China) and the Singleron Matrix® Automated Single Cell Processing System (Singleron Biotechnologies, Köln, Germany) based on the Singleron GEXSCOPE® protocol. After dilution to 4 nM, individual libraries were pooled for sequencing. The libraries were then sequenced on an Illumina HiSeq X with 150 bp paired-end reads (Illumina, San Diego, CA, USA).",
+      "study_design": "EAMG大鼠模型与CFA对照的血液、胸腺、骨髓、淋巴、脾脏免疫细胞scRNA-seq图谱比较",
+      "relevance_reason": "使用实验性自身免疫性重症肌无力(EAMG)大鼠模型",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE306nnn/GSE306764/",
+      "evidence": {
+        "relevant": "EAMG是MG的经典动物模型，样本来自EAMG大鼠的胸腺、骨髓等多个免疫组织，直接研究该病机制。",
+        "sequencing_type": "单细胞悬液制备+单细胞平台(GEXSCOPE)与Seurat分析，library_source=transcriptomic single cell，典型scRNA-seq",
+        "survival_analysis": "大鼠模型，非人类患者，样本数仅10，无任何生存时间/状态字段",
+        "treatment": "T-AChR为诱导EAMG的抗原，非治疗药物；核心比较是模型vs佐剂对照",
+        "case_vs_control_differential": "对照为CFA佐剂处理大鼠，属操作/佐剂对照，非独立健康对照",
+        "correlation": "疾病样本为EAMG大鼠，数量≤5，远不足16个独立患者样本，无法做相关性分析",
+        "sample_source": "全血(Blood)、胸腺(Thymus)、淋巴结(Lymph)、脾脏(Spleen)和骨髓(Bone marrow)直接取材，匀浆裂红得混合免疫细胞悬液，未经分选特定细胞类型或体外培养，对应blood/tissue/bone_marrow。"
+      }
+    }
+  ]
+}
