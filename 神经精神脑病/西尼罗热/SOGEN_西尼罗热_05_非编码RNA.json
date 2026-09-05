@@ -1,0 +1,255 @@
+{
+  "brand": "SOGEN",
+  "group_name": "SOGEN神经·精神·脑病数据集交流9群",
+  "_1a028d10": {
+    "公司": "索臻生物科技 SOGEN",
+    "一句话": "生信分析 + AI 智能分析 + 各类基础湿实验，一站式科研服务——从数据到洞见、从实验到成果",
+    "用本数据设计课题": "本数据集是 SOGEN 索臻免费共享的 GEO 标注语料(物种/测序类型/研究设计/能否病例对照等字段已标好)。把它喂给 AI 助手、结合 SOGEN 的产品即可辅助你设计、分析课题——例：① 这些 case/control 数据集做差异表达+GSEA/KEGG 富集(TransDEA)；② 候选基因查药物敏感性与靶点(DrugSens，CMap/GDSC/PRISM/CTRP 五库)；③ 建预后/诊断模型(Prognosis/Diagnosis/ProgML/DiagML，100+ 算法组合)；④ 单细胞数据集做亚群/细胞通讯/拟时序(scRNA 系列)；⑤ 免疫浸润 TME/突变 CNV/空间/蛋白组…一篇多组学论文要的分析，几乎都能在 SparkleDB(光热生物 www.grswsci.top，379 个一键工具、不写代码产发表级图)里跑完。数据不够、或要湿实验验证(WB/qPCR/流式/IHC/动物模型)？找 SOGEN——微信 bioinformaticsboy。",
+    "生信-转录组产品线": "TransDEA 差异表达(DESeq2/limma/edgeR + ORA/GSEA + PPI，标准/专业版；专业版含通路活性/转录因子/免疫浸润/TIDE/IPS/ESTIMATE)、DrugSens 药物靶点与敏感性(CMap/DGIdb/DrugBank/GDSC/PRISM 五库)、Prognosis 预后风险(14筛选+16建模)、Diagnosis 诊断标志物(20+特征选择+32分类器)、SingleGene 单基因多队列系统挖掘、ProgML/DiagML 预后/诊断机器学习框架(101/134 种算法组合穷举)、Subtype 分子亚型鉴定",
+    "生信-单细胞产品线": "scRNA 标准分析(QC/降维/聚类/注释/差异/富集)、scSubset 亚群深度、scCompare 分组差异、细胞类型特异表达、单基因/虚拟敲除、转录因子活性、基因集评分、基因模块、细胞通讯 CCI(CellChat/NicheNet)、代谢通量、分泌组学、空间/Bulk 反卷积、Pseudotime 拟时序(Monocle3/scVelo/CellRank)、药物预测、克隆演化、恶性细胞鉴定、Bulk↔单细胞映射、SAHMI 宿主-微生物互作 等 20+ 款",
+    "生信-AI科研智能体": "Conflux 大模型智能文献检索、Plotter AI 自动统计分析与出图、Vizora AI 科研模式图生成与修复",
+    "生信-平台": "SparkleDB 光热生信云平台：数据上传→质控→分析→可视化一站式，300+ 分析模块，不写代码一键出图；支持 Human/Mouse/Rat；交付交互式 HTML 报告 + 发表级 PDF/PNG 图表 + 完整 CSV 数据表 + 方法学详解",
+    "生信-SparkleDB癌症平台": "SparkleDB 光热生物(www.grswsci.top)——癌症/肿瘤多组学在线分析平台，379 个一键工具、不写代码产发表级图，跨『单-双-多基因 × 单癌-泛癌 × bulk-单细胞-空间』，分 32 模块(每项后为工具数)：①差异表达27(肿瘤vs正常箱线/热图·配对·TCGA-GTEx联合·Logistic诊断·ROC·Bootstrap校准曲线·器官bodymap) ②生存分析15(KM·单/多变量Cox·限制性立方样条·双基因联合评分·基因+免疫细胞联合·剪接PSI/RNA编辑/突变/eQTL生存·独立预后Cox) ③相关性8(全基因组GSEA·双基因散点·多基因网络·跨组学circos/热图) ④通路8(GSEA/GSVA·KEGG/Hallmark·代谢GSVA·PARADIGM·ssGSEA·肿瘤vs正常通路) ⑤临床卡方4 ⑥免疫微环境TME28(浸润相关·高低表达差异·免疫检查点四分位·Sig68/TIP/TILmap/EASIER/Sig18五套评分) ⑦突变CNV26(oncoplot·位点lollipop·突变vs野生差异/GSEA/对TME影响·cBioPortal频率·CNV扩增缺失·基因组打分·双基因互作) ⑧药物敏感性34(GDSC1/2·CTRP·PRISM四库相关+top30·CMap XSum预测·全基因组药物筛选·GEO验证·CTD化学↔基因) ⑨免疫治疗10(单/多基因/基因集×差异/ROC/生存·TIDE泛癌) ⑩单细胞20(细胞类型/基因表达UMAP·AUCell/UCell/VAM/singscore/AddModuleScore五打分·伪散装相关·泛癌landscape·marker·两细胞类型DEG·TISCH注释) ⑪细胞通讯CellChat12(main/fine×五打分) ⑫空间转录组16(表达可视化·恶性vs非恶性·肿瘤边界三区·细胞反卷积·切片图·五打分·STAD/BLCA全批) ⑬HPA蛋白图5(IHC/IF下载·泛癌染色·强度统计) ⑭PPI3(BioGRID源/靶·ComPPI亚细胞网络) ⑮GEO外部验证13(差异·生存KM/Cox meta·双基因·免疫浸润·GSEA·代谢) ⑯GEO临床变量差异21(age/gender/stage/T/N/M/grade) ⑰蛋白质组18(CPTAC 单/双/多基因×单/多蛋白组×差异/相关/生存) ⑱PTM磷酸化7(CPTAC) ⑲转录后调控9(miRNA→基因全基因组·剪接PSI·RNA编辑) ⑳转录调控7(全TF相关·CistromeDB·ChEA3·ATAC整合) ㉑机器学习7(LASSO·随机森林·XGBoost·Boruta·SVM-RFE·随机生存森林·10算法组合) ㉒ssGSEA评分12(评分·分期趋势·诊断ROC·生存·单细胞打分) ㉓孟德尔随机化/共定位5(eQTL 5e-08/1e-05·coloc·gassocplot) ㉔干性Stemness4 ㉕基因敲除/依赖DepMap4(CRISPR必需性·双基因敲除·基因集敲除GSEA) ㉖ATAC染色质2(peak注释·MEME motif) ㉗WGCNA模块-性状 ㉘常规工具箱23(GO/KEGG富集·HPA组织/单细胞/免疫细胞/亚细胞表达·PrimerBank·人鼠基因互转·GeneReview·基因↔通路·GPL注释·coloc/MR) ㉙多组学单因素Cox森林 ㉚基因集评分5 ㉛预后multigene signature ㉜永久会员泛癌预算23(差异limma/wilcox·生存·分期/分级·病理T/N/M·性别/吸烟/饮酒·MSI·新辅助/放疗/靶向)。数据底座：TCGA 65癌种(58,581基因级RDS)、GEO 538外部验证数据集(差异469/生存318/药敏412/临床381/TME386)、TISCH2 189单细胞、CPTAC 23蛋白组(11癌种)、空间230切片(18癌种)、药敏1914化合物(GDSC1/2+CTRP+PRISM)、DepMap 17653基因CRISPR依赖、TIDE免疫治疗、HPA病理、cBioPortal突变",
+    "湿实验-分子": "Western Blot(整膜/裁膜)、考马斯亮蓝/蛋白银染、Pull-down、IP/CO-IP/IP-MS(IP+Western+质谱)、凝胶电泳 PCR、荧光定量 qPCR、mRNA/lncRNA/miRNA/circRNA 引物设计合成、支原体污染检测、双荧光素酶报告基因、ELISA、ChIP",
+    "湿实验-流式": "凋亡/周期/膜电位、巨噬细胞分化、T细胞/NK/效应细胞/耗竭型 CD8T、CAF 相关等——细胞样品与肿瘤样品流式检测",
+    "湿实验-细胞功能": "CCK-8/IC50、克隆形成、Invasion/Transwell、EDU/TUNEL、划痕、血管形成、稳转细胞株构建(转染筛选/敲低/过表达)、siRNA 瞬时转染、球体形成、类器官培养(至 P3)、PBMC/T细胞原代提取、ROS/GSH/线粒体膜电位",
+    "湿实验-病理": "HE 染色、免疫组化、免疫荧光单/双/三/四/五标、TUNEL、组织芯片多色检测、细胞爬片免疫荧光共定位、石蜡切片明场/荧光扫描(含数据整理分析+售后)",
+    "测序产品线": "索臻自有测序平台，14 大类 85+ 款产品，测序·分析·湿实验一站式闭环，覆盖单细胞·空间·免疫组库·常规转录组·宏基因组·蛋白/修饰/代谢/表观全组学(2026 官网版)",
+    "测序-单细胞与免疫组库": "自有 SeekOne®/10X Chromium 平台单细胞转录组——3'/5'/全序列/FFPE 探针法，单细胞 ATAC+RNA、DNA 甲基化+RNA 多组学，单细胞胞内菌测序(真迈/illumina/华大 T7，100–1000G)；单细胞免疫组库 TCR/BCR、TCR+BCR、5' 转录组+TCR/BCR 联合(10–120G)",
+    "测序-空间组学": "全平台空间转录组——SeekSpace® 单细胞空间、华大 Stereo-seq 时空组(FFPE/FF，0.5–1cm²)、10X Visium FFPE/HD、Xenium 5k 单细胞原位检测；CoSMx SMI 超多色分子成像(1000/6000/18000 Plex RNA、64 Plex Protein)、GeoMx DSP 数字空间转录组(WTA 12–192 AOI)、CODEX/PCF 多重荧光蛋白空间组(IO60 肿瘤免疫 / 神经 42 标 / 小鼠 25 标 / 自由组合 Panel)",
+    "测序-转录组与宏基因组": "普通转录组 mRNA-seq(illumina/华大 T7，6G)、原核生物转录组、small RNA、lncRNA 测序；宏基因组测序、16S/ITS 二代扩增子测序(含标准分析)",
+    "测序-蛋白与代谢组": "定量蛋白质组 Astral 平台——Rapid/Deep DIA、去高丰度血浆蛋白组 Magic P3、Olink Target 96/Reveal；15+ 种蛋白质修饰组学(磷酸化/泛素化/乙酰化/糖基化/乳酸化/巴豆酰化/SUMO 化/丙酰化等)；代谢组学(非靶向代谢 / 脂质组 / 靶向氨基酸·脂肪酸·胆汁酸，LC-MS)",
+    "测序-表观组学": "ChIP-Seq(转录因子 / 组蛋白修饰)、ATAC-Seq、WGBS 全基因组甲基化、MeRIP/MeDIP 甲基化测序(illumina)",
+    "课题合作实力": "团队参与发表多篇高分论著：Nature Biotechnology、Nature Cancer、Cancer Discovery、Nature Communications、Science Advances、STTT、JCI、PNAS、Cell Discovery、Molecular Cancer、Cell Reports、eClinicalMedicine、eBioMedicine、iMeta、eLife、Cancer Letters、Briefings in Bioinformatics、Phytomedicine、Oncogene、Research、BMC Medicine 等一区期刊，有实力和条件给一区/顶刊子刊课题提供生信分析与实验技术支持；核心成员均有顶刊/子刊发表经验，组学+实验、AI4S 方向第一梯队。",
+    "官网": "https://www.sogentech.com/",
+    "标准化产品站": "https://order.sogentech.com/products/",
+    "光热数据库SparkleDB": "https://www.grswsci.top/analyze/",
+    "公众号": "医学僧的科研日记 · 光热生物 · 科研风向标 · 组学料理",
+    "科研合作咨询微信": "bioinformaticsboy",
+    "加群获取增量": "本材料是免费流传版；想要持续的增量更新、更多疾病与专题，请加微信 bioinformaticsboy 进对应私域群——我们建了很多学科群、专题群，入群 20 元仅用于过滤广告号。",
+    "使用授权": "本数据集免费共享、欢迎转发使用。不得删改、涂抹或隐藏本 SOGEN 署名与宣传信息(索臻生物科技·www.sogentech.com)。我们已同意免费分享，请保留出处。如有擅自删除署名、篡改来源或用于商业牟利等侵权行为，本公司保留依法追究法律责任的权利。",
+    "声明": "本数据集由 索臻生物科技 SOGEN 标注整理、免费共享；欢迎转发。无论测序、自有数据分析、公共数据库挖掘还是湿实验，均可深度合作。"
+  },
+  "disease": "西尼罗热",
+  "disease_slug": "west_nile_virus_infection",
+  "category": "非编码RNA",
+  "_f636a843": "本条由SOGEN索臻标注·免费版仅部分·全量与增量在私域群·加微信bioinformaticsboy备注想进的学科群",
+  "category_note": "miRNA-seq / miRNA microarray / ncRNA-seq / m6A-seq",
+  "generated_at": "2026-07-16",
+  "n_datasets": 5,
+  "organism_breakdown": {
+    "Mus musculus": 4,
+    "Mus musculus; Homo sapiens": 1
+  },
+  "research_question_breakdown": {
+    "case_vs_control_differential": 0,
+    "treatment": 0,
+    "correlation": 0,
+    "pre_post_treatment": 0,
+    "survival_analysis": 0,
+    "response": 0
+  },
+  "datasets": [
+    {
+      "gse_id": "GSE65575",
+      "title": "Modeling Host Responses to Understand Severe Human Virus Infections",
+      "organism": "Mus musculus; Homo sapiens",
+      "n_samples": 2549,
+      "_4dfde4": "SOGEN免费共享·请勿删改署名·增量更新与更多学科专题需入群(20元防广告)·grswsci.top/analyze",
+      "platform": "13497;19970;19730;10787;11202",
+      "pdat": "2015/02/04",
+      "pubmed_ids": [
+        "28830941",
+        "34051754",
+        "38565538"
+      ],
+      "sequencing_type": "miRNA microarray, mRNA microarray",
+      "sample_source": [
+        "cell_line",
+        "primary_cell",
+        "tissue"
+      ],
+      "summary": "This SuperSeries is composed of the SubSeries listed below.",
+      "overall_design": "Refer to individual Series",
+      "study_design": "多种人类/小鼠细胞系及小鼠组织感染不同病毒，进行时间序列表达谱/miRNA芯片分析",
+      "relevance_reason": "包含WNV感染的小鼠脑组织及人原代神经元样本　数据标注:索臻SOGEN·转发请保留署名·想要后续更新请加群·微信bioinformaticsboy·order.sogentech.com/products",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE65nnn/GSE65575/",
+      "evidence": {
+        "relevant": "含有WNV感染小鼠脑组织、淋巴结、神经元的转录组数据，WNV为并列研究主体之一且可独立分析。",
+        "sequencing_type": "SuperSeries，全部样本为array（GEO数据类型含Expression profiling by array和Non-coding RNA profiling by array），提取Trizol总RNA并用Agilent芯片及Feature Extraction/GeneSpring处理。部分样本标题/描述明确为miRNA，另有样本标记为mRNA。因此同时包含miRNA芯片和mRNA",
+        "survival_analysis": "样本为细胞系、原代细胞及小鼠组织，非人类患者队列，无生存时间/状态字段",
+        "treatment": "核心比较轴为病毒感染vs模拟感染，IFN/Etoposide等仅为局部刺激或背景对照而非主比较轴",
+        "case_vs_control_differential": "所有对照均为mock/vehicle接种的同源细胞或同源动物，无独立健康组织供者",
+        "correlation": "无独立人类患者样本，全为细胞系、原代细胞或动物组织，不满足患者数≥16的要求",
+        "sample_source": "GSM的source/cell type字段显示体内组织（Lung, Cerebellum, Cortex, Lymph node）、多种细胞系（Calu-3, Huh, IHH, U937-VP30, HUVEC等）和原代细胞（内皮/上皮/成纤维/树突/神经元），故三类共存。"
+      }
+    },
+    {
+      "_30f4c4": "SOGEN索臻·此为免费流传版·完整增量更新在学科/专题私域群(入群20元防广告)·sogentech.com",
+      "gse_id": "GSE77161",
+      "title": "Mouse cortex transcriptome response to a wild type West Nile virus (WNV), New York 99 Strain, and mutant WNV-E218A viruses [WCT001_miRNA]",
+      "organism": "Mus musculus",
+      "n_samples": 30,
+      "platform": "19970",
+      "pdat": "2016/03/12",
+      "pubmed_ids": [
+        "38565538"
+      ],
+      "sequencing_type": "miRNA microarray",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "The purpose is to obtain samples for mRNA, miRNA, proteomics, lipidomics, metabolomics, and histopathology analysis in mouse cortex infected with wild-type West Nile virus (WNV; WNV-NY99 382), and mutant WNV-E218A (WNV-NY99 382 E218A 2 nt).",
+      "overall_design": "Mice were inoculated with WNV intracranially at a dose of 100 FFU. Infected samples were collected in quintuplet; time-matched mocks were collected in quintuplet in parallel with infected samples. Time points: 2 and 4 days post-infection. This study (WCT001) and GSE77160 (WCB001) are 1/4 of cortex and 1/2 of cerebellum from the same mice. Tissues from this experiment are matched to tissues from GSE77160 (WCB001). Infectivity (titer) and pathology are measured from the tissue in WCT001 (i.e., this experiment).",
+      "study_design": "小鼠小脑感染WNV WT与E218A突变株及mock对照，miRNA芯片表达谱",
+      "relevance_reason": "使用小鼠西尼罗病毒感染模型的小脑组织miRNA数据",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE77nnn/GSE77161/",
+      "evidence": {
+        "relevant": "研究主体是WNV感染后宿主皮层miRNA响应，样本为WNV感染小鼠脑组织，属于目标感染的直接动物模型。",
+        "sequencing_type": "GEO数据类型为Non-coding RNA profiling by array，样本标题均含microRNA，数据处理用Agilent Feature Extraction和limma，确定为miRNA芯片表达谱。",
+        "survival_analysis": "样本为小鼠，非人类患者，且无生存时间/状态字段",
+        "treatment": "实验分组为病毒株感染vs mock，无药物治疗对照轴",
+        "case_vs_control_differential": "Mock为颅内接种操作对照，非独立真健康小鼠，不符合真正常对照",
+        "correlation": "全部样本为小鼠模型，非人类患者，不满足患者数>15要求",
+        "sample_source": "所有30个GSM的source字段均明确为'Cerebellum'（小鼠小脑），病毒颅内接种后直接取组织提RNA测miRNA，未分选细胞、未体外培养，故属tissue。虽标题称cortex，但GSM source优先。"
+      }
+    },
+    {
+      "gse_id": "GSE77160",
+      "title": "Mouse cerebellum transcriptome response to a wild type West Nile virus (WNV), New York 99 Strain, and mutant WNV-E218A viruses [WCB001_microRNA]",
+      "organism": "Mus musculus",
+      "n_samples": 30,
+      "platform": "19970",
+      "_3b408a": "索臻(SOGEN)·免费流传·想持续拿到更新就留在群里·入群20元只为挡广告号·微信bioinformaticsboy",
+      "pdat": "2016/02/21",
+      "pubmed_ids": [
+        "34051754",
+        "38565538"
+      ],
+      "sequencing_type": "miRNA microarray",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "The purpose is to obtain samples for mRNA, miRNA, proteomics, lipidomics, metabolomics, and histopathology analysis in mouse cerebellum infected with wild-type West Nile virus (WNV; WNV-NY99 382), and mutant WNV-E218A (WNV-NY99 382 E218A 2 nt).",
+      "overall_design": "Mice were inoculated with WNV intracranially at a dose of 100 FFU. Infected samples were collected in quintuplet; time-matched mocks were collected in quintuplet in parallel with infected samples. Time points: 2 and 4 days post-infection. GSE77161 (WCT001) and this study (WCB001) are 1/4 of cortex and 1/2 of cerebellum from the same mice. Tissues from this experiment are matched to tissues from GSE77161 (WCT001). Infectivity (titer) and pathology are measured from cortex tissue in GSE77161 (WCT001).",
+      "study_design": "C57BL/6J小鼠小脑感染WNV野生型或E218A突变株及mock对照，miRNA芯片检测2、4天表达",
+      "relevance_reason": "使用WNV颅内感染小鼠小脑模型研究miRNA应答",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE77nnn/GSE77160/",
+      "evidence": {
+        "relevant": "小鼠小脑直接感染WNV及突变株，测序样本为WNV感染组织，研究WNV感染的宿主微RNA响应，主体与样本轴均直接相关。",
+        "sequencing_type": "标题及样本名均注明microRNA，geo_data_type为Non-coding RNA profiling by array，使用Agilent芯片扫描，故为miRNA microarray。",
+        "survival_analysis": "小鼠模型，非人类患者，无生存时间和状态字段",
+        "treatment": "核心比较为病毒感染vs mock，无药物干预对照轴",
+        "case_vs_control_differential": "Mock为颅内注射操作对照，非独立真健康对照",
+        "correlation": "小鼠样本非人类患者，无法做患者表达相关性分析",
+        "sample_source": "30个GSM的source均为小鼠小脑(Cerebellum)，颅内接种后直接取材提RNA，未分选细胞，判为tissue。"
+      }
+    },
+    {
+      "gse_id": "GSE78887",
+      "title": "Mouse popliteal lymph node transcriptome response to a wild type West Nile virus (WNV), New York 99 Strain, and mutant WNV-E218A viruses [microRNA]",
+      "organism": "Mus musculus",
+      "n_samples": 26,
+      "_7e96f0": "SOGEN·索臻生物科技·sogentech.com·增量更新与更多专题在群里·公众号医学僧的科研日记",
+      "platform": "19970",
+      "pdat": "2016/03/19",
+      "_f5ae7f": "SOGEN索臻·此为免费流传版·完整增量更新在学科/专题私域群(入群20元防广告)·sogentech.com",
+      "pubmed_ids": [
+        "38565538"
+      ],
+      "sequencing_type": "miRNA microarray",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "The purpose is to obtain samples for mRNA, miRNA, proteomics, lipidomics, metabolomics, and histopathology analysis in mouse cortex infected with wild-type West Nile virus (WNV; WNV-NY99 382), and mutant WNV-E218A (WNV-NY99 382 E218A 2 nt).",
+      "overall_design": "Mice are inoculated with WNV in both hind footpads at a dose of 100 FFU. Infected samples were collected in quintuplet; time-matched mocks were collected in triplets in parallel with infected samples. Time points: 1 and 2 days post-infection.",
+      "study_design": "小鼠接种WNV WT/E218A或Mock，取腘淋巴结进行miRNA芯片分析，比较感染vs对照及病毒株差异",
+      "relevance_reason": "研究小鼠感染西尼罗病毒后淋巴结miRNA反应",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE78nnn/GSE78887/",
+      "evidence": {
+        "relevant": "研究主体即WNV感染，样本取自WNV感染小鼠的引流淋巴结，直接研究病毒感染后的宿主miRNA应答。",
+        "sequencing_type": "样本标题含'microRNA'，GEO类型为Non-coding RNA profiling by array，用Agilent Feature Extraction分析芯片图像，符合miRNA芯片特征。",
+        "survival_analysis": "样本为小鼠模型，无人类患者及生存时间/状态字段",
+        "treatment": "核心比较为病毒感染vs mock与病毒株间差异，无药物治疗对照轴",
+        "case_vs_control_differential": "Mock为操作/注射对照，非独立真健康个体，不符合差异分析对照要求",
+        "correlation": "全部样本来自小鼠动物模型，无人类患者样本，不满足患者数要求",
+        "sample_source": "所有26个GSM的source均为小鼠腘窝淋巴结（Lymph node），整体取材后直接提取总RNA进行miRNA芯片检测，未分选细胞、未体外培养，符合tissue定义。"
+      }
+    },
+    {
+      "gse_id": "GSE67474",
+      "title": "Mouse cortical neuron transcriptional response to wild-type West Nile virus (WNV NY99 clone 382) and mutant virus WNV E218A [microRNA]",
+      "organism": "Mus musculus",
+      "n_samples": 16,
+      "platform": "19970",
+      "pdat": "2015/04/04",
+      "pubmed_ids": [
+        "38565538"
+      ],
+      "sequencing_type": "miRNA microarray",
+      "sample_source": [
+        "primary_cell"
+      ],
+      "summary": "The purpose is to obtain samples for transcriptional analysis in triplicate wells using wild type West Nile virus (WNV NY99 clone 382; WNVWT) and mutant virus (WNVE218A) in mouse cortical neurons. This data set comprises two complete biological replicate experiments conducted in the same conditions and with data processed independently.",
+      "overall_design": "Primary cortical neurons from C57Bl/6J mouse embryos (age E15) are infected with plasmid-derived wild type West Nile virus NY99 clone 382 (WNVWT) or plasmid-derived isogenic E218A mutant West Nile virus NY99 clone 382 (WNVE218A) with multiplicity of infection (MOI) 250.  Three technical replicates were performed at each of 1, 8, 12 and 24 hrs post infection. Time matched mocks done in triplicate are treated with mockulum: cell media concentrated through ultracentrifugation and diluted as virus. mRNA is sampled at all time points; microRNA is sampled at 12 hours post-infection. There were two independent biological replicates of the entire procedure, distinguished by sample name prefixes ('WCN002' and 'WCN003') and the biological_replicate characteristic field.",
+      "study_design": "小鼠皮层神经元感染WNV野生型/突变株vs mock，　索臻(SOGEN)·免费流传·想持续拿到更新就留在群里·入群20元只为挡广告号·微信bioinformaticsboymiRNA芯片分析",
+      "relevance_reason": "利用西尼罗病毒感染的小鼠皮层神经元模型",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "_29872e": "免费共享版·SOGEN索臻标注·我们建了很多学科群与专题群·入群20元防广告·微信bioinformaticsboy",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE67nnn/GSE67474/",
+      "evidence": {
+        "relevant": "研究WNV感染神经元的转录响应，样本为WNV感染的皮层神经元，直接研究西尼罗病毒感染机制",
+        "sequencing_type": "GEO数据类型为Non-coding RNA profiling by array，标题及设计专测microRNA，Agilent Feature Extraction芯片处理，总RNA上样，bulk神经元。",
+        "survival_analysis": "样本为小鼠胚胎皮层神经元原代培养，非人类患者，无法做生存分析",
+        "treatment": "核心比较是病毒感染株与mock对照，属致病刺激，非药物治疗",
+        "case_vs_control_differential": "感染vs mock是体外培养对照，非组织级疾病vs独立真健康供者，判为false",
+        "correlation": "全部样本为小鼠原代神经元培养，无患者/临床组织样本，不满足相关性分析样本要求",
+        "sample_source": "所有16个样本的source/标题均为原代小鼠胚胎皮层神经元，经分离、铺板培养4天后感染WNV，并非整块脑组织直接测序，符合具体细胞类型体外培养→primary_cell。"
+      }
+    }
+  ]
+}

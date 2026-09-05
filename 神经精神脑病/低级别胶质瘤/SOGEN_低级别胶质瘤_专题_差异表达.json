@@ -1,0 +1,287 @@
+{
+  "brand": "SOGEN",
+  "_4e26881b": "本条由SOGEN索臻标注·免费版仅部分·全量与增量在私域群·加微信bioinformaticsboy备注想进的学科群",
+  "group_name": "SOGEN神经·精神·脑病数据集交流9群",
+  "_d7b2e919": "数据标注:索臻SOGEN·转发请保留署名·想要后续更新请加群·微信bioinformaticsboy·order.sogentech.com/products",
+  "disease": "低级别胶质瘤",
+  "disease_slug": "low_grade_glioma",
+  "topic": "差异表达",
+  "_ad7e99fa": {
+    "公司": "索臻生物科技 SOGEN",
+    "一句话": "生信分析 + AI 智能分析 + 各类基础湿实验，一站式科研服务——从数据到洞见、从实验到成果",
+    "用本数据设计课题": "本数据集是 SOGEN 索臻免费共享的 GEO 标注语料(物种/测序类型/研究设计/能否病例对照等字段已标好)。把它喂给 AI 助手、结合 SOGEN 的产品即可辅助你设计、分析课题——例：① 这些 case/control 数据集做差异表达+GSEA/KEGG 富集(TransDEA)；② 候选基因查药物敏感性与靶点(DrugSens，CMap/GDSC/PRISM/CTRP 五库)；③ 建预后/诊断模型(Prognosis/Diagnosis/ProgML/DiagML，100+ 算法组合)；④ 单细胞数据集做亚群/细胞通讯/拟时序(scRNA 系列)；⑤ 免疫浸润 TME/突变 CNV/空间/蛋白组…一篇多组学论文要的分析，几乎都能在 SparkleDB(光热生物 www.grswsci.top，379 个一键工具、不写代码产发表级图)里跑完。数据不够、或要湿实验验证(WB/qPCR/流式/IHC/动物模型)？找 SOGEN——微信 bioinformaticsboy。",
+    "生信-转录组产品线": "TransDEA 差异表达(DESeq2/limma/edgeR + ORA/GSEA + PPI，标准/专业版；专业版含通路活性/转录因子/免疫浸润/TIDE/IPS/ESTIMATE)、DrugSens 药物靶点与敏感性(CMap/DGIdb/DrugBank/GDSC/PRISM 五库)、Prognosis 预后风险(14筛选+16建模)、Diagnosis 诊断标志物(20+特征选择+32分类器)、SingleGene 单基因多队列系统挖掘、ProgML/DiagML 预后/诊断机器学习框架(101/134 种算法组合穷举)、Subtype 分子亚型鉴定",
+    "生信-单细胞产品线": "scRNA 标准分析(QC/降维/聚类/注释/差异/富集)、scSubset 亚群深度、scCompare 分组差异、细胞类型特异表达、单基因/虚拟敲除、转录因子活性、基因集评分、基因模块、细胞通讯 CCI(CellChat/NicheNet)、代谢通量、分泌组学、空间/Bulk 反卷积、Pseudotime 拟时序(Monocle3/scVelo/CellRank)、药物预测、克隆演化、恶性细胞鉴定、Bulk↔单细胞映射、SAHMI 宿主-微生物互作 等 20+ 款",
+    "生信-AI科研智能体": "Conflux 大模型智能文献检索、Plotter AI 自动统计分析与出图、Vizora AI 科研模式图生成与修复",
+    "生信-平台": "SparkleDB 光热生信云平台：数据上传→质控→分析→可视化一站式，300+ 分析模块，不写代码一键出图；支持 Human/Mouse/Rat；交付交互式 HTML 报告 + 发表级 PDF/PNG 图表 + 完整 CSV 数据表 + 方法学详解",
+    "生信-SparkleDB癌症平台": "SparkleDB 光热生物(www.grswsci.top)——癌症/肿瘤多组学在线分析平台，379 个一键工具、不写代码产发表级图，跨『单-双-多基因 × 单癌-泛癌 × bulk-单细胞-空间』，分 32 模块(每项后为工具数)：①差异表达27(肿瘤vs正常箱线/热图·配对·TCGA-GTEx联合·Logistic诊断·ROC·Bootstrap校准曲线·器官bodymap) ②生存分析15(KM·单/多变量Cox·限制性立方样条·双基因联合评分·基因+免疫细胞联合·剪接PSI/RNA编辑/突变/eQTL生存·独立预后Cox) ③相关性8(全基因组GSEA·双基因散点·多基因网络·跨组学circos/热图) ④通路8(GSEA/GSVA·KEGG/Hallmark·代谢GSVA·PARADIGM·ssGSEA·肿瘤vs正常通路) ⑤临床卡方4 ⑥免疫微环境TME28(浸润相关·高低表达差异·免疫检查点四分位·Sig68/TIP/TILmap/EASIER/Sig18五套评分) ⑦突变CNV26(oncoplot·位点lollipop·突变vs野生差异/GSEA/对TME影响·cBioPortal频率·CNV扩增缺失·基因组打分·双基因互作) ⑧药物敏感性34(GDSC1/2·CTRP·PRISM四库相关+top30·CMap XSum预测·全基因组药物筛选·GEO验证·CTD化学↔基因) ⑨免疫治疗10(单/多基因/基因集×差异/ROC/生存·TIDE泛癌) ⑩单细胞20(细胞类型/基因表达UMAP·AUCell/UCell/VAM/singscore/AddModuleScore五打分·伪散装相关·泛癌landscape·marker·两细胞类型DEG·TISCH注释) ⑪细胞通讯CellChat12(main/fine×五打分) ⑫空间转录组16(表达可视化·恶性vs非恶性·肿瘤边界三区·细胞反卷积·切片图·五打分·STAD/BLCA全批) ⑬HPA蛋白图5(IHC/IF下载·泛癌染色·强度统计) ⑭PPI3(BioGRID源/靶·ComPPI亚细胞网络) ⑮GEO外部验证13(差异·生存KM/Cox meta·双基因·免疫浸润·GSEA·代谢) ⑯GEO临床变量差异21(age/gender/stage/T/N/M/grade) ⑰蛋白质组18(CPTAC 单/双/多基因×单/多蛋白组×差异/相关/生存) ⑱PTM磷酸化7(CPTAC) ⑲转录后调控9(miRNA→基因全基因组·剪接PSI·RNA编辑) ⑳转录调控7(全TF相关·CistromeDB·ChEA3·ATAC整合) ㉑机器学习7(LASSO·随机森林·XGBoost·Boruta·SVM-RFE·随机生存森林·10算法组合) ㉒ssGSEA评分12(评分·分期趋势·诊断ROC·生存·单细胞打分) ㉓孟德尔随机化/共定位5(eQTL 5e-08/1e-05·coloc·gassocplot) ㉔干性Stemness4 ㉕基因敲除/依赖DepMap4(CRISPR必需性·双基因敲除·基因集敲除GSEA) ㉖ATAC染色质2(peak注释·MEME motif) ㉗WGCNA模块-性状 ㉘常规工具箱23(GO/KEGG富集·HPA组织/单细胞/免疫细胞/亚细胞表达·PrimerBank·人鼠基因互转·GeneReview·基因↔通路·GPL注释·coloc/MR) ㉙多组学单因素Cox森林 ㉚基因集评分5 ㉛预后multigene signature ㉜永久会员泛癌预算23(差异limma/wilcox·生存·分期/分级·病理T/N/M·性别/吸烟/饮酒·MSI·新辅助/放疗/靶向)。数据底座：TCGA 65癌种(58,581基因级RDS)、GEO 538外部验证数据集(差异469/生存318/药敏412/临床381/TME386)、TISCH2 189单细胞、CPTAC 23蛋白组(11癌种)、空间230切片(18癌种)、药敏1914化合物(GDSC1/2+CTRP+PRISM)、DepMap 17653基因CRISPR依赖、TIDE免疫治疗、HPA病理、cBioPortal突变",
+    "湿实验-分子": "Western Blot(整膜/裁膜)、考马斯亮蓝/蛋白银染、Pull-down、IP/CO-IP/IP-MS(IP+Western+质谱)、凝胶电泳 PCR、荧光定量 qPCR、mRNA/lncRNA/miRNA/circRNA 引物设计合成、支原体污染检测、双荧光素酶报告基因、ELISA、ChIP",
+    "湿实验-流式": "凋亡/周期/膜电位、巨噬细胞分化、T细胞/NK/效应细胞/耗竭型 CD8T、CAF 相关等——细胞样品与肿瘤样品流式检测",
+    "湿实验-细胞功能": "CCK-8/IC50、克隆形成、Invasion/Transwell、EDU/TUNEL、划痕、血管形成、稳转细胞株构建(转染筛选/敲低/过表达)、siRNA 瞬时转染、球体形成、类器官培养(至 P3)、PBMC/T细胞原代提取、ROS/GSH/线粒体膜电位",
+    "湿实验-病理": "HE 染色、免疫组化、免疫荧光单/双/三/四/五标、TUNEL、组织芯片多色检测、细胞爬片免疫荧光共定位、石蜡切片明场/荧光扫描(含数据整理分析+售后)",
+    "测序产品线": "索臻自有测序平台，14 大类 85+ 款产品，测序·分析·湿实验一站式闭环，覆盖单细胞·空间·免疫组库·常规转录组·宏基因组·蛋白/修饰/代谢/表观全组学(2026 官网版)",
+    "测序-单细胞与免疫组库": "自有 SeekOne®/10X Chromium 平台单细胞转录组——3'/5'/全序列/FFPE 探针法，单细胞 ATAC+RNA、DNA 甲基化+RNA 多组学，单细胞胞内菌测序(真迈/illumina/华大 T7，100–1000G)；单细胞免疫组库 TCR/BCR、TCR+BCR、5' 转录组+TCR/BCR 联合(10–120G)",
+    "测序-空间组学": "全平台空间转录组——SeekSpace® 单细胞空间、华大 Stereo-seq 时空组(FFPE/FF，0.5–1cm²)、10X Visium FFPE/HD、Xenium 5k 单细胞原位检测；CoSMx SMI 超多色分子成像(1000/6000/18000 Plex RNA、64 Plex Protein)、GeoMx DSP 数字空间转录组(WTA 12–192 AOI)、CODEX/PCF 多重荧光蛋白空间组(IO60 肿瘤免疫 / 神经 42 标 / 小鼠 25 标 / 自由组合 Panel)",
+    "测序-转录组与宏基因组": "普通转录组 mRNA-seq(illumina/华大 T7，6G)、原核生物转录组、small RNA、lncRNA 测序；宏基因组测序、16S/ITS 二代扩增子测序(含标准分析)",
+    "测序-蛋白与代谢组": "定量蛋白质组 Astral 平台——Rapid/Deep DIA、去高丰度血浆蛋白组 Magic P3、Olink Target 96/Reveal；15+ 种蛋白质修饰组学(磷酸化/泛素化/乙酰化/糖基化/乳酸化/巴豆酰化/SUMO 化/丙酰化等)；代谢组学(非靶向代谢 / 脂质组 / 靶向氨基酸·脂肪酸·胆汁酸，LC-MS)",
+    "测序-表观组学": "ChIP-Seq(转录因子 / 组蛋白修饰)、ATAC-Seq、WGBS 全基因组甲基化、MeRIP/MeDIP 甲基化测序(illumina)",
+    "课题合作实力": "团队参与发表多篇高分论著：Nature Biotechnology、Nature Cancer、Cancer Discovery、Nature Communications、Science Advances、STTT、JCI、PNAS、Cell Discovery、Molecular Cancer、Cell Reports、eClinicalMedicine、eBioMedicine、iMeta、eLife、Cancer Letters、Briefings in Bioinformatics、Phytomedicine、Oncogene、Research、BMC Medicine 等一区期刊，有实力和条件给一区/顶刊子刊课题提供生信分析与实验技术支持；核心成员均有顶刊/子刊发表经验，组学+实验、AI4S 方向第一梯队。",
+    "官网": "https://www.sogentech.com/",
+    "标准化产品站": "https://order.sogentech.com/products/",
+    "光热数据库SparkleDB": "https://www.grswsci.top/analyze/",
+    "公众号": "医学僧的科研日记 · 光热生物 · 科研风向标 · 组学料理",
+    "科研合作咨询微信": "bioinformaticsboy",
+    "加群获取增量": "本材料是免费流传版；想要持续的增量更新、更多疾病与专题，请加微信 bioinformaticsboy 进对应私域群——我们建了很多学科群、专题群，入群 20 元仅用于过滤广告号。",
+    "使用授权": "本数据集免费共享、欢迎转发使用。不得删改、涂抹或隐藏本 SOGEN 署名与宣传信息(索臻生物科技·www.sogentech.com)。我们已同意免费分享，请保留出处。如有擅自删除署名、篡改来源或用于商业牟利等侵权行为，本公司保留依法追究法律责任的权利。",
+    "声明": "本数据集由 索臻生物科技 SOGEN 标注整理、免费共享；欢迎转发。无论测序、自有数据分析、公共数据库挖掘还是湿实验，均可深度合作。"
+  },
+  "topic_field": "diff_expression",
+  "note": "本文件是「低级别胶质瘤 · 差异表达」分析场景专题（病例/对照差异表达分析(DEG、火山图、GO/KEGG富集)候选），跟按测序类型分的 7 个文件是不同维度、有重叠，不是第 8 个分桶，不要跟那 7 个加总。",
+  "generated_at": "2026-07-11",
+  "n_datasets": 6,
+  "n_verified_total": 107,
+  "organism_breakdown": {
+    "Homo sapiens": 6
+  },
+  "sequencing_type_breakdown": {
+    "转录组·测序": 2,
+    "单细胞/单核": 2,
+    "其他/长尾": 1,
+    "转录组·芯片": 1
+  },
+  "datasets": [
+    {
+      "gse_id": "GSE227756",
+      "title": "NanoString immune profiling of pediatric brain tumors",
+      "organism": "Homo sapiens",
+      "n_samples": 571,
+      "platform": "33269",
+      "pdat": "2024/02/19",
+      "pubmed_ids": [
+        "38987542"
+      ],
+      "sequencing_type": "NanoString nCounter",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "With the increasing use of immunotherapy in cancer, understanding the tumor immune microenvironment (TIME) has become increasingly important. There has been great success in treatment of some pediatric high-grade gliomas with immune checkpoint inhibition, however overall, the immune microenvironment in pediatric brain tumors remains poorly understood. Accordingly, we developed a clinical immune-oncology gene expression assay and used it to profile a diverse range of pediatric brain tumors with detailed clinical and molecular annotation, including a total of 1379 cases. Our findings demonstrate the critical importance of understanding the TIME to guide the prognosis and management of pediatric brain tumors. In pediatric low-grade gliomas we identified distinct patterns of immune activation with prognostic significance in BRAF V600E mutant tumors. In pediatric high-grade gliomas, we observed elevated inflammation and T cell infiltrates in tumors that have historically been considered immune cold, as well as genomic correlates of inflammation levels. In our cohort of mismatch repair deficient high-grade gliomas treated with immune checkpoint inhibition, we found that high tumor inflammation signature was a significant predictor of treatment response. Furthermore, we demonstrated the potential for multimodal biomarkers to improve the treatment stratification of these patients. Importantly, while overall patterns of immune activation were observed for histologically and genomically defined tumor types, there was nonetheless significant variability within each diagnostic entity, indicating that the immune response must be evaluated as an independent feature. In sum, in addition to the histology and molecular profile, this work establishes the importance of assessing and reporting on the tumor immune microenvironment as an essential axis of cancer diagnosis in the era of personalized medicine.",
+      "overall_design": "This study analyzed frozen or formalin-fixed paraffin-embedded (FFPE) tissue from 571 patient samples, including 559 pediatric brain tumors and 12 non-tumor brain control samples. Gene expression profiling was carried out using the NanoString nCounter system with a customized CodeSet composed of a total of 103 genes focused on the tumor-immune microenvironment.",
+      "study_design": "儿童脑肿瘤（含224例低级别胶质瘤）与12例非肿瘤脑组织，NanoString免疫基因表达谱分析",
+      "_5f8dc0": "索臻(SOGEN)出品·公共数据标注语料·加微信bioinformaticsboy进群持续获取增量·grswsci.top/analyze",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": true,
+      "correlation": true,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE227nnn/GSE227756/",
+      "evidence": {
+        "relevant": "包含224例LGG肿瘤组织并独立分析其免疫微环境谱及预后，LGG为研究主体之一，满足样本轴和主体轴。",
+        "sequencing_type": "标题及摘要明确使用NanoString nCounter系统，补充文件为RCC格式，数据处理用NanoStringQCPro，测总RNA的免疫微环境基因表达，无测序，为靶向探针杂交直接计数。",
+        "survival_analysis": "样本级特征仅含肿瘤类型，无生存时间或状态字段，无法构建KM曲线",
+        "treatment": "所有样本按肿瘤类型分组，无药物处理vs对照的干预轴，治疗仅为背景描述",
+        "case_vs_control_differential": "同一数据集中存在LGG肿瘤样本224例与12例非肿瘤正常脑对照(Normal brain)，NanoString nCounter表达定量平台，两组样本数均≥3，对照为正向健康标签正常脑组织，可做LGG vs normal差异分析。",
+        "correlation": "NanoString nCounter平台（表达定量），目标疾病LGG临床样本224例（>15），可做表达相关性分析。",
+        "sample_source": "所有571个样本的source均为pediatric brain tumor或non-tumor brain control，实验设计明确使用FFPE或冰冻组织直接提取RNA，未经细胞分选或体外培养，属整块实体组织。"
+      },
+      "relevance_reason": null
+    },
+    {
+      "gse_id": "GSE44971",
+      "title": "Gene expression data from pilocytic astrocytoma tumour samples and normal cerebellum controls",
+      "organism": "Homo sapiens",
+      "n_samples": 58,
+      "platform": "570",
+      "pdat": "2013/06/12",
+      "pubmed_ids": [
+        "23660940"
+      ],
+      "sequencing_type": "mRNA microarray",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "Pilocytic astrocytomas (PA) are the most common brain tumor in pediatric patients and can cause significant morbidity, including chronic neurological deficiencies. They are characterized by activating alterations in the mitogen-activated protein kinase (MAPK) pathway, but little else is known about their development. To further define their molecular development, we analysed the global DNA methylation profiles of 61 PAs and 6 normal cerebellum samples and integrated this data with transcriptome profiling. These data revealed two subgroups of PA that separate according to tumor location (infratentorial versus supratentorial), and identified key neural developmental genes that are differentially methylated between the two groups. Significant expression differences were identified for the majority of differentially methylated genes, and these were unexpectedly associated with a strong positive correlation between methylation and expression. We also identified a large number of differentially methylated/expressed genes between cerebellar PAs and normal cerebellum, which included additional developmental genes.",
+      "overall_design": "Total RNA from 49 PA tumour samples and 9 normal cerebellum samples (from commercial sources) were hybridised to the Affymetrix HG U133 Plus 2.0 microarrays.",
+      "study_design": "毛细胞星形细胞瘤样本vs正常小脑，表达芯片差异分析",
+      "relevance_reason": "研究低级别胶质瘤亚型毛细胞星形细胞瘤的基因表达",
+      "treatment": false,
+      "treatment_type": "",
+      "_2c5807": "本条由SOGEN索臻标注·免费版仅部分·全量与增量在私域群·加微信bioinformaticsboy备注想进的学科群",
+      "drug_names": "",
+      "case_vs_control_differential": true,
+      "correlation": true,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE44nnn/GSE44971/",
+      "evidence": {
+        "relevant": "毛细胞星形细胞瘤是低级别胶质瘤亚型，数据集研究其肿瘤组织与正常对照的转录组，主体和样本均为该疾病。",
+        "sequencing_type": "总RNA直接与Affymetrix HG U133 Plus 2.0芯片杂交，MAS5.0归一化，测mRNA表达，属标准mRNA表达芯片。",
+        "survival_analysis": "样本均为患者肿瘤组织，但characteristics中无生存时间或状态字段，下游无法进行生存分析",
+        "treatment": "无任何药物干预，treatment_protocol仅描述样本冻存过程，核心比较轴为肿瘤亚组与正常对照",
+        "case_vs_control_differential": "tissue字段含Pilocytic astrocytoma(49)与Normal cerebellum control(9)，对照为独立正常小脑组织，非实验框架内对照，平台为表达芯片，样本量充足。",
+        "correlation": "Affymetrix HG U133 Plus 2.0 mRNA表达芯片，49例毛细胞星形细胞瘤（低级别胶质瘤）患者冰冻肿瘤组织样本，>15，符合表达定量平台与目标疾病临床样本量要求。",
+        "sample_source": "49 PA tumor samples and 9 normal cerebellum controls are both from intact frozen tissue directly extracted for RNA, no cell sorting or culture."
+      }
+    },
+    {
+      "gse_id": "GSE163071",
+      "title": "NF1 mutation drives neuronal activity-dependent optic glioma initiation",
+      "organism": "Homo sapiens",
+      "n_samples": 44,
+      "platform": "24676",
+      "pdat": "2021/03/30",
+      "pubmed_ids": [
+        "34040258"
+      ],
+      "sequencing_type": "mRNA-seq",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "The study investigates the role of NF1 mutation and neuronal activity on the initiation of optic pathway glioma, a type of low-grade glioma.  the RNAseq dataset investigates mRNA expression profile of human pilocytic astrocytomas (WHO grade I)",
+      "overall_design": "mRNA profiling of human non-neoplastic brains, NF1-associated pilocytic astrocytomas, and sporatic pilocytic astrocytomas",
+      "relevance_reason": "毛细胞星形细胞瘤（WHO I级）属于低级别胶质瘤",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": true,
+      "correlation": true,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE163nnn/GSE163071/",
+      "evidence": {
+        "relevant": "研究低级别胶质瘤亚型毛细胞星形细胞瘤的起始机制，样本为该肿瘤组织",
+        "sequencing_type": "总RNA进行RNA-Seq，文库选择cDNA，实验设计写明mRNA profiling，组织样品无单细胞/空间证据，判为mRNA-seq",
+        "survival_analysis": "样本级元数据仅含age/sex/nf1/tumor，无生存时间或状态字段，无法进行生存分析",
+        "treatment": "比较非肿瘤vs PA及NF1突变状态，无药物干预组，治疗非核心变量",
+        "case_vs_control_differential": "实验设计含human non-neoplastic brains(CTL,8例)与PA/GBM(36例)，表达平台，n≥3，对照为独立健康脑组织。",
+        "correlation": "mRNA-seq（RNA-Seq）表达定量平台；tumor字段含32例毛细胞型星形细胞瘤（PA，低级别胶质瘤）临床组织样本，超过15例，可做表达相关性分析。",
+        "sample_source": "所有44个GSM的source均为Human tumor tissue或Human control tissue，直接提取总RNA进行RNA-seq，无细胞分选或体外培养，属于整块实体脑组织。"
+      },
+      "study_design": null
+    },
+    {
+      "gse_id": "GSE249263",
+      "title": "Cancer-Associated Fibroblast Secreted Collagen is associated with Immune Suppressive LAIR-1 in Gliomas",
+      "organism": "Homo sapiens",
+      "n_samples": 21,
+      "platform": "24676",
+      "pdat": "2023/12/09",
+      "pubmed_ids": [
+        "39137048"
+      ],
+      "sequencing_type": "scRNA-seq",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "This is for a research letter in which we use peds glioma data to show collagen expression and CAFs are more abundant in the high grade glioma over low grade gliomas and additionally report the presence of LAIR1 in close proximity with these collagen rich areas.",
+      "overall_design": "To investigate the presence of CAFs, collagen and related immune suppression markers.",
+      "relevance_reason": "含13例低级别胶质瘤单细胞转录组数据。；免费共享版·SOGEN索臻标注·我们建了很多学科群与专题群·入群20元防广告·微信bioinformaticsboy",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": true,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "_7637cb": "索臻(SOGEN)出品·公共数据标注语料·加微信bioinformaticsboy进群持续获取增量·grswsci.top/analyze",
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE249nnn/GSE249263/",
+      "evidence": {
+        "relevant": "数据集包含13例LGG肿瘤样本，研究胶质瘤中CAF、胶原和免疫抑制，LGG为直接研究对象和样本。",
+        "sequencing_type": "单细胞悬液制备+library_source=transcriptomic single cell+10x Genomics+Cell Ranger+矩阵文件，为单细胞mRNA-seq",
+        "survival_analysis": "scRNA-seq非患者级矩阵，临床字段无生存时间/状态。",
+        "treatment": "分组为LGG/HGG/Normal，无药物处理对照。",
+        "case_vs_control_differential": "疾病组(LGG 13例, HGG 5例) vs 对照组(Normal 3例)共存；Normal为同一患者手术入路获取的无肿瘤脑组织，属癌旁正常组织；平台是scRNA-seq表达定量；每组≥1例，三关全过。",
+        "correlation": "scRNA-seq平台过关，但目标疾病LGG临床样本仅13例，未达到>15的要求",
+        "sample_source": "所有21例GSM的source均为Brain，取自手术切除的低级别胶质瘤(LGG)、高级别胶质瘤(HGG)或正常脑组织，新鲜组织经切碎、酶解、Percoll密度梯度离心富集免疫细胞后直接进行10x单细胞测序，未分选特定细胞类型、未体外培养，仍属实体组织来源。"
+      },
+      "study_design": null
+    },
+    {
+      "gse_id": "GSE65867",
+      "title": "Human junior pilocytic astrocytoma",
+      "organism": "Homo sapiens",
+      "n_samples": 12,
+      "platform": "15520;11154",
+      "pdat": "2020/07/03",
+      "pubmed_ids": [],
+      "sequencing_type": "mRNA-seq",
+      "sample_source": [
+        "primary_cell"
+      ],
+      "summary": "Microglia in the microenvironment of low-grade tumors have been shown to allow and support tumor growth, but the expression profile of these microglia are unknown. To examine the role of microglia in junior pilocytic astrocytomas, macrophages were flow sorted from cyroprotected surgical excisions of tumors and normal brain tissues. Upregulated markers of tumor-associated microglia were verified and compared to mouse tumor-associated microglia.",
+      "overall_design": "Junior pilocytic astrocytoma macrophages were flow sorted. Upregulated genes of glioma associated microglia were verified and further examined.",
+      "study_design": "毛细胞星形细胞瘤患者肿瘤与正常脑组织分选巨噬细胞，bulk RNA-seq肿瘤vs正常差异分析",
+      "_f5b702": "SOGEN免费共享·请勿删改署名·增量更新与更多学科专题需入群(20元防广告)·grswsci.top/analyze",
+      "relevance_reason": "比较低级胶质瘤肿瘤与正常脑组织来源巨噬细胞的表达差异",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": true,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "_0e6107": "免费共享版·SOGEN索臻标注·我们建了很多学科群与专题群·入群20元防广告·微信bioinformaticsboy",
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE65nnn/GSE65867/",
+      "evidence": {
+        "relevant": "毛细胞型星形细胞瘤（pilocytic astrocytoma）为低级别胶质瘤（WHO I级）的一种，数据集直接对该肿瘤微环境中的小胶质细胞进行表达谱分析，研究问题以该疾病为中心，样本取自该肿瘤组织。",
+        "sequencing_type": "总RNA经TRIzol提取,cDNA文库建库测序,表达谱分析,无ncRNA特异性富集,默认判mRNA-seq",
+        "survival_analysis": "只有12例样本且无生存时间/状态字段，无法做生存分析",
+        "treatment": "无药物干预对照，核心比较是肿瘤vs正常来源的巨噬细胞",
+        "case_vs_control_differential": "人肿瘤组织vs正常脑组织，tissue字段tumor/normal各6样本，来自6名独立患者(JPA 3名,正常3名),均流式分选巨噬细胞后行RNA-seq，对照为独立正常脑组织，组别可比且≥3例独立重复。",
+        "correlation": "疾病样本仅6例，远少于16例，无法做相关性分析",
+        "sample_source": "从肿瘤及正常脑组织手术切除标本中，经流式分选巨噬细胞（FACS），立即冻存提取RNA测序。被测材料为分选的具体原代细胞类型，非整块组织，按规则判为primary_cell，不双标tissue。"
+      }
+    },
+    {
+      "_0bbca6": "索臻生物科技SOGEN·生信+湿实验一站式·一区顶刊课题合作·加群获取增量·微信bioinformaticsboy",
+      "gse_id": "GSE270109",
+      "title": "Single-Cell Sequencing of IDH-Mutant Glioma",
+      "organism": "Homo sapiens",
+      "n_samples": 4,
+      "platform": "24676",
+      "pdat": "2024/06/21",
+      "pubmed_ids": [
+        "38989284"
+      ],
+      "sequencing_type": "scRNA-seq",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "Glioma, a prevalent and deadly brain tumor, is marked by significant cellular heterogeneity and metabolic alterations, yet the comprehensive cell-of-origin and metabolic landscape in high-grade (Glioblastoma Multiforme, WHO grade IV) and low-grade (Oligoastrocytoma, WHO grade II) gliomas remains elusive. In this study, we undertook single-cell transcriptome sequencing of these glioma grades to elucidate their cellular and metabolic distinctions. Following the identification of cell types, we compared metabolic pathway activities and gene expressions between high-grade and low-grade gliomas. The comprehensive analysis identified the most altered metabolic pathways (MCPs) and genes across all cell types, which were further validated against TCGA and CGGA datasets for their clinical significance.",
+      "overall_design": "Our primary glioma samples were obtained from two untreated patients and analyzed using single-cell transcriptomics profiling",
+      "study_design": "IDH突变胶质瘤患者肿瘤与癌旁正常组织，scRNA-seq比较高低级别代谢差异",
+      "relevance_reason": "包含低级别胶质瘤（Oligoastrocytoma）单细胞转录组数据",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": true,
+      "_a4c878": "SOGEN免费共享·请勿删改署名·增量更新与更多学科专题需入群(20元防广告)·grswsci.top/analyze",
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE270nnn/GSE270109/",
+      "evidence": {
+        "relevant": "研究明确比较低级别与高级别胶质瘤，低级别胶质瘤为研究主体之一，样本含低级别胶质瘤组织。",
+        "sequencing_type": "library_source='transcriptomic single cell', molecule='polyA RNA', 10x Chromium, Cell Ranger处理, 明确为单细胞mRNA测序",
+        "survival_analysis": "人类患者仅2例，远不足20例，且样本元数据无生存时间或状态字段",
+        "treatment": "研究主轴为不同级别胶质瘤比较，无药物治疗对照轴",
+        "case_vs_control_differential": "样本中 cell type 含 normal(1) 与 glioma(3)，样本标题为 sample1_normal / sample2_glioma 等，对照臂来自患者癌旁正常颞叶组织，单细胞转录组平台满足表达定量，每组≥1名患者，符合肿瘤 vs 癌旁正常的真对照。",
+        "correlation": "疾病样本仅3个，远不足16例，无法进行表达相关性分析",
+        "sample_source": "4个GSM来源均为颞叶，原发胶质瘤手术切除组织，未经分选直接解离进行单细胞测序，属整块组织直接取材测序。"
+      }
+    }
+  ]
+}

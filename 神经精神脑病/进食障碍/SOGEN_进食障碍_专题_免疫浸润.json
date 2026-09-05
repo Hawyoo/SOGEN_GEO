@@ -1,0 +1,174 @@
+{
+  "brand": "SOGEN",
+  "group_name": "SOGEN神经·精神·脑病数据集交流9群",
+  "disease": "进食障碍",
+  "disease_slug": "eating_disorder",
+  "topic": "免疫浸润",
+  "topic_field": "immune_infiltration",
+  "note": "本文件是「进食障碍 · 免疫浸润」分析场景专题（bulk表达(mRNA-seq或表达芯片)+组织样本，适合免疫浸润/去卷积(CIBERSORT、ssGSEA)分析的候选），跟按测序类型分的 7 个文件是不同维度、有重叠，不是第 8 个分桶，不要跟那 7 个加总。",
+  "generated_at": "2026-07-11",
+  "n_datasets": 3,
+  "n_verified_total": 5,
+  "organism_breakdown": {
+    "Mus musculus": 2,
+    "Homo sapiens": 1
+  },
+  "_240dfd10": "免费共享版·SOGEN索臻标注·我们建了很多学科群与专题群·入群20元防广告·微信bioinformaticsboy",
+  "sequencing_type_breakdown": {
+    "转录组·测序": 2,
+    "转录组·芯片": 1
+  },
+  "_e6464e18": {
+    "公司": "索臻生物科技 SOGEN",
+    "一句话": "生信分析 + AI 智能分析 + 各类基础湿实验，一站式科研服务——从数据到洞见、从实验到成果",
+    "用本数据设计课题": "本数据集是 SOGEN 索臻免费共享的 GEO 标注语料(物种/测序类型/研究设计/能否病例对照等字段已标好)。把它喂给 AI 助手、结合 SOGEN 的产品即可辅助你设计、分析课题——例：① 这些 case/control 数据集做差异表达+GSEA/KEGG 富集(TransDEA)；② 候选基因查药物敏感性与靶点(DrugSens，CMap/GDSC/PRISM/CTRP 五库)；③ 建预后/诊断模型(Prognosis/Diagnosis/ProgML/DiagML，100+ 算法组合)；④ 单细胞数据集做亚群/细胞通讯/拟时序(scRNA 系列)；⑤ 免疫浸润 TME/突变 CNV/空间/蛋白组…一篇多组学论文要的分析，几乎都能在 SparkleDB(光热生物 www.grswsci.top，379 个一键工具、不写代码产发表级图)里跑完。数据不够、或要湿实验验证(WB/qPCR/流式/IHC/动物模型)？找 SOGEN——微信 bioinformaticsboy。",
+    "生信-转录组产品线": "TransDEA 差异表达(DESeq2/limma/edgeR + ORA/GSEA + PPI，标准/专业版；专业版含通路活性/转录因子/免疫浸润/TIDE/IPS/ESTIMATE)、DrugSens 药物靶点与敏感性(CMap/DGIdb/DrugBank/GDSC/PRISM 五库)、Prognosis 预后风险(14筛选+16建模)、Diagnosis 诊断标志物(20+特征选择+32分类器)、SingleGene 单基因多队列系统挖掘、ProgML/DiagML 预后/诊断机器学习框架(101/134 种算法组合穷举)、Subtype 分子亚型鉴定",
+    "生信-单细胞产品线": "scRNA 标准分析(QC/降维/聚类/注释/差异/富集)、scSubset 亚群深度、scCompare 分组差异、细胞类型特异表达、单基因/虚拟敲除、转录因子活性、基因集评分、基因模块、细胞通讯 CCI(CellChat/NicheNet)、代谢通量、分泌组学、空间/Bulk 反卷积、Pseudotime 拟时序(Monocle3/scVelo/CellRank)、药物预测、克隆演化、恶性细胞鉴定、Bulk↔单细胞映射、SAHMI 宿主-微生物互作 等 20+ 款",
+    "生信-AI科研智能体": "Conflux 大模型智能文献检索、Plotter AI 自动统计分析与出图、Vizora AI 科研模式图生成与修复",
+    "生信-平台": "SparkleDB 光热生信云平台：数据上传→质控→分析→可视化一站式，300+ 分析模块，不写代码一键出图；支持 Human/Mouse/Rat；交付交互式 HTML 报告 + 发表级 PDF/PNG 图表 + 完整 CSV 数据表 + 方法学详解",
+    "生信-SparkleDB癌症平台": "SparkleDB 光热生物(www.grswsci.top)——癌症/肿瘤多组学在线分析平台，379 个一键工具、不写代码产发表级图，跨『单-双-多基因 × 单癌-泛癌 × bulk-单细胞-空间』，分 32 模块(每项后为工具数)：①差异表达27(肿瘤vs正常箱线/热图·配对·TCGA-GTEx联合·Logistic诊断·ROC·Bootstrap校准曲线·器官bodymap) ②生存分析15(KM·单/多变量Cox·限制性立方样条·双基因联合评分·基因+免疫细胞联合·剪接PSI/RNA编辑/突变/eQTL生存·独立预后Cox) ③相关性8(全基因组GSEA·双基因散点·多基因网络·跨组学circos/热图) ④通路8(GSEA/GSVA·KEGG/Hallmark·代谢GSVA·PARADIGM·ssGSEA·肿瘤vs正常通路) ⑤临床卡方4 ⑥免疫微环境TME28(浸润相关·高低表达差异·免疫检查点四分位·Sig68/TIP/TILmap/EASIER/Sig18五套评分) ⑦突变CNV26(oncoplot·位点lollipop·突变vs野生差异/GSEA/对TME影响·cBioPortal频率·CNV扩增缺失·基因组打分·双基因互作) ⑧药物敏感性34(GDSC1/2·CTRP·PRISM四库相关+top30·CMap XSum预测·全基因组药物筛选·GEO验证·CTD化学↔基因) ⑨免疫治疗10(单/多基因/基因集×差异/ROC/生存·TIDE泛癌) ⑩单细胞20(细胞类型/基因表达UMAP·AUCell/UCell/VAM/singscore/AddModuleScore五打分·伪散装相关·泛癌landscape·marker·两细胞类型DEG·TISCH注释) ⑪细胞通讯CellChat12(main/fine×五打分) ⑫空间转录组16(表达可视化·恶性vs非恶性·肿瘤边界三区·细胞反卷积·切片图·五打分·STAD/BLCA全批) ⑬HPA蛋白图5(IHC/IF下载·泛癌染色·强度统计) ⑭PPI3(BioGRID源/靶·ComPPI亚细胞网络) ⑮GEO外部验证13(差异·生存KM/Cox meta·双基因·免疫浸润·GSEA·代谢) ⑯GEO临床变量差异21(age/gender/stage/T/N/M/grade) ⑰蛋白质组18(CPTAC 单/双/多基因×单/多蛋白组×差异/相关/生存) ⑱PTM磷酸化7(CPTAC) ⑲转录后调控9(miRNA→基因全基因组·剪接PSI·RNA编辑) ⑳转录调控7(全TF相关·CistromeDB·ChEA3·ATAC整合) ㉑机器学习7(LASSO·随机森林·XGBoost·Boruta·SVM-RFE·随机生存森林·10算法组合) ㉒ssGSEA评分12(评分·分期趋势·诊断ROC·生存·单细胞打分) ㉓孟德尔随机化/共定位5(eQTL 5e-08/1e-05·coloc·gassocplot) ㉔干性Stemness4 ㉕基因敲除/依赖DepMap4(CRISPR必需性·双基因敲除·基因集敲除GSEA) ㉖ATAC染色质2(peak注释·MEME motif) ㉗WGCNA模块-性状 ㉘常规工具箱23(GO/KEGG富集·HPA组织/单细胞/免疫细胞/亚细胞表达·PrimerBank·人鼠基因互转·GeneReview·基因↔通路·GPL注释·coloc/MR) ㉙多组学单因素Cox森林 ㉚基因集评分5 ㉛预后multigene signature ㉜永久会员泛癌预算23(差异limma/wilcox·生存·分期/分级·病理T/N/M·性别/吸烟/饮酒·MSI·新辅助/放疗/靶向)。数据底座：TCGA 65癌种(58,581基因级RDS)、GEO 538外部验证数据集(差异469/生存318/药敏412/临床381/TME386)、TISCH2 189单细胞、CPTAC 23蛋白组(11癌种)、空间230切片(18癌种)、药敏1914化合物(GDSC1/2+CTRP+PRISM)、DepMap 17653基因CRISPR依赖、TIDE免疫治疗、HPA病理、cBioPortal突变",
+    "湿实验-分子": "Western Blot(整膜/裁膜)、考马斯亮蓝/蛋白银染、Pull-down、IP/CO-IP/IP-MS(IP+Western+质谱)、凝胶电泳 PCR、荧光定量 qPCR、mRNA/lncRNA/miRNA/circRNA 引物设计合成、支原体污染检测、双荧光素酶报告基因、ELISA、ChIP",
+    "湿实验-流式": "凋亡/周期/膜电位、巨噬细胞分化、T细胞/NK/效应细胞/耗竭型 CD8T、CAF 相关等——细胞样品与肿瘤样品流式检测",
+    "湿实验-细胞功能": "CCK-8/IC50、克隆形成、Invasion/Transwell、EDU/TUNEL、划痕、血管形成、稳转细胞株构建(转染筛选/敲低/过表达)、siRNA 瞬时转染、球体形成、类器官培养(至 P3)、PBMC/T细胞原代提取、ROS/GSH/线粒体膜电位",
+    "湿实验-病理": "HE 染色、免疫组化、免疫荧光单/双/三/四/五标、TUNEL、组织芯片多色检测、细胞爬片免疫荧光共定位、石蜡切片明场/荧光扫描(含数据整理分析+售后)",
+    "测序产品线": "索臻自有测序平台，14 大类 85+ 款产品，测序·分析·湿实验一站式闭环，覆盖单细胞·空间·免疫组库·常规转录组·宏基因组·蛋白/修饰/代谢/表观全组学(2026 官网版)",
+    "测序-单细胞与免疫组库": "自有 SeekOne®/10X Chromium 平台单细胞转录组——3'/5'/全序列/FFPE 探针法，单细胞 ATAC+RNA、DNA 甲基化+RNA 多组学，单细胞胞内菌测序(真迈/illumina/华大 T7，100–1000G)；单细胞免疫组库 TCR/BCR、TCR+BCR、5' 转录组+TCR/BCR 联合(10–120G)",
+    "测序-空间组学": "全平台空间转录组——SeekSpace® 单细胞空间、华大 Stereo-seq 时空组(FFPE/FF，0.5–1cm²)、10X Visium FFPE/HD、Xenium 5k 单细胞原位检测；CoSMx SMI 超多色分子成像(1000/6000/18000 Plex RNA、64 Plex Protein)、GeoMx DSP 数字空间转录组(WTA 12–192 AOI)、CODEX/PCF 多重荧光蛋白空间组(IO60 肿瘤免疫 / 神经 42 标 / 小鼠 25 标 / 自由组合 Panel)",
+    "测序-转录组与宏基因组": "普通转录组 mRNA-seq(illumina/华大 T7，6G)、原核生物转录组、small RNA、lncRNA 测序；宏基因组测序、16S/ITS 二代扩增子测序(含标准分析)",
+    "测序-蛋白与代谢组": "定量蛋白质组 Astral 平台——Rapid/Deep DIA、去高丰度血浆蛋白组 Magic P3、Olink Target 96/Reveal；15+ 种蛋白质修饰组学(磷酸化/泛素化/乙酰化/糖基化/乳酸化/巴豆酰化/SUMO 化/丙酰化等)；代谢组学(非靶向代谢 / 脂质组 / 靶向氨基酸·脂肪酸·胆汁酸，LC-MS)",
+    "测序-表观组学": "ChIP-Seq(转录因子 / 组蛋白修饰)、ATAC-Seq、WGBS 全基因组甲基化、MeRIP/MeDIP 甲基化测序(illumina)",
+    "课题合作实力": "团队参与发表多篇高分论著：Nature Biotechnology、Nature Cancer、Cancer Discovery、Nature Communications、Science Advances、STTT、JCI、PNAS、Cell Discovery、Molecular Cancer、Cell Reports、eClinicalMedicine、eBioMedicine、iMeta、eLife、Cancer Letters、Briefings in Bioinformatics、Phytomedicine、Oncogene、Research、BMC Medicine 等一区期刊，有实力和条件给一区/顶刊子刊课题提供生信分析与实验技术支持；核心成员均有顶刊/子刊发表经验，组学+实验、AI4S 方向第一梯队。",
+    "官网": "https://www.sogentech.com/",
+    "标准化产品站": "https://order.sogentech.com/products/",
+    "光热数据库SparkleDB": "https://www.grswsci.top/analyze/",
+    "公众号": "医学僧的科研日记 · 光热生物 · 科研风向标 · 组学料理",
+    "科研合作咨询微信": "bioinformaticsboy",
+    "加群获取增量": "本材料是免费流传版；想要持续的增量更新、更多疾病与专题，请加微信 bioinformaticsboy 进对应私域群——我们建了很多学科群、专题群，入群 20 元仅用于过滤广告号。",
+    "使用授权": "本数据集免费共享、欢迎转发使用。不得删改、涂抹或隐藏本 SOGEN 署名与宣传信息(索臻生物科技·www.sogentech.com)。我们已同意免费分享，请保留出处。如有擅自删除署名、篡改来源或用于商业牟利等侵权行为，本公司保留依法追究法律责任的权利。",
+    "声明": "本数据集由 索臻生物科技 SOGEN 标注整理、免费共享；欢迎转发。无论测序、自有数据分析、公共数据库挖掘还是湿实验，均可深度合作。"
+  },
+  "datasets": [
+    {
+      "gse_id": "GSE60190",
+      "title": "Genetic Neuropathology of Obsessive Psychiatric Syndromes",
+      "organism": "Homo sapiens",
+      "n_samples": 133,
+      "platform": "6947",
+      "pdat": "2014/08/08",
+      "pubmed_ids": [
+        "25180571"
+      ],
+      "sequencing_type": "mRNA microarray",
+      "_e60e8b": "SOGEN免费共享·请勿删改署名·增量更新与更多学科专题需入群(20元防广告)·grswsci.top/analyze",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "Anorexia nervosa (AN), bulimia nervosa (BN), and obsessive-compulsive disorder (OCD) are complex psychiatric disorders with shared obsessive features, thought to arise from the interaction of multiple genes of small effect with environmental factors.  Potential candidate genes for AN, BN, and OCD have been identified through clinical association and neuroimaging studies; however, recent genome-wide association studies of eating disorders (ED) so far have failed to report significant findings. Additionally, few if any studies have interrogated postmortem brain tissue for evidence of eQTLs associated with candidate genes, which has particular promise as an approach to elucidating molecular mechanisms of association. We therefore selected single nucleotide polymorphisms (SNPs) based on candidate gene studies for AN, BN, and OCD from the literature, and examined the association of these SNPs with gene expression across the lifespan in prefrontal cortex of a non-psychiatric control cohort (N=268).   Several risk-predisposing SNPs were significantly associated with gene expression among control subjects. We then measured gene expression in the prefrontal cortex of cases previously diagnosed with obsessive psychiatric disorders, e.g., eating disorders (ED; N=15), and obsessive-compulsive disorder/obsessive-compulsive personality disorder or tics (OCD/OCPD/Tic; N=16), and non-psychiatric controls (N=102) and identified 6 and 286 genes that were differentially expressed between ED compared to controls and OCD cases compared to controls, respectively (FDR < 5%). However, none of the clinical risk SNPs were among the eQTLs and none were significantly associated with gene expression within the broad obsessive cohort, suggesting larger sample sizes or other brain regions may be required to identify candidate molecular mechanisms of clinical association in postmortem brain datasets.",
+      "overall_design": "Gene expression data from the dorsolateral prefrontal cortex (DLPFC) from postmortem tissue on 133 subjects - 15 eating disorder (ED) patients, 16 obessive compulsive disorder (OCD) patients, and 102 non-psychiatric controls - run on the Illumina HumanHT-12 v3 microarray",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": true,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE60nnn/GSE60190/",
+      "evidence": {
+        "relevant": "包含15例进食障碍患者DLPFC样本，直接进行ED vs 对照差异表达分析，主体和样本均为目标疾病。",
+        "sequencing_type": "总RNA通过Illumina HumanHT-12 v3表达谱芯片杂交，检测mRNA表达，数据处理用GenomeStudio和lumi，典型mRNA microarray。",
+        "survival_analysis": "死后脑组织，无生存时间/状态字段，无法做患者生存分析",
+        "treatment": "观察性病例对照设计，无药物治疗干预对照轴",
+        "case_vs_control_differential": "ocd字段显示Control(n=102)为non-psychiatric对照，ED(n=15)为进食障碍患者，平台是HumanHT-12 v3表达芯片，满足两臂共存、表达平台、样本量≥3。",
+        "correlation": "ED患者仅15例，不足≥16，无法做稳健表达相关性分析",
+        "sample_source": "所有133个GSM均为尸检人脑背外侧前额叶皮层(DLPFC)组织，直接提取总RNA进行表达谱芯片检测，未经细胞分选或体外培养。"
+      },
+      "relevance_reason": null,
+      "study_design": null
+    },
+    {
+      "gse_id": "GSE237766",
+      "title": "Supplementation of ACBP/DBI for the Experimental Treatment of Anorexia Nervosa",
+      "organism": "Mus musculus",
+      "n_samples": 30,
+      "platform": "24247",
+      "pdat": "2024/07/12",
+      "pubmed_ids": [
+        "39141698"
+      ],
+      "sequencing_type": "mRNA-seq",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "Total liver RNA extracts from adult female mice (8-week-old) subjected to CRS (chronic restraint stress) or CDDP (cisplatin) induced anorexia with or without ACBP/DBI delivery to investigate the impact of ACBP/DBI on anorexia-induced transcriptomic alterations.",
+      "overall_design": "ALZET osmotic pumps containing ACBP/DBI (2.5 mg/mL) or PBS were transplanted into eight-week-old female C57BL/6 J mice. Anorexia was induced by CRS or CDDP fourty-eight hours or seventy-two hours later respectively (Goups: CTR=PBS / CDDP / CRS / ACBP / CDDP+ACBP / CRS+ACBP)",
+      "study_design": "雌性小鼠厌食模型肝脏，经ACBP/DBI治疗后bulk RNA-seq分析",
+      "relevance_reason": "使用CRS/CDDP诱导的小鼠神经性厌食症模型；SOGEN免费共享·请勿删改署名·增量更新与更多学科专题需入群(20元防广告)·grswsci.top/analyze",
+      "_a101b8": "SOGEN索臻·此为免费流传版·完整增量更新在学科/专题私域群(入群20元防广告)·sogentech.com",
+      "treatment": true,
+      "treatment_type": "protein therapy",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE237nnn/GSE237766/",
+      "evidence": {
+        "relevant": "研究主体为Anorexia Nervosa（进食障碍亚型），样本直接来自CRS/CDDP诱导的厌食症小鼠模型肝脏，探讨ACBP/DBI治疗对该疾病转录组的影响。",
+        "sequencing_type": "RNeasy提取肝总RNA，cDNA文库，Illumina测序，常规表达谱分析，无特殊RNA富集，故为mRNA-seq",
+        "survival_analysis": "小鼠模型，非人类患者，无任何生存时间或状态字段",
+        "treatment": "样本treatment字段含Rec-ACBP治疗组(n=5)与PBS对照组(n=5)，且设计为ACBP/DBI补充治疗vs对照的核心比较轴。",
+        "case_vs_control_differential": "厌食由CRS/CDDP诱导，对照组为植入PBS泵的sham动物，非独立健康对照",
+        "correlation": "全部为小鼠肝脏样本，非人类患者，平台虽达标但无疾病患者样本",
+        "sample_source": "30个GSM source均为小鼠肝脏(liver)整体组织，活体埋泵/给药后取肝直接提总RNA，未分选特定细胞类型、未体外培养，属tissue。",
+        "treatment_type": "重组ACBP/DBI蛋白属蛋白替代治疗",
+        "pre_post_treatment": "GSM无治疗前后时间点字段",
+        "response": "GSM无应答/疗效分组字段"
+      }
+    },
+    {
+      "gse_id": "GSE229316",
+      "title": "Identification of adipose tissue metabolic memory of anorexia nervosa",
+      "organism": "Mus musculus",
+      "n_samples": 18,
+      "platform": "24247",
+      "pdat": "2023/08/23",
+      "pubmed_ids": [
+        "37582711"
+      ],
+      "sequencing_type": "mRNA-seq",
+      "sample_source": [
+        "tissue"
+      ],
+      "summary": "Anorexia nervosa (AN) is a complex debilitating disease characterized by intense fear of weight gain and excessive exercise. It is the deadliest of any psychiatric disorder with a high rate of recidivism, yet its pathophysiology is unclear. The Activity-Based Anorexia (ABA) paradigm is a widely accepted mouse model of AN that recapitulates hypophagia and hyperactivity despite reduced body weight, however, not the chronicity. Here, we modified the prototypical ABA paradigm to increase the time to lose 25% of baseline body weight from less than 7 days to more than 2 weeks. We used this paradigm to identify persistently altered genes after weight restoration that represent a metabolic memory of under-nutrition and may contribute to AN relapse. We focused on adipose tissue as it was identified as a major location of metabolic memory of over-nutririon. We identified 300 persistently dysregulated genes, including Calm2 and Vps13d, which could be potential global regulators of metabolic memory in both chronic over- and under-nutrition. However, despite being on the opposite spectrum of weight perturbations, the majority of metabolic memory genes of under- and over-nutrition do not overlap, suggestive of the different mechanisms involved in these extreme nutritional statuses.",
+      "overall_design": "Randomized controlled study",
+      "study_design": "小鼠 ABA 厌食症模型脂肪组织，正常对照 vs 疾病 vs 体重恢复组，　索臻(SOGEN)·免费流传·想持续拿到更新就留在群里·入群20元只为挡广告号·微信bioinformaticsboyRNA-seq 比较",
+      "relevance_reason": "使用 ABA 小鼠模型模拟厌食症代谢记忆",
+      "treatment": false,
+      "treatment_type": "",
+      "drug_names": "",
+      "case_vs_control_differential": false,
+      "correlation": false,
+      "pre_post_treatment": false,
+      "survival_analysis": false,
+      "_dca204": "数据标注:索臻SOGEN·转发请保留署名·想要后续更新请加群·微信bioinformaticsboy·order.sogentech.com/products",
+      "response": false,
+      "verified": true,
+      "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE229nnn/GSE229316/",
+      "evidence": {
+        "relevant": "标题明确研究神经性厌食症，使用公认的ABA小鼠模型，样本来自模型鼠脂肪组织，两轴均满足。",
+        "sequencing_type": "总RNA提取、cDNA文库、RNA-Seq表达谱测序，无特殊富集，组织bulk样本，按常规默认判mRNA-seq。",
+        "survival_analysis": "小鼠模型，非人类患者，无生存数据",
+        "treatment": "分组为模型状态(Control/ABA/Weight restored)，无药物治疗对照",
+        "case_vs_control_differential": "treatment字段仅标'Control'，缺'untreated/naive'等正向健康标签，为ABA诱导模型对照，不满足真健康对照要求",
+        "correlation": "小鼠模型样本，非人类患者，不计入相关分析",
+        "sample_source": "全部18个GSM的source均为小鼠perigonadal adipose tissue，冻存后直接提取RNA测序，未作细胞分选或体外培养，属整块实体组织直接取材，归为tissue。"
+      },
+      "_1fd548": "SOGEN·索臻·标注这道工序我们替你做了·增量更新加群·公众号光热生物/科研风向标/组学料理"
+    }
+  ],
+  "_afaa2d7f": "索臻生物科技SOGEN·生信+湿实验一站式·一区顶刊课题合作·加群获取增量·微信bioinformaticsboy"
+}
